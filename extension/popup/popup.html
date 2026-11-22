@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Solo Siguiendo</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="../icons/icon-48.png" alt="" width="28" height="28">
+    <h1>Solo Siguiendo</h1>
+  </header>
+
+  <label class="row main">
+    <span>Activado</span>
+    <input type="checkbox" data-key="enabled">
+  </label>
+
+  <div id="options">
+    <label class="row">
+      <span>Abrir siempre «Siguiendo»</span>
+      <input type="checkbox" data-key="forceFollowing">
+    </label>
+    <label class="row">
+      <span>Ocultar pestaña «Para ti»</span>
+      <input type="checkbox" data-key="hideForYou">
+    </label>
+    <label class="row">
+      <span>Ocultar anuncios</span>
+      <input type="checkbox" data-key="hideAds">
+    </label>
+    <label class="row">
+      <span>Ocultar «A quién seguir» y tendencias</span>
+      <input type="checkbox" data-key="hideSuggestions">
+    </label>
+    <label class="row">
+      <span>Ocultar reposts<small>Traen cuentas que no sigues</small></span>
+      <input type="checkbox" data-key="hideReposts">
+    </label>
+  </div>
+
+  <p class="note">Los cambios se aplican al momento en las pestañas de X abiertas.</p>
+  <script src="popup.js"></script>
+</body>
+</html>
