@@ -29,7 +29,7 @@ Dezombify mata al algoritmo de tus redes sociales y trae a tus amigos de vuelta 
 
 Las redes ya no te enseñan lo que publica la gente que sigues: te llenan el inicio de «Para ti», sugerencias, vídeos virales y anuncios para que sigas haciendo scroll. Dezombify devuelve tu inicio a lo que de verdad elegiste seguir.
 
-Funciona en X, YouTube, Instagram, Facebook, LinkedIn, TikTok, Threads, Bluesky y Twitch.
+Funciona en las principales redes sociales y plataformas de vídeo. La lista completa de sitios compatibles está en la página de opciones de la extensión y en https://github.com/GofioDesign/dezombify.
 
 QUÉ HACE
 • Abre siempre el feed de quien sigues (Siguiendo, Suscripciones o el cronológico de amigos) en lugar del algorítmico.
@@ -57,7 +57,7 @@ Dezombify kills the algorithm of your social networks and brings your friends ba
 
 Social networks no longer show you what the people you follow post: they fill your home feed with “For you”, suggestions, viral videos and ads to keep you scrolling. Dezombify brings your feed back to what you actually chose to follow.
 
-It works on X, YouTube, Instagram, Facebook, LinkedIn, TikTok, Threads, Bluesky and Twitch.
+It works on the major social networks and video platforms. The full list of supported sites is on the extension's options page and at https://github.com/GofioDesign/dezombify.
 
 WHAT IT DOES
 • Always opens the feed of people you follow (Following, Subscriptions or the chronological friends feed) instead of the algorithmic one.
@@ -78,7 +78,7 @@ More extensions and voluntary donations: https://gofiodesign.eu/extensiones.html
 Works in the desktop browser; it does not change mobile apps.
 ```
 
-> Las marcas de las redes aparecen una sola vez, en una frase, para no repetir el rechazo por «keyword stuffing».
+> **No enumerar las redes en la descripción.** El 22-11-2026 Google rechazó la 2.0 por «keyword stuffing» (referencia *Yellow Argon*) por la frase que listaba las nueve redes. La lista completa va en el README y en la página de opciones, no en la ficha. Tampoco pongas nombres de redes en el título ni en la descripción breve.
 
 ### Recursos gráficos (`store/es` y `store/en`)
 
@@ -134,5 +134,5 @@ https://github.com/GofioDesign/dezombify/blob/main/PRIVACY.md
 
 | Versión | Fecha | Cambios |
 |---|---|---|
-| 2.0.0 | 2026-11-22 | Pasa a llamarse Dezombify. Nueve redes sociales, opciones por red, anuncios de YouTube, nuevo logo, bienvenida, aviso de valoración cada 5 usos. |
+| 2.0.0 | 2026-11-22 | Rechazada una vez por la lista de redes en la descripción (corregido). Pasa a llamarse Dezombify. Nueve redes sociales, opciones por red, anuncios de YouTube, nuevo logo, bienvenida, aviso de valoración cada 5 usos. |
 | 1.0.0 | 2026-11 | «Solo Siguiendo para X»: solo X. |
