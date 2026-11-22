@@ -32,15 +32,18 @@
     const ys = [];
     // 1) elementos con etiqueta accesible de fecha; 2) los reels incrustados son un único enlace
     //    grande y la fecha va como texto visible («21 nov.», «2 d») en un <span> dentro de él
-    const cands = [...post.querySelectorAll('[aria-labelledby], a span')];
+    const cands = [...post.querySelectorAll('[aria-labelledby], [aria-describedby], a span')];
     for (const el of cands) {
       const art = el.closest('[role="article"]');
       if (art && art !== post && post.contains(art)) continue;
-      if (el.hasAttribute('aria-labelledby')) {
-        const txt = el.getAttribute('aria-labelledby').split(' ')
+      const ref = el.getAttribute('aria-labelledby') || el.getAttribute('aria-describedby');
+      if (ref) {
+        // Facebook enlaza la fecha con aria-labelledby («Hace 3 h») o aria-describedby
+        // («martes, 3 de noviembre de 2026 a las 17:18»)
+        const txt = ref.split(' ')
           .map((id) => (document.getElementById(id)?.textContent || '').trim()).join(' ');
-        // fechas cortas (≤5 palabras, o con hora «a las 13:42»): descarta textos alternativos de fotos con números
-        if (!txt || txt.length >= 40 || (txt.split(/\s+/).length > 5 && !/\d:\d\d/.test(txt)) || !TIME.test(txt) || AD_WORDS.test(txt)) continue;
+        // fechas cortas (≤5 palabras) o completas (con año u hora): descarta textos de fotos
+        if (!txt || txt.length >= 60 || (txt.split(/\s+/).length > 5 && !/\d:\d\d|\d{4}/.test(txt)) || /^[\d:\s/.]+$/.test(txt) || !TIME.test(txt) || AD_WORDS.test(txt)) continue;
       } else {
         if (el.childElementCount) continue;
         const txt = el.textContent.trim();
