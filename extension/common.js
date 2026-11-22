@@ -9,7 +9,7 @@
     // X
     x_on: true, x_reposts: false,
     // YouTube
-    yt_on: true, yt_shorts: true, yt_related: true, yt_autoplay: true,
+    yt_on: true, yt_shorts: true, yt_related: true, yt_autoplay: true, yt_ads: true,
     // Instagram
     ig_on: true, ig_explore: true, ig_reposts: false,
     // Facebook

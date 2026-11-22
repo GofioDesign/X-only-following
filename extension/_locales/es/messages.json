@@ -32,6 +32,12 @@
   "yt_on_hint": {
     "message": "Inicio abre tus suscripciones"
   },
+  "yt_ads": {
+    "message": "Ocultar anuncios"
+  },
+  "yt_ads_hint": {
+    "message": "Banners y promocionados; en el vídeo pulsa «Saltar» al aparecer"
+  },
   "yt_shorts": {
     "message": "Ocultar Shorts"
   },

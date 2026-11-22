@@ -32,6 +32,12 @@
   "yt_on_hint": {
     "message": "Home opens your subscriptions"
   },
+  "yt_ads": {
+    "message": "Hide ads"
+  },
+  "yt_ads_hint": {
+    "message": "Banners and promoted items; skips video ads as soon as allowed"
+  },
   "yt_shorts": {
     "message": "Hide Shorts"
   },

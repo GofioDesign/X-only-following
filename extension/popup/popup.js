@@ -4,7 +4,7 @@
 const DEFAULTS = {
   enabled: true,
   x_on: true, x_reposts: false,
-  yt_on: true, yt_shorts: true, yt_related: true, yt_autoplay: true,
+  yt_on: true, yt_shorts: true, yt_related: true, yt_autoplay: true, yt_ads: true,
   ig_on: true, ig_explore: true, ig_reposts: false,
   fb_on: true, fb_friends: false, fb_reels: true, fb_shares: false, fb_activity: true,
   li_on: true, li_reposts: false, li_activity: true,
@@ -15,7 +15,7 @@ const DEFAULTS = {
 };
 const NETS = [
   { main: 'x_on', host: /(^|\.)(x|twitter)\.com$/, subs: ['x_reposts'] },
-  { main: 'yt_on', host: /(^|\.)youtube\.com$/, subs: ['yt_shorts', 'yt_related', 'yt_autoplay'] },
+  { main: 'yt_on', host: /(^|\.)youtube\.com$/, subs: ['yt_ads', 'yt_shorts', 'yt_related', 'yt_autoplay'] },
   { main: 'ig_on', host: /(^|\.)instagram\.com$/, subs: ['ig_explore', 'ig_reposts'] },
   { main: 'fb_on', host: /(^|\.)facebook\.com$/, subs: ['fb_friends', 'fb_reels', 'fb_shares', 'fb_activity'] },
   { main: 'li_on', host: /(^|\.)linkedin\.com$/, subs: ['li_reposts', 'li_activity'] },
