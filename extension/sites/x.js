@@ -1,4 +1,4 @@
-// Kill the Algorithm — X (Twitter): solo «Siguiendo»
+// Dezombify — X (Twitter): solo «Siguiendo»
 (() => {
   const KTA = (globalThis.KTA = globalThis.KTA || { sites: {} });
   const AD_LABELS = /^(ad|ads|promoted|promocionado|anuncio|sponsorisé|sponsorizzato|gesponsert|patrocinado|publicidade|gesponsord|promowane|reklam|реклама|プロモーション|광고|推广|推廣)$/i;

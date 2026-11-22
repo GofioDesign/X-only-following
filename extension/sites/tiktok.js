@@ -1,4 +1,4 @@
-// Kill the Algorithm — TikTok: solo «Siguiendo»
+// Dezombify — TikTok: solo «Siguiendo»
 (() => {
   const KTA = (globalThis.KTA = globalThis.KTA || { sites: {} });
   const AD = /^(patrocinado|sponsored|publicidad|anuncio|ad|sponsorisé|gesponsert|sponsorizzato|patrocinado|gesponsord|sponsorowane|sponsorlu|реклама|広告|광고|广告|廣告)$/i;

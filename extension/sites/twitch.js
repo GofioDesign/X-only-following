@@ -1,4 +1,4 @@
-// Kill the Algorithm — Twitch: solo «Siguiendo»
+// Dezombify — Twitch: solo «Siguiendo»
 (() => {
   const KTA = (globalThis.KTA = globalThis.KTA || { sites: {} });
   const RECOMMENDED = /^(canales recomendados|recommended channels|chaînes recommandées|empfohlene kanäle|canali consigliati|canais recomendados|aanbevolen kanalen|polecane kanały|önerilen kanallar|рекомендуемые каналы|おすすめチャンネル|추천 채널|推荐频道|推薦頻道|categorías recomendadas|recommended categories)$/i;

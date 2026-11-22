@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,"Segoe UI",system-ui,sans-serif;color:#f1f2f4;background:#0f1013}
+.f{position:relative;overflow:hidden;display:none;background:radial-gradient(900px 600px at 80% 0%,#3a1530 0%,#0f1013 65%)}
+body[data-v=s1] #s1,body[data-v=s2] #s2,body[data-v=s3] #s3,body[data-v=s4] #s4,body[data-v=tile] #tile,body[data-v=marquee] #marquee{display:block}
+.s{width:1280px;height:800px}
+h1{font-size:60px;line-height:1.05;letter-spacing:-1.5px;font-weight:800}
+h2{font-size:46px;line-height:1.1;letter-spacing:-1px;font-weight:800}
+em{font-style:normal;color:#ff5fa2}
+.lead{font-size:23px;line-height:1.45;color:#a9adb5;margin-top:20px}
+.brand{display:flex;align-items:center;gap:16px;font-size:26px;font-weight:800;margin-bottom:36px}
+.brand img{width:64px;height:64px}
+.left{position:absolute;left:80px;top:0;bottom:0;width:520px;display:flex;flex-direction:column;justify-content:center}
+.shot{position:absolute;border-radius:18px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.55);background:#fff}
+.shot img{display:block;width:100%}
+/* feeds genéricos */
+.feeds{position:absolute;right:70px;top:180px;display:flex;gap:28px}
+.feed{width:290px;border-radius:20px;background:#1b1d22;border:1px solid #2b2e35;padding:16px;display:flex;flex-direction:column;gap:12px}
+.feed .t{font-weight:800;font-size:17px;color:#cfd2d8;padding:2px 4px 6px;display:flex;justify-content:space-between}
+.card{border-radius:14px;background:#24272d;padding:12px;display:flex;gap:10px;align-items:flex-start;position:relative}
+.av{width:36px;height:36px;border-radius:50%;flex:none}
+.ln{height:9px;border-radius:5px;background:#3a3e46;margin:5px 0}
+.tag{font-size:12px;font-weight:700;border-radius:6px;padding:2px 7px;display:inline-block;margin-bottom:4px}
+.bad .tag{background:#3b2a2e;color:#ff8a8a}
+.bad{opacity:.55;filter:grayscale(.6)}
+.bad::after{content:"";position:absolute;left:8px;right:8px;top:50%;height:3px;background:#ef3b3b;transform:rotate(-6deg);border-radius:3px}
+.good .tag{background:#3a1c2f;color:#ff8fc1}
+.zombie .av{background:#5d6b57}
+.friend .av{background:linear-gradient(135deg,#ff5fa2,#ffb36b)}
+.arrow{position:absolute;left:304px;top:250px;font-size:44px;color:#ff5fa2}
+.pill{display:inline-flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.pill span{background:#22242a;border:1px solid #33363e;border-radius:999px;padding:10px 18px;font-size:18px;color:#d6d8dd}
+.big{font-size:110px;line-height:1}
+</style></head><body>
+<!-- 1 hero -->
+<section class="f s" id="s1">
+ <div class="left"><div class="brand"><img src="logo.png">Dezombify</div><h1 data-t="h1"></h1><p class="lead" data-t="l1"></p></div>
+ <div class="feeds">
+  <div class="feed"><div class="t"><span data-t="foryou"></span><span>🧟</span></div>
+   <div class="card bad zombie"><div class="av"></div><div style="flex:1"><span class="tag" data-t="ad"></span><div class="ln" style="width:90%"></div><div class="ln" style="width:60%"></div></div></div>
+   <div class="card bad zombie"><div class="av"></div><div style="flex:1"><span class="tag" data-t="sugg"></span><div class="ln" style="width:80%"></div><div class="ln" style="width:70%"></div></div></div>
+   <div class="card bad zombie"><div class="av"></div><div style="flex:1"><span class="tag" data-t="viral"></span><div class="ln" style="width:95%"></div><div class="ln" style="width:50%"></div></div></div>
+   <div class="card bad zombie"><div class="av"></div><div style="flex:1"><span class="tag" data-t="ad"></span><div class="ln" style="width:70%"></div><div class="ln" style="width:85%"></div></div></div>
+  </div>
+  <div class="feed"><div class="t"><span data-t="following"></span><span>💗</span></div>
+   <div class="card good friend"><div class="av"></div><div style="flex:1"><span class="tag" data-t="f1"></span><div class="ln" style="width:85%"></div><div class="ln" style="width:65%"></div></div></div>
+   <div class="card good friend"><div class="av" style="background:linear-gradient(135deg,#6bc6ff,#ff5fa2)"></div><div style="flex:1"><span class="tag" data-t="f2"></span><div class="ln" style="width:75%"></div><div class="ln" style="width:90%"></div></div></div>
+   <div class="card good friend"><div class="av" style="background:linear-gradient(135deg,#b38bff,#ff5fa2)"></div><div style="flex:1"><span class="tag" data-t="f3"></span><div class="ln" style="width:92%"></div><div class="ln" style="width:55%"></div></div></div>
+   <div class="card good friend"><div class="av" style="background:linear-gradient(135deg,#ffd36b,#ff5fa2)"></div><div style="flex:1"><span class="tag" data-t="f4"></span><div class="ln" style="width:80%"></div><div class="ln" style="width:70%"></div></div></div>
+  </div>
+ </div>
+</section>
+<!-- 2 popup por red -->
+<section class="f s" id="s2">
+ <div class="left"><div class="brand"><img src="logo.png">Dezombify</div><h2 data-t="h2"></h2><p class="lead" data-t="l2"></p></div>
+ <div class="shot" style="right:160px;top:130px;width:420px"><img data-img="fb"></div>
+</section>
+<!-- 3 opciones -->
+<section class="f s" id="s3">
+ <div class="left"><div class="brand"><img src="logo.png">Dezombify</div><h2 data-t="h3"></h2><p class="lead" data-t="l3"></p></div>
+ <div class="shot" style="right:80px;top:70px;width:560px;height:760px"><img data-img="full"></div>
+</section>
+<!-- 4 privacidad -->
+<section class="f s" id="s4">
+ <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 140px">
+  <img src="logo.png" style="width:140px;height:140px;margin-bottom:34px">
+  <h2 data-t="h4" style="font-size:52px"></h2><p class="lead" data-t="l4" style="max-width:900px"></p>
+  <div class="pill"><span data-t="p1"></span><span data-t="p2"></span><span data-t="p3"></span><span data-t="p4"></span></div>
+ </div>
+</section>
+<!-- tile 440x280 -->
+<section class="f" id="tile" style="width:440px;height:280px">
+ <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center">
+  <img src="logo.png" style="width:96px;height:96px"><div style="font-size:36px;font-weight:800;letter-spacing:-.5px">Dezombify</div><div data-t="tag" style="font-size:18px;color:#ff8fc1;font-weight:700"></div>
+ </div>
+</section>
+<!-- marquee 1400x560 -->
+<section class="f" id="marquee" style="width:1400px;height:560px">
+ <div style="position:absolute;left:90px;top:0;bottom:0;display:flex;align-items:center;gap:40px">
+  <img src="logo.png" style="width:220px;height:220px">
+  <div><div style="font-size:84px;font-weight:800;letter-spacing:-2px">Dezombify</div><div data-t="mq" style="font-size:30px;color:#c9ccd2;margin-top:12px;max-width:820px;line-height:1.35"></div></div>
+ </div>
+</section>
+<script>
+const T={es:{h1:'Mata al algoritmo.<br>Trae a tus <em>amigos</em> de vuelta.',l1:'Tus redes, solo con lo que publica quien sigues: sin feeds «Para ti», sugerencias ni anuncios.',foryou:'Para ti',following:'Siguiendo',ad:'Publicidad',sugg:'Sugerido para ti',viral:'Te puede gustar',f1:'Tu hermana',f2:'Ana',f3:'El grupo del barrio',f4:'Carlos',
+h2:'Cada red, sus opciones.<br><em>Solo cuando estás en ella.</em>',l2:'Abre el panel en la red que estás usando y decide qué ocultar: lo que comparten, la actividad, Reels o Shorts.',
+h3:'Nueve redes sociales,<br><em>un solo interruptor.</em>',l3:'Todas las opciones juntas en la página de ajustes. Los cambios se aplican al momento.',
+h4:'Sin cuentas, sin datos, <em>sin trampas</em>',l4:'Todo ocurre en tu navegador: Dezombify no recoge ni envía nada. Gratis y de código abierto.',p1:'🔒 Nada sale de tu navegador',p2:'⚡ Cambios al momento',p3:'🌍 15 idiomas',p4:'💗 Gratis',tag:'Mata al algoritmo',mq:'Mata al algoritmo de tus redes sociales y trae a tus amigos de vuelta a casa, sanos y salvos.'},
+en:{h1:'Kill the algorithm.<br>Bring your <em>friends</em> back.',l1:'Your social networks with only what the people you follow post: no “For you” feeds, suggestions or ads.',foryou:'For you',following:'Following',ad:'Sponsored',sugg:'Suggested for you',viral:'You might like',f1:'Your sister',f2:'Anna',f3:'Neighbourhood group',f4:'Charlie',
+h2:'Each network, its own options.<br><em>Only when you’re on it.</em>',l2:'Open the panel on the network you’re using and choose what to hide: shares, activity, Reels or Shorts.',
+h3:'Nine social networks,<br><em>one switch.</em>',l3:'Every option together on the settings page. Changes apply instantly.',
+h4:'No accounts, no data, <em>no tricks</em>',l4:'Everything happens in your browser: Dezombify collects and sends nothing. Free and open source.',p1:'🔒 Nothing leaves your browser',p2:'⚡ Instant changes',p3:'🌍 15 languages',p4:'💗 Free',tag:'Kill the algorithm',mq:'Kill the algorithm of your social networks and bring your friends back home, safe and sound.'}};
+const q=new URLSearchParams(location.search),lang=q.get('l')||'es';
+document.body.dataset.v=q.get('v')||'s1';
+document.querySelectorAll('[data-t]').forEach(e=>e.innerHTML=T[lang][e.dataset.t]);
+document.querySelectorAll('[data-img]').forEach(e=>e.src=`ui-${e.dataset.img}-${lang}.png`);
+</script></body></html>

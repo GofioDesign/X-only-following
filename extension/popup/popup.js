@@ -1,4 +1,4 @@
-// Kill the Algorithm — panel (icono) y página de opciones
+// Dezombify — panel (icono) y página de opciones
 // En el panel: solo la red de la pestaña actual; fuera de ellas, la lista de redes.
 // En Opciones: todas las redes con todas sus opciones.
 const DEFAULTS = {

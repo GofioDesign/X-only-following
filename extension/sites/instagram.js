@@ -1,4 +1,4 @@
-// Kill the Algorithm — Instagram: feed «Siguiendo» (cronológico)
+// Dezombify — Instagram: feed «Siguiendo» (cronológico)
 // Idea de usar /?variant=following tomada de Escape the Algorithm (MIT, © 2025 Ernest Wolfe).
 (() => {
   const KTA = (globalThis.KTA = globalThis.KTA || { sites: {} });

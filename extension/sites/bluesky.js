@@ -1,4 +1,4 @@
-// Kill the Algorithm — Bluesky: solo «Siguiendo»
+// Dezombify — Bluesky: solo «Siguiendo»
 (() => {
   const KTA = (globalThis.KTA = globalThis.KTA || { sites: {} });
   const FOLLOWING = /^(siguiendo|following|abonnements|folge ich|seguiti|seguindo|volgend|obserwowani|takip edilenler|подписки|フォロー中|팔로우 중|关注|關注)$/i;

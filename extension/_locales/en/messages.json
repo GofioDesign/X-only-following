@@ -1,15 +1,15 @@
 {
   "extName": {
-    "message": "Kill the Algorithm"
+    "message": "Dezombify"
   },
   "extShortName": {
     "message": "Kill the Algo"
   },
   "extDescription": {
-    "message": "See only what the accounts you follow post: no algorithmic feeds, suggestions or ads on your social networks."
+    "message": "Kill the algorithm of your social networks and bring your friends back home, safe and sound: only posts from people you follow."
   },
   "tagline": {
-    "message": "Only what you follow"
+    "message": "Kill the algorithm"
   },
   "masterOn": {
     "message": "Enabled"
@@ -216,7 +216,7 @@
     "message": "Pin the extension to the toolbar"
   },
   "step1Text": {
-    "message": "Click the <strong>puzzle piece</strong> icon at the top right of Chrome, then the <strong>pin</strong> next to “Kill the Algorithm”. Its settings will always be at hand."
+    "message": "Click the <strong>puzzle piece</strong> icon at the top right of Chrome, then the <strong>pin</strong> next to “Dezombify”. Its settings will always be at hand."
   },
   "step2Title": {
     "message": "Open your networks as usual"

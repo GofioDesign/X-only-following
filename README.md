@@ -1,4 +1,4 @@
-# Kill the Algorithm
+# Dezombify
 
 **Solo lo que sigues.** Extensión de Chrome que quita el feed algorítmico de tus redes sociales y te deja ver únicamente lo que publican las cuentas que sigues.
 

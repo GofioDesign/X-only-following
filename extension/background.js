@@ -1,4 +1,4 @@
-// Kill the Algorithm — service worker
+// Dezombify — service worker
 // Fecha de instalación (solo en local) para el aviso anual de donación, y bienvenida.
 chrome.runtime.onInstalled.addListener(async ({ reason, previousVersion }) => {
   try {

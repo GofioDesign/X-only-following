@@ -1,4 +1,4 @@
-// Kill the Algorithm — YouTube: solo Suscripciones
+// Dezombify — YouTube: solo Suscripciones
 // Selectores de referencia: Escape the Algorithm (MIT, © 2025 Ernest Wolfe), adaptados.
 (() => {
   const KTA = (globalThis.KTA = globalThis.KTA || { sites: {} });

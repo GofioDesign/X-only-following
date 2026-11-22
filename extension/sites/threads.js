@@ -1,4 +1,4 @@
-// Kill the Algorithm — Threads: solo «Seguidos»
+// Dezombify — Threads: solo «Seguidos»
 (() => {
   const KTA = (globalThis.KTA = globalThis.KTA || { sites: {} });
   const REPOST = /(lo reposteó|lo republicó|reposted|a reposté|hat reposted|ha ripubblicato|repostou|heeft gerepost|udostępnił|yeniden paylaştı|сделал репост|さんがリポスト|님이 리포스트|转发了|轉發了)/i;

@@ -1,4 +1,4 @@
-// Kill the Algorithm — núcleo común a todas las redes.
+// Dezombify — núcleo común a todas las redes.
 // Cada archivo de sites/ registra su módulo en KTA.sites antes de que se cargue este.
 (() => {
   'use strict';
@@ -58,7 +58,7 @@
       lastUrl = location.href;
       site.apply(settings, { urlChanged });
     } catch (err) {
-      console.warn('[Kill the Algorithm]', site.key, err);
+      console.warn('[Dezombify]', site.key, err);
     }
   }
 
@@ -72,7 +72,7 @@
     try {
       settings = { ...KTA.DEFAULTS, ...(await chrome.storage.sync.get(KTA.DEFAULTS)) };
     } catch (err) {
-      console.warn('[Kill the Algorithm] ajustes', err);
+      console.warn('[Dezombify] ajustes', err);
     }
   }
 

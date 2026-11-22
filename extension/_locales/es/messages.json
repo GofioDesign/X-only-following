@@ -1,15 +1,15 @@
 {
   "extName": {
-    "message": "Kill the Algorithm"
+    "message": "Dezombify"
   },
   "extShortName": {
     "message": "Kill the Algo"
   },
   "extDescription": {
-    "message": "Ve solo lo que publican las cuentas que sigues: sin feeds algorítmicos, sugerencias ni anuncios en tus redes sociales."
+    "message": "Mata al algoritmo de tus redes sociales y trae a tus amigos de vuelta a casa, sanos y salvos: solo lo que publica quien sigues."
   },
   "tagline": {
-    "message": "Solo lo que sigues"
+    "message": "Mata al algoritmo"
   },
   "masterOn": {
     "message": "Activado"
@@ -216,7 +216,7 @@
     "message": "Fija la extensión en la barra"
   },
   "step1Text": {
-    "message": "Pulsa el icono de la <strong>pieza de puzle</strong> arriba a la derecha de Chrome y después la <strong>chincheta</strong> junto a «Kill the Algorithm». Así tendrás sus ajustes siempre a mano."
+    "message": "Pulsa el icono de la <strong>pieza de puzle</strong> arriba a la derecha de Chrome y después la <strong>chincheta</strong> junto a «Dezombify». Así tendrás sus ajustes siempre a mano."
   },
   "step2Title": {
     "message": "Abre tus redes como siempre"

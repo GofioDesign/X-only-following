@@ -1,4 +1,4 @@
-// Kill the Algorithm — LinkedIn: solo publicaciones de quien sigues
+// Dezombify — LinkedIn: solo publicaciones de quien sigues
 (() => {
   const KTA = (globalThis.KTA = globalThis.KTA || { sites: {} });
   const PROMOTED = /^(promocionado|promoted|sponsorisé|gesponsert|promosso|patrocinado|promovido|gepromoot|promowane|tanıtılan|продвигается|プロモーション|광고|推广|推廣)\b/i;

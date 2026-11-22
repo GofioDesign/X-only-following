@@ -1,4 +1,4 @@
-// Kill the Algorithm — Facebook: Feeds cronológico (Todo o Amigos), sin anuncios
+// Dezombify — Facebook: Feeds cronológico (Todo o Amigos), sin anuncios
 (() => {
   const KTA = (globalThis.KTA = globalThis.KTA || { sites: {} });
   const AD_WORDS = /^(publicidad|patrocinado|sponsored|sponsorisé|gesponsert|sponsorizzato|gesponsord|sponsorowane|sponsorlu|реклама|広告|광고|赞助内容|贊助)$/i;
