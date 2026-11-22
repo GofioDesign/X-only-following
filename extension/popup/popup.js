@@ -55,6 +55,45 @@ function refresh(s) {
   document.querySelectorAll('.sub[data-parent]').forEach((r) => r.classList.toggle('off', !s[r.dataset.parent]));
 }
 
+// Avisos de valoración (cada 5 aperturas del panel) y de donación (1 vez por año
+// desde la instalación). Todo se cuenta en local: nada sale del navegador.
+const REVIEW_URL = 'https://chromewebstore.google.com/detail/fhajebegoleecljdhfokiokejdkalhji/reviews';
+const YEAR_MS = 365.25 * 24 * 3600 * 1000;
+
+async function maybeAsk() {
+  const st = await chrome.storage.local.get({ installDate: 0, uses: 0, donateYearsShown: 0, reviewDone: false, reviewShown: 0 });
+  const uses = st.uses + 1;
+  const update = { uses };
+  if (!st.installDate) update.installDate = Date.now();
+  const years = st.installDate ? Math.floor((Date.now() - st.installDate) / YEAR_MS) : 0;
+
+  if (years >= 1 && st.donateYearsShown < years) {
+    update.donateYearsShown = years;
+    await chrome.storage.local.set(update);
+    const box = document.getElementById('donateBox');
+    document.getElementById('donateGo').href = `${t('moreUrl')}#donar`;
+    document.getElementById('donateGo').addEventListener('click', () => { box.hidden = true; });
+    document.getElementById('donateLater').addEventListener('click', () => { box.hidden = true; });
+    box.hidden = false;
+    return;
+  }
+  if (!st.reviewDone && uses % 5 === 0) {
+    const shown = st.reviewShown + 1;
+    update.reviewShown = shown;
+    await chrome.storage.local.set(update);
+    const box = document.getElementById('reviewBox');
+    const never = document.getElementById('reviewNever');
+    const done = async () => { box.hidden = true; try { await chrome.storage.local.set({ reviewDone: true }); } catch {} };
+    document.getElementById('reviewGo').href = REVIEW_URL;
+    document.getElementById('reviewGo').addEventListener('click', done);
+    document.getElementById('reviewLater').addEventListener('click', () => { box.hidden = true; });
+    if (shown >= 3) { never.hidden = false; never.addEventListener('click', done); }
+    box.hidden = false;
+    return;
+  }
+  await chrome.storage.local.set(update);
+}
+
 async function currentNet() {
   try {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
@@ -67,15 +106,17 @@ async function currentNet() {
 (async () => {
   document.querySelectorAll('[data-i18n]').forEach((el) => { el.textContent = t(el.dataset.i18n); });
   const full = document.body.dataset.mode === 'full';
+  document.getElementById('moreLink').href = t('moreUrl');
   if (full) {
     document.title = `${t('extName')} · ${t('optionsTitle')}`;
     build(NETS, true);
-    document.getElementById('openOptions').parentElement.remove();
+    document.getElementById('openOptions').remove();
   } else {
     const net = await currentNet();
     if (net) { build([net], true); document.getElementById('openOptions').textContent = t('allNetworks'); }
     else build(NETS, false);
     document.getElementById('openOptions').addEventListener('click', (e) => { e.preventDefault(); chrome.runtime.openOptionsPage(); });
+    try { await maybeAsk(); } catch (err) { console.warn(err); }
   }
 
   const inputs = document.querySelectorAll('input[data-key]');

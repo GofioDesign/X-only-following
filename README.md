@@ -23,6 +23,10 @@
 
 **Limitación:** funciona en el navegador del ordenador. Las apps del móvil no se pueden modificar.
 
+## Al instalarla
+
+Se abre una pantalla de bienvenida (español o inglés) que explica cómo fijar la extensión y cómo ajustar cada red. El panel incluye un enlace a [más extensiones de Gofio Design](https://gofiodesign.eu/extensiones.html), una invitación a valorarla cada 5 aperturas y, una vez al año, a donar; todo voluntario y contado solo en local.
+
 ## Instalación manual
 
 1. Descarga el repositorio y descomprímelo.

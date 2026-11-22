@@ -18,3 +18,12 @@ input[type="checkbox"] { width: 17px; height: 17px; accent-color: var(--accent);
 .links a { color: var(--accent); text-decoration: none; font-weight: 600; }
 body[data-mode="full"] { width: auto; max-width: 560px; margin: 32px auto; padding: 24px 28px; font-size: 14.5px; }
 body[data-mode="full"] h1 { font-size: 20px; }
+
+[hidden] { display: none !important; }
+.links { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 12px; }
+.ask { margin: 4px 0 10px; padding: 10px 12px; border-radius: 10px; background: color-mix(in srgb, var(--accent) 10%, Canvas); border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); font-size: 12.5px; }
+.ask p { margin: 0 0 8px; }
+.ask-actions { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.btn { font: inherit; font-size: 12px; font-weight: 600; border-radius: 99px; padding: 5px 12px; border: 1px solid color-mix(in srgb, CanvasText 18%, transparent); background: Canvas; color: CanvasText; cursor: pointer; text-decoration: none; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn.link { border-color: transparent; background: none; text-decoration: underline; opacity: .7; }

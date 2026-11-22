@@ -163,5 +163,71 @@
   },
   "bs_reposts_hint": {
     "message": "“Reposted by…”"
+  },
+  "moreLink": {
+    "message": "More extensions · Support the project ♥"
+  },
+  "moreUrl": {
+    "message": "https://gofiodesign.eu/extensions.html"
+  },
+  "reviewTitle": {
+    "message": "Finding it useful?"
+  },
+  "reviewText": {
+    "message": "A rating on the Chrome Web Store helps other people find it."
+  },
+  "reviewButton": {
+    "message": "Rate it"
+  },
+  "reviewLater": {
+    "message": "Not now"
+  },
+  "reviewNever": {
+    "message": "Don't show again"
+  },
+  "donateTitle": {
+    "message": "Thanks for using it all this time!"
+  },
+  "donateText": {
+    "message": "It is free and ad-free. A voluntary donation helps keep it going and build new tools."
+  },
+  "donateButton": {
+    "message": "Support"
+  },
+  "donateLater": {
+    "message": "Not now"
+  },
+  "welcomeKicker": {
+    "message": "Installed and ready"
+  },
+  "welcomeLead": {
+    "message": "From now on, your social networks show you what the accounts you follow post, not what the algorithm picks. Here is how:"
+  },
+  "artExtensions": {
+    "message": "Extensions"
+  },
+  "step1Title": {
+    "message": "Pin the extension to the toolbar"
+  },
+  "step1Text": {
+    "message": "Click the <strong>puzzle piece</strong> icon at the top right of Chrome, then the <strong>pin</strong> next to “Kill the Algorithm”. Its settings will always be at hand."
+  },
+  "step2Title": {
+    "message": "Open your networks as usual"
+  },
+  "step2Text": {
+    "message": "Nothing else to do: when you visit them, the extension takes you to the feed of accounts you follow and hides suggestions, recommendations and ads."
+  },
+  "step3Title": {
+    "message": "Tune each network"
+  },
+  "step3Text": {
+    "message": "Click the icon while on a network to see its options (for example, hiding what they repost). All networks and options are in <strong>Options</strong>."
+  },
+  "welcomePrivacy": {
+    "message": "The extension only changes how the networks look in your browser. It doesn't read your accounts or send anything to any server."
+  },
+  "welcomeRepo": {
+    "message": "Open source on GitHub"
   }
 }

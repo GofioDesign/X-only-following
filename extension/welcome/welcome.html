@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>…</title>
+  <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+  <main>
+    <header>
+      <img src="../icons/icon-128.png" alt="" width="72" height="72">
+      <div>
+        <p class="kicker" data-i18n="welcomeKicker"></p>
+        <h1 data-i18n="extName"></h1>
+      </div>
+    </header>
+    <p class="lead" data-i18n="welcomeLead"></p>
+
+    <ol class="steps">
+      <li>
+        <div class="num">1</div>
+        <div class="text">
+          <h2 data-i18n="step1Title"></h2>
+          <p data-i18n="step1Text"></p>
+        </div>
+        <div class="art art-pin" aria-hidden="true">
+          <div class="bar">
+            <span class="omni"></span>
+            <span class="tb puzzle"><svg viewBox="0 0 24 24"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5a2.5 2.5 0 0 0-5 0V5H4a2 2 0 0 0-2 2v3.8h1.5a2.7 2.7 0 0 1 0 5.4H2V20a2 2 0 0 0 2 2h3.8v-1.5a2.7 2.7 0 0 1 5.4 0V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 0-5z"/></svg></span>
+            <span class="tb avatar"></span>
+          </div>
+          <div class="menu">
+            <div class="menu-title" data-i18n="artExtensions"></div>
+            <div class="menu-row">
+              <img src="../icons/icon-32.png" alt="">
+              <span class="name" data-i18n="extName"></span>
+              <span class="pin"><svg viewBox="0 0 24 24"><path d="M16 3l5 5-3 1-4 4 1 5-2 2-4-4-5 5-1-1 5-5-4-4 2-2 5 1 4-4z"/></svg></span>
+            </div>
+          </div>
+          <div class="pointer"></div>
+        </div>
+      </li>
+      <li>
+        <div class="num">2</div>
+        <div class="text">
+          <h2 data-i18n="step2Title"></h2>
+          <p data-i18n="step2Text"></p>
+        </div>
+        <div class="art art-chat" aria-hidden="true">
+          <div class="win">
+            <div class="bar"><span class="omni"></span><span class="tb mine"><img src="../icons/icon-32.png" alt=""></span></div>
+            <div class="chat">
+              <div class="line w90"></div><div class="line w70"></div><div class="line w80"></div>
+              <div class="line w85"></div><div class="line w50"></div><div class="line w75"></div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="num">3</div>
+        <div class="text">
+          <h2 data-i18n="step3Title"></h2>
+          <p data-i18n="step3Text"></p>
+          <p><a href="#" id="openOptions" data-i18n="allNetworks"></a></p>
+        </div>
+      </li>
+    </ol>
+
+    <footer>
+      <p data-i18n="welcomePrivacy"></p>
+      <p><a href="https://github.com/GofioDesign/X-only-following" target="_blank" rel="noopener" data-i18n="welcomeRepo"></a> · <a id="moreLink" target="_blank" rel="noopener" data-i18n="moreLink"></a></p>
+    </footer>
+  </main>
+  <script src="welcome.js"></script>
+</body>
+</html>

@@ -163,5 +163,71 @@
   },
   "bs_reposts_hint": {
     "message": "«Republicado por…»"
+  },
+  "moreLink": {
+    "message": "Más extensiones · Apoya el proyecto ♥"
+  },
+  "moreUrl": {
+    "message": "https://gofiodesign.eu/extensiones.html"
+  },
+  "reviewTitle": {
+    "message": "¿Te está siendo útil?"
+  },
+  "reviewText": {
+    "message": "Una valoración en la Chrome Web Store ayuda a que otras personas la encuentren."
+  },
+  "reviewButton": {
+    "message": "Valorar"
+  },
+  "reviewLater": {
+    "message": "Ahora no"
+  },
+  "reviewNever": {
+    "message": "No volver a mostrar"
+  },
+  "donateTitle": {
+    "message": "¡Gracias por usarla todo este tiempo!"
+  },
+  "donateText": {
+    "message": "Es gratuita y sin anuncios. Una donación voluntaria ayuda a mantenerla y a crear nuevas herramientas."
+  },
+  "donateButton": {
+    "message": "Colaborar"
+  },
+  "donateLater": {
+    "message": "Ahora no"
+  },
+  "welcomeKicker": {
+    "message": "Ya está instalada"
+  },
+  "welcomeLead": {
+    "message": "A partir de ahora, tus redes sociales te enseñan lo que publican las cuentas que sigues, no lo que elige el algoritmo. Así se usa:"
+  },
+  "artExtensions": {
+    "message": "Extensiones"
+  },
+  "step1Title": {
+    "message": "Fija la extensión en la barra"
+  },
+  "step1Text": {
+    "message": "Pulsa el icono de la <strong>pieza de puzle</strong> arriba a la derecha de Chrome y después la <strong>chincheta</strong> junto a «Kill the Algorithm». Así tendrás sus ajustes siempre a mano."
+  },
+  "step2Title": {
+    "message": "Abre tus redes como siempre"
+  },
+  "step2Text": {
+    "message": "No tienes que hacer nada más: al entrar, la extensión te lleva al feed de las cuentas que sigues y oculta sugerencias, recomendados y anuncios."
+  },
+  "step3Title": {
+    "message": "Ajusta cada red a tu gusto"
+  },
+  "step3Text": {
+    "message": "Pulsa el icono estando en una red para ver sus opciones (por ejemplo, ocultar lo que republican). Todas las redes y opciones están en <strong>Opciones</strong>."
+  },
+  "welcomePrivacy": {
+    "message": "La extensión solo cambia cómo se ven las redes en tu navegador. No lee tus cuentas ni envía nada a ningún servidor."
+  },
+  "welcomeRepo": {
+    "message": "Código abierto en GitHub"
   }
 }

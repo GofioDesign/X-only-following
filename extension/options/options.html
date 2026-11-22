@@ -10,9 +10,24 @@
     <img src="../icons/icon-48.png" alt="" width="30" height="30">
     <div><h1 data-i18n="extName"></h1><p data-i18n="tagline"></p></div>
   </header>
+  <div class="ask" id="reviewBox" hidden>
+    <p><b data-i18n="reviewTitle"></b> <span data-i18n="reviewText"></span></p>
+    <div class="ask-actions">
+      <a class="btn primary" id="reviewGo" target="_blank" rel="noopener" data-i18n="reviewButton"></a>
+      <button type="button" class="btn" id="reviewLater" data-i18n="reviewLater"></button>
+      <button type="button" class="btn link" id="reviewNever" data-i18n="reviewNever" hidden></button>
+    </div>
+  </div>
+  <div class="ask donate" id="donateBox" hidden>
+    <p><b data-i18n="donateTitle"></b> <span data-i18n="donateText"></span></p>
+    <div class="ask-actions">
+      <a class="btn primary" id="donateGo" target="_blank" rel="noopener" data-i18n="donateButton"></a>
+      <button type="button" class="btn" id="donateLater" data-i18n="donateLater"></button>
+    </div>
+  </div>
   <label class="row master"><span data-i18n="masterOn"></span><input type="checkbox" data-key="enabled"></label>
   <div id="options"></div>
-  <p class="links"><a href="#" id="openOptions" data-i18n="moreOptions"></a></p>
+  <p class="links"><a href="#" id="openOptions" data-i18n="moreOptions"></a><a id="moreLink" target="_blank" rel="noopener" data-i18n="moreLink"></a></p>
   <p class="note" data-i18n="note"></p>
   <script src="../popup/popup.js"></script>
 </body>
