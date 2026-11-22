@@ -22,6 +22,36 @@
     return false;
   }
 
+  // Fechas relativas («Hace 3 h», «4 h», «Yesterday»…) a las que apuntan las etiquetas accesibles.
+  // Una publicación compartida lleva dos: la de quien comparte y la del original incrustado.
+  const TIME = /(\d|ayer|yesterday|hier|gestern|ieri|ontem|gisteren|wczoraj|dün|вчера|昨日|어제|昨天|hace |\bago\b|il y a|\bvor |\bfa$|há |geleden|temu|önce|назад|前|전)/i;
+  // Cuenta las fechas distintas, fuera de los comentarios (role=article anidado) y agrupando
+  // las que están a la misma altura (cada fecha aparece en varios nodos).
+  const DATE_TEXT = /^(\d{1,2}\s?(min|h|d|sem|w|m|j|t|g|std|hr|hrs|mins?)\.?|\d{1,2}\s\p{L}{3,5}\.?(\s\d{4})?|\p{L}{3,5}\.?\s\d{1,2}(,\s\d{4})?|ayer|yesterday)$/iu;
+  function timeLabels(post) {
+    const ys = [];
+    // 1) elementos con etiqueta accesible de fecha; 2) los reels incrustados son un único enlace
+    //    grande y la fecha va como texto visible («21 nov.», «2 d») en un <span> dentro de él
+    const cands = [...post.querySelectorAll('[aria-labelledby], a span')];
+    for (const el of cands) {
+      const art = el.closest('[role="article"]');
+      if (art && art !== post && post.contains(art)) continue;
+      if (el.hasAttribute('aria-labelledby')) {
+        const txt = el.getAttribute('aria-labelledby').split(' ')
+          .map((id) => (document.getElementById(id)?.textContent || '').trim()).join(' ');
+        // fechas cortas (≤5 palabras, o con hora «a las 13:42»): descarta textos alternativos de fotos con números
+        if (!txt || txt.length >= 40 || (txt.split(/\s+/).length > 5 && !/\d:\d\d/.test(txt)) || !TIME.test(txt) || AD_WORDS.test(txt)) continue;
+      } else {
+        if (el.childElementCount) continue;
+        const txt = el.textContent.trim();
+        if (!txt || txt.length > 16 || !DATE_TEXT.test(txt)) continue;
+      }
+      const y = el.getBoundingClientRect().top;
+      if (!ys.some((v) => Math.abs(v - y) < 6)) ys.push(y);
+    }
+    return ys.length;
+  }
+
   // ¿Es un anuncio? 1) etiqueta para lectores de pantalla «Publicidad»
   //                 2) carácter invisible en el enlace donde iría la fecha
   function isAd(post) {
@@ -55,7 +85,7 @@
         if (isAd(post)) { KTA.hide(post); continue; }
         const head = post.innerText.split('\n').map((t) => t.trim()).filter((t) => t && t !== 'Facebook').slice(0, 3).join(' ');
         if (s.fb_activity && ACTIVITY.test(head.slice(0, 160))) { KTA.hide(post); continue; }
-        if (s.fb_shares && SHARED.test(head.slice(0, 160))) KTA.hide(post);
+        if (s.fb_shares && (timeLabels(post) >= 2 || SHARED.test(head.slice(0, 160)))) KTA.hide(post);
       }
 
       // Columna derecha: bloque «Patrocinado»
