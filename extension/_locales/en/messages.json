@@ -151,5 +151,17 @@
   },
   "th_reposts_hint": {
     "message": "Reposts from accounts you follow"
+  },
+  "bs_on": {
+    "message": "Bluesky: “Following” only"
+  },
+  "bs_on_hint": {
+    "message": "No Discover, Video or other feeds"
+  },
+  "bs_reposts": {
+    "message": "Hide what they repost"
+  },
+  "bs_reposts_hint": {
+    "message": "“Reposted by…”"
   }
 }

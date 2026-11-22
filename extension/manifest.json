@@ -18,7 +18,8 @@
     "https://www.facebook.com/*",
     "https://www.tiktok.com/*",
     "https://www.threads.com/*",
-    "https://www.threads.net/*"
+    "https://www.threads.net/*",
+    "https://bsky.app/*"
   ],
   "content_scripts": [
     {
@@ -113,6 +114,19 @@
         "content.css"
       ],
       "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://bsky.app/*"
+      ],
+      "js": [
+        "sites/bluesky.js",
+        "common.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
     }
   ],
   "action": {

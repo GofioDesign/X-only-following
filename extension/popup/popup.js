@@ -9,7 +9,8 @@ const DEFAULTS = {
   fb_on: true, fb_friends: false, fb_reels: true, fb_shares: false, fb_activity: true,
   li_on: true, li_reposts: false, li_activity: true,
   tt_on: true, tt_explore: true, tt_reposts: false,
-  th_on: true, th_reposts: false
+  th_on: true, th_reposts: false,
+  bs_on: true, bs_reposts: false
 };
 const NETS = [
   { main: 'x_on', host: /(^|\.)(x|twitter)\.com$/, subs: ['x_reposts'] },
@@ -18,7 +19,8 @@ const NETS = [
   { main: 'fb_on', host: /(^|\.)facebook\.com$/, subs: ['fb_friends', 'fb_reels', 'fb_shares', 'fb_activity'] },
   { main: 'li_on', host: /(^|\.)linkedin\.com$/, subs: ['li_reposts', 'li_activity'] },
   { main: 'tt_on', host: /(^|\.)tiktok\.com$/, subs: ['tt_explore', 'tt_reposts'] },
-  { main: 'th_on', host: /(^|\.)threads\.(com|net)$/, subs: ['th_reposts'] }
+  { main: 'th_on', host: /(^|\.)threads\.(com|net)$/, subs: ['th_reposts'] },
+  { main: 'bs_on', host: /(^|\.)bsky\.app$/, subs: ['bs_reposts'] }
 ];
 const t = (k) => chrome.i18n.getMessage(k) || '';
 

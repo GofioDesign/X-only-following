@@ -19,7 +19,9 @@
     // TikTok
     tt_on: true, tt_explore: true, tt_reposts: false,
     // Threads
-    th_on: true, th_reposts: false
+    th_on: true, th_reposts: false,
+    // Bluesky
+    bs_on: true, bs_reposts: false
   };
 
   const HIDDEN = 'kta-hidden';

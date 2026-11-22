@@ -151,5 +151,17 @@
   },
   "th_reposts_hint": {
     "message": "Reposts de las cuentas que sigues"
+  },
+  "bs_on": {
+    "message": "Bluesky: solo «Siguiendo»"
+  },
+  "bs_on_hint": {
+    "message": "Sin Discover, Video ni otros feeds"
+  },
+  "bs_reposts": {
+    "message": "Ocultar lo que republican"
+  },
+  "bs_reposts_hint": {
+    "message": "«Republicado por…»"
   }
 }
