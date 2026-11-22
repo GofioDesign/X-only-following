@@ -1,105 +1,127 @@
-# Chrome Web Store — Solo Siguiendo para X
+# Chrome Web Store — Dezombify
 
-> Última actualización: 2026-11-22 · Versión 1.0.0
+> Última actualización: 2026-11-22 · Versión 2.0.0 (actualización del ítem «Solo Siguiendo para X», id `fhajebegoleecljdhfokiokejdkalhji`)
 
-Paquete a subir: `dist/solo-siguiendo-x-1.0.0.zip` (generado con `./build.sh`).
+Paquete a subir: `releases/dezombify-2.0.0.zip` (también en el release v2.0.0 de GitHub).
+Idiomas del paquete: español (predeterminado) e inglés.
 
 ---
 
-## 1. Ficha de Play Store → «Store listing»
+## 1. Paquete → «Package»
 
-**Nombre** (sale del manifest)
-```
-Solo Siguiendo para X
-```
+Sube `dezombify-2.0.0.zip` como nueva versión. El nombre y la descripción breve salen del manifest:
 
-**Resumen / descripción breve** (máx. 132)
-```
-Limita tu feed de X a las cuentas que sigues: abre siempre Siguiendo y oculta Para ti, anuncios y sugerencias.
-```
+- **Nombre:** `Dezombify`
+- **Descripción breve (es, 127 caracteres):** Mata al algoritmo de tus redes sociales y trae a tus amigos de vuelta a casa, sanos y salvos: solo lo que publica quien sigues.
+- **Descripción breve (en, 127 caracteres):** Kill the algorithm of your social networks and bring your friends back home, safe and sound: only posts from people you follow.
 
-**Descripción**
+---
+
+## 2. Ficha → «Store listing»
+
+**Categoría:** Social Networking (Redes sociales)
+**Idioma principal:** Español
+
+### Descripción — Español
+
 ```
-Solo Siguiendo para X hace que tu inicio de X (Twitter) muestre únicamente publicaciones de las cuentas que sigues, sin el feed algorítmico.
+Dezombify mata al algoritmo de tus redes sociales y trae a tus amigos de vuelta a casa, sanos y salvos.
+
+Las redes ya no te enseñan lo que publica la gente que sigues: te llenan el inicio de «Para ti», sugerencias, vídeos virales y anuncios para que sigas haciendo scroll. Dezombify devuelve tu inicio a lo que de verdad elegiste seguir.
+
+Funciona en X, YouTube, Instagram, Facebook, LinkedIn, TikTok, Threads, Bluesky y Twitch.
 
 QUÉ HACE
-• Abre siempre la pestaña «Siguiendo» en lugar de «Para ti».
-• Oculta la pestaña «Para ti» para que no vuelvas a caer en ella.
-• Oculta las publicaciones promocionadas (anuncios).
-• Oculta los bloques de «A quién seguir» y las tendencias.
-• Opcional: oculta los reposts, que suelen mostrar contenido de cuentas que no sigues.
+• Abre siempre el feed de quien sigues (Siguiendo, Suscripciones o el cronológico de amigos) en lugar del algorítmico.
+• Oculta las pestañas «Para ti», las sugerencias de cuentas, las tendencias y las publicaciones promocionadas.
+• Opcional, en cada red: ocultar lo que tus contactos republican o comparten, la actividad («A X le gusta…», «X y Y siguen a…»), Reels, Shorts y vídeos recomendados.
+• En YouTube puede ocultar los anuncios gráficos y pulsar «Saltar» en los anuncios de vídeo en cuanto se permite.
 
-CÓMO SE USA
-1. Instala la extensión.
-2. Abre x.com: el inicio pasará solo a «Siguiendo».
-3. Pulsa el icono de la extensión para activar o desactivar cada opción. Los cambios se aplican al instante.
+OPCIONES SIN LÍOS
+Al abrir el panel ves solo las opciones de la red en la que estás. Todas las demás están juntas en la página de opciones. Los cambios se aplican al momento, sin recargar.
 
 PRIVACIDAD
-La extensión no recoge, envía ni vende ningún dato. Funciona solo en x.com y twitter.com, y únicamente guarda tus preferencias (qué opciones tienes activadas) en Chrome. Sin analítica ni servicios de terceros.
+Dezombify no recoge, envía ni vende ningún dato. Todo ocurre en tu navegador: tus preferencias se guardan en el almacenamiento de Chrome y solo se cuenta en local cuántas veces la usas, para pedirte de vez en cuando una valoración. Sin cuentas, sin analítica, sin servidores.
 
-CÓDIGO ABIERTO
-El código es público y puedes revisarlo o reportar problemas en:
-https://github.com/GofioDesign/dezombify
+GRATIS Y DE CÓDIGO ABIERTO
+Código fuente: https://github.com/GofioDesign/dezombify
+Más extensiones y donaciones voluntarias: https://gofiodesign.eu/extensiones.html
 
-Proyecto independiente, sin relación con X Corp.
+Funciona en el navegador del ordenador; no cambia las apps del móvil.
 ```
 
-**Categoría**
+### Description — English
+
 ```
-Redes sociales y comunicación (Social & Communication)
+Dezombify kills the algorithm of your social networks and brings your friends back home, safe and sound.
+
+Social networks no longer show you what the people you follow post: they fill your home feed with “For you”, suggestions, viral videos and ads to keep you scrolling. Dezombify brings your feed back to what you actually chose to follow.
+
+It works on X, YouTube, Instagram, Facebook, LinkedIn, TikTok, Threads, Bluesky and Twitch.
+
+WHAT IT DOES
+• Always opens the feed of people you follow (Following, Subscriptions or the chronological friends feed) instead of the algorithmic one.
+• Hides “For you” tabs, account suggestions, trends and promoted posts.
+• Optional, per network: hide what your contacts repost or share, activity (“X likes this”, “X and Y follow…”), Reels, Shorts and recommended videos.
+• On YouTube it can hide display ads and press “Skip” on video ads as soon as it is allowed.
+
+NO CLUTTER
+The panel only shows the options for the network you are on. Everything else is together on the options page. Changes apply instantly, no reload needed.
+
+PRIVACY
+Dezombify does not collect, send or sell any data. Everything happens in your browser: your preferences are stored in Chrome storage and only a local count of how often you use it is kept, to occasionally ask for a rating. No accounts, no analytics, no servers.
+
+FREE AND OPEN SOURCE
+Source code: https://github.com/GofioDesign/dezombify
+More extensions and voluntary donations: https://gofiodesign.eu/extensiones.html
+
+Works in the desktop browser; it does not change mobile apps.
 ```
 
-**Idioma**
-```
-Español
-```
+> Las marcas de las redes aparecen una sola vez, en una frase, para no repetir el rechazo por «keyword stuffing».
 
-**Icono de la tienda (128×128)** → `extension/icons/icon-128.png`
+### Recursos gráficos (`store/es` y `store/en`)
 
-**Capturas (1280×800)** → `store/screenshot-1.png`, `store/screenshot-2.png`
+| Campo | Archivo |
+|---|---|
+| Icono de la tienda (128×128) | `extension/icons/icon-128.png` |
+| Capturas (1280×800) | `1-captura` … `4-captura-1280x800.png` |
+| Mosaico pequeño (440×280) | `mosaico-pequeno-440x280.png` |
+| Mosaico marquesina (1400×560) | `mosaico-marquesina-1400x560.png` |
 
-**Mosaico promocional pequeño (440×280)** → `store/promo-tile-440x280.png`
+Sube las de `store/es` en la ficha española y las de `store/en` en la inglesa.
 
-**Sitio web oficial / Página principal**
-```
-https://github.com/GofioDesign/dezombify
-```
+### Enlaces
 
-**URL de asistencia**
-```
-https://github.com/GofioDesign/dezombify/issues
-```
+- **URL oficial:** https://gofiodesign.eu
+- **Página principal:** https://github.com/GofioDesign/dezombify
+- **Soporte:** https://github.com/GofioDesign/dezombify/issues
 
 ---
 
-## 2. Pestaña «Privacidad» (Privacy practices)
+## 3. Privacidad → «Privacy practices»
 
-**Finalidad única (Single purpose)**
+**Propósito único**
 ```
-Mostrar en x.com solo las publicaciones de las cuentas que el usuario sigue, abriendo la pestaña «Siguiendo» y ocultando el feed algorítmico, los anuncios y las sugerencias.
+Dezombify makes supported social networks show only posts from accounts the user follows: it opens the "Following"/chronological feed instead of the algorithmic one and hides suggested content, promoted posts and other algorithmic recommendations, with per-network options.
 ```
 
 **Justificación de `storage`**
 ```
-Se usa para guardar las preferencias del usuario (qué opciones están activadas, por ejemplo «Ocultar anuncios» u «Ocultar reposts») y mantenerlas entre sesiones y dispositivos. No se guarda ningún otro dato.
+Stores the user's on/off settings for each social network (chrome.storage.sync) and, locally only, the install date and a usage count used to occasionally show a rating invitation and a yearly donation invitation. Nothing is transmitted.
 ```
 
-**Justificación de permisos de host (`https://x.com/*`, `https://twitter.com/*`)**
+**Justificación de los permisos de host**
 ```
-La extensión solo actúa en x.com y twitter.com: necesita acceder a estas páginas para cambiar a la pestaña «Siguiendo» y ocultar en la página los anuncios, las sugerencias de cuentas y, si el usuario lo elige, los reposts. No lee ni envía el contenido a ningún sitio; todo ocurre localmente en el navegador.
-```
-
-**¿Usas código remoto?**
-```
-No, no uso código remoto.
+The extension needs access to x.com, twitter.com, youtube.com, instagram.com, facebook.com, linkedin.com, tiktok.com, threads.com/threads.net, bsky.app and twitch.tv to run its content scripts on those sites only: redirect the home page to the feed of followed accounts and hide algorithmic, suggested and promoted elements in the page. It does not read, store or send page content or personal data. It runs on no other website.
 ```
 
-**Uso de datos** → no marcar ninguna categoría (no se recoge ningún dato).
+**Código remoto:** No, no uso código remoto.
 
-Marcar las tres certificaciones:
-- [x] No vendo ni transfiero datos de usuarios a terceros fuera de los casos de uso aprobados.
-- [x] No uso ni transfiero datos de usuarios para fines no relacionados con la finalidad única.
-- [x] No uso ni transfiero datos para determinar solvencia o conceder préstamos.
+**Uso de datos:** no marcar ninguna categoría. Marcar las tres certificaciones:
+- No vendo ni transfiero datos de usuario a terceros, salvo en los casos de uso aprobados.
+- No uso ni transfiero datos de usuario para fines no relacionados con el propósito único del elemento.
+- No uso ni transfiero datos de usuario para determinar la solvencia crediticia ni para conceder préstamos.
 
 **URL de la política de privacidad**
 ```
@@ -108,21 +130,9 @@ https://github.com/GofioDesign/dezombify/blob/main/PRIVACY.md
 
 ---
 
-## 3. Distribución
-
-- Visibilidad: **Pública**
-- Regiones: **Todas**
-- Precio: gratis
-
----
-
 ## Historial de versiones
 
-| Versión | Fecha | Cambios | Estado |
-|---|---|---|---|
-| 1.0.0 | 2026-11-22 | Primera versión | Borrador |
-
-## Notas para la revisión
-
-- El icono es propio (marca de verificación azul): no usa el logotipo de X, y la ficha aclara que no hay relación con X Corp. para evitar rechazos por marca.
-- Si piden aclarar el nombre: «para X» indica la web en la que funciona, no afiliación.
+| Versión | Fecha | Cambios |
+|---|---|---|
+| 2.0.0 | 2026-11-22 | Pasa a llamarse Dezombify. Nueve redes sociales, opciones por red, anuncios de YouTube, nuevo logo, bienvenida, aviso de valoración cada 5 usos. |
+| 1.0.0 | 2026-11 | «Solo Siguiendo para X»: solo X. |
