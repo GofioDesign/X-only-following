@@ -3,6 +3,10 @@
   const KTA = (globalThis.KTA = globalThis.KTA || { sites: {} });
   const AD_WORDS = /^(publicidad|patrocinado|sponsored|sponsorisé|gesponsert|sponsorizzato|gesponsord|sponsorowane|sponsorlu|реклама|広告|광고|赞助内容|贊助)$/i;
   const WORD_JOINER = '⁠'; // Facebook lo pone en lugar de la fecha en los anuncios
+  // «X ha compartido una publicación»
+  const SHARED = /(ha compartido|han compartido|shared a |shared an |a partagé|hat .* geteilt|ha condiviso|compartilhou|partilhou|heeft .* gedeeld|udostępnił|paylaştı|поделил)/i;
+  // «X y Y siguen a…», «A X le gusta…», «X ha comentado…» (lo elige el algoritmo)
+  const ACTIVITY = /(\bsiguen a\b|\bsigue a\b|le gusta|les gusta|ha comentado|han comentado|\bfollows?\b|\blikes?\b this|commented on|suivent|aime|folgen|gefällt|seguono|piace|seguem|curtiu|volgen|vind|obserwują|takip ediyor|подписаны)/i;
   const SIDEBAR_SPONSORED = /^(patrocinado|publicidad|sponsored|sponsorisé|gesponsert|sponsorizzato|patrocinados)$/i;
 
   function feedUrl(s) {
@@ -48,7 +52,10 @@
       // Anuncios dentro del feed
       for (const post of document.querySelectorAll('div[role="main"] [aria-posinset]')) {
         if (KTA.isHidden(post) || !post.innerText.trim()) continue;
-        if (isAd(post)) KTA.hide(post);
+        if (isAd(post)) { KTA.hide(post); continue; }
+        const head = post.innerText.split('\n').map((t) => t.trim()).filter((t) => t && t !== 'Facebook').slice(0, 3).join(' ');
+        if (s.fb_activity && ACTIVITY.test(head.slice(0, 160))) { KTA.hide(post); continue; }
+        if (s.fb_shares && SHARED.test(head.slice(0, 160))) KTA.hide(post);
       }
 
       // Columna derecha: bloque «Patrocinado»

@@ -14,3 +14,7 @@ section { border-top: 1px solid color-mix(in srgb, CanvasText 12%, transparent);
 #options.off { opacity: .4; pointer-events: none; }
 input[type="checkbox"] { width: 17px; height: 17px; accent-color: var(--accent); flex-shrink: 0; }
 .note { font-size: 11.5px; opacity: .6; margin: 8px 0 0; }
+.links { margin: 10px 0 0; font-size: 12.5px; }
+.links a { color: var(--accent); text-decoration: none; font-weight: 600; }
+body[data-mode="full"] { width: auto; max-width: 560px; margin: 32px auto; padding: 24px 28px; font-size: 14.5px; }
+body[data-mode="full"] h1 { font-size: 20px; }

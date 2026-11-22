@@ -11,13 +11,13 @@
     // YouTube
     yt_on: true, yt_shorts: true, yt_related: true, yt_autoplay: true,
     // Instagram
-    ig_on: true, ig_explore: true,
-    // LinkedIn
-    li_on: true, li_activity: false,
+    ig_on: true, ig_explore: true, ig_reposts: false,
     // Facebook
-    fb_on: true, fb_friends: false, fb_reels: true,
+    fb_on: true, fb_friends: false, fb_reels: true, fb_shares: false, fb_activity: true,
+    // LinkedIn
+    li_on: true, li_reposts: false, li_activity: true,
     // TikTok
-    tt_on: true, tt_explore: true
+    tt_on: true, tt_explore: true, tt_reposts: false
   };
 
   const HIDDEN = 'kta-hidden';

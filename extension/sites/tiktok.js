@@ -2,6 +2,7 @@
 (() => {
   const KTA = (globalThis.KTA = globalThis.KTA || { sites: {} });
   const AD = /^(patrocinado|sponsored|publicidad|anuncio|ad|sponsorisé|gesponsert|sponsorizzato|patrocinado|gesponsord|sponsorowane|sponsorlu|реклама|広告|광고|广告|廣告)$/i;
+  const REPOST = /(reposted|republicó|ha republicado|ha reposteado|reposteó|a republié|hat reposted|ha ripubblicato|republicou|repostou|opnieuw geplaatst|udostępnił|yeniden paylaştı|сделал репост|リポスト|재게시|转发了|轉發了)/i;
   const ALGO_PATHS = /^\/(foryou|explore|live|minidrama|short-drama)?\/?$/;
 
   function toFollowing(s) {
@@ -29,7 +30,11 @@
       if (location.pathname.startsWith('/following') || location.pathname.startsWith('/friends')) {
         for (const item of document.querySelectorAll('[data-e2e="recommend-list-item-container"]')) {
           if (KTA.isHidden(item)) continue;
-          const notFollowed = !!item.querySelector('[data-e2e="feed-follow"]');
+          // Un repost de alguien que sigues trae a un autor que no sigues: se decide con tt_reposts
+          const repost = !!item.querySelector('[data-e2e*="repost" i]') ||
+            [...item.querySelectorAll('span, div, p')].slice(0, 60).some((el) => el.childElementCount === 0 && REPOST.test(el.textContent.trim()));
+          const notFollowed = !repost && !!item.querySelector('[data-e2e="feed-follow"]');
+          if (repost && s.tt_reposts) { item.querySelectorAll('video').forEach((v) => { try { v.pause(); } catch {} }); KTA.hide(item); continue; }
           const ad = !!item.querySelector('[data-e2e*="ad-tag"], [data-e2e*="sponsor"]') ||
             [...item.querySelectorAll('span, div')].some((el) => el.childElementCount === 0 && AD.test(el.textContent.trim()));
           if (notFollowed || ad) {

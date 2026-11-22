@@ -21,10 +21,10 @@
     "message": "No “For you”, ads or suggestions"
   },
   "x_reposts": {
-    "message": "Hide reposts"
+    "message": "Hide what they repost"
   },
   "x_reposts_hint": {
-    "message": "They bring in accounts you don’t follow"
+    "message": "Reposts bring in accounts you don’t follow"
   },
   "yt_on": {
     "message": "YouTube: Subscriptions only"
@@ -68,12 +68,6 @@
   "li_on_hint": {
     "message": "No promoted posts or authors you don’t follow"
   },
-  "li_activity": {
-    "message": "Hide “X likes this”"
-  },
-  "li_activity_hint": {
-    "message": "Posts shown because of your contacts’ activity"
-  },
   "note": {
     "message": "Changes apply instantly. Works in the desktop browser."
   },
@@ -100,5 +94,50 @@
   },
   "tt_explore": {
     "message": "Hide Explore, LIVE and Minidramas"
+  },
+  "ig_reposts": {
+    "message": "Hide what they repost"
+  },
+  "ig_reposts_hint": {
+    "message": "Reposts from accounts you follow"
+  },
+  "fb_shares": {
+    "message": "Hide what they share"
+  },
+  "fb_shares_hint": {
+    "message": "Other people’s posts shared by your friends"
+  },
+  "fb_activity": {
+    "message": "Hide activity"
+  },
+  "fb_activity_hint": {
+    "message": "“X likes this”, “X and Y follow…”: picked by the algorithm"
+  },
+  "li_reposts": {
+    "message": "Hide what they share"
+  },
+  "li_reposts_hint": {
+    "message": "“X reposted this”"
+  },
+  "li_activity": {
+    "message": "Hide activity"
+  },
+  "li_activity_hint": {
+    "message": "“X likes this”, “X commented”: picked by the algorithm"
+  },
+  "tt_reposts": {
+    "message": "Hide what they repost"
+  },
+  "tt_reposts_hint": {
+    "message": "Reposts from accounts you follow"
+  },
+  "moreOptions": {
+    "message": "More options"
+  },
+  "allNetworks": {
+    "message": "Options for all networks"
+  },
+  "optionsTitle": {
+    "message": "Options"
   }
 }

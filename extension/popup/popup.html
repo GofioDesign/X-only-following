@@ -3,47 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Kill the Algorithm</title>
-  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="../popup/popup.css">
 </head>
-<body>
+<body data-mode="popup">
   <header>
     <img src="../icons/icon-48.png" alt="" width="30" height="30">
     <div><h1 data-i18n="extName"></h1><p data-i18n="tagline"></p></div>
   </header>
-
   <label class="row master"><span data-i18n="masterOn"></span><input type="checkbox" data-key="enabled"></label>
-
-  <div id="options">
-    <section>
-      <label class="row net"><span><b data-i18n="x_on"></b><small data-i18n="x_on_hint"></small></span><input type="checkbox" data-key="x_on"></label>
-      <label class="row sub" data-parent="x_on"><span><span data-i18n="x_reposts"></span><small data-i18n="x_reposts_hint"></small></span><input type="checkbox" data-key="x_reposts"></label>
-    </section>
-    <section>
-      <label class="row net"><span><b data-i18n="yt_on"></b><small data-i18n="yt_on_hint"></small></span><input type="checkbox" data-key="yt_on"></label>
-      <label class="row sub" data-parent="yt_on"><span><span data-i18n="yt_shorts"></span><small data-i18n="yt_shorts_hint"></small></span><input type="checkbox" data-key="yt_shorts"></label>
-      <label class="row sub" data-parent="yt_on"><span><span data-i18n="yt_related"></span><small data-i18n="yt_related_hint"></small></span><input type="checkbox" data-key="yt_related"></label>
-      <label class="row sub" data-parent="yt_on"><span><span data-i18n="yt_autoplay"></span></span><input type="checkbox" data-key="yt_autoplay"></label>
-    </section>
-    <section>
-      <label class="row net"><span><b data-i18n="ig_on"></b><small data-i18n="ig_on_hint"></small></span><input type="checkbox" data-key="ig_on"></label>
-      <label class="row sub" data-parent="ig_on"><span><span data-i18n="ig_explore"></span></span><input type="checkbox" data-key="ig_explore"></label>
-    </section>
-    <section>
-      <label class="row net"><span><b data-i18n="li_on"></b><small data-i18n="li_on_hint"></small></span><input type="checkbox" data-key="li_on"></label>
-      <label class="row sub" data-parent="li_on"><span><span data-i18n="li_activity"></span><small data-i18n="li_activity_hint"></small></span><input type="checkbox" data-key="li_activity"></label>
-    </section>
-    <section>
-      <label class="row net"><span><b data-i18n="fb_on"></b><small data-i18n="fb_on_hint"></small></span><input type="checkbox" data-key="fb_on"></label>
-      <label class="row sub" data-parent="fb_on"><span><span data-i18n="fb_friends"></span><small data-i18n="fb_friends_hint"></small></span><input type="checkbox" data-key="fb_friends"></label>
-      <label class="row sub" data-parent="fb_on"><span><span data-i18n="fb_reels"></span></span><input type="checkbox" data-key="fb_reels"></label>
-    </section>
-    <section>
-      <label class="row net"><span><b data-i18n="tt_on"></b><small data-i18n="tt_on_hint"></small></span><input type="checkbox" data-key="tt_on"></label>
-      <label class="row sub" data-parent="tt_on"><span><span data-i18n="tt_explore"></span></span><input type="checkbox" data-key="tt_explore"></label>
-    </section>
-  </div>
-
+  <div id="options"></div>
+  <p class="links"><a href="#" id="openOptions" data-i18n="moreOptions"></a></p>
   <p class="note" data-i18n="note"></p>
-  <script src="popup.js"></script>
+  <script src="../popup/popup.js"></script>
 </body>
 </html>

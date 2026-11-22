@@ -8,6 +8,9 @@
   // «A X le gusta esto», «X ha comentado esto»…
   const ACTIVITY = /(le gusta esto|les gusta esto|ha comentado|han comentado|le encanta|celebra esto|apoya esto|likes this|like this|commented on this|loves this|celebrates this|supports this|finds this|aime ça|a commenté|gefällt das|hat kommentiert|piace questo|ha commentato|gostou|comentou|vindt dit|heeft gereageerd|lubi to|skomentował|beğendi|yorum yaptı|нравится|прокомментировал)/i;
 
+  // «X ha compartido esto», «X reposted this»
+  const REPOST = /(ha compartido esto|han compartido esto|ha republicado|reposted this|reposted|a republié|a partagé ceci|hat das geteilt|hat reposted|ha ripubblicato|republicou|compartilhou isto|heeft dit gedeeld|udostępnił|yeniden paylaştı|поделился)/i;
+
   function posts() {
     const feed = document.querySelector('[data-testid="mainFeed"]');
     if (feed) return [...feed.children];
@@ -28,7 +31,8 @@
         const notFollowed = [...post.querySelectorAll('button[aria-label]')].slice(0, 4)
           .some((b) => FOLLOW_BTN.test(b.getAttribute('aria-label').trim()));
         const activity = s.li_activity && head.slice(0, 4).some((t) => ACTIVITY.test(t));
-        if (promoted || suggested || notFollowed || activity) KTA.hide(post);
+        const repost = s.li_reposts && head.slice(0, 4).some((t) => REPOST.test(t));
+        if (promoted || suggested || notFollowed || activity || repost) KTA.hide(post);
       }
       // Barra lateral: «Añadir a tu feed» y noticias recomendadas
       document.querySelectorAll('aside section, aside [data-view-name]').forEach((box) => {

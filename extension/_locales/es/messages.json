@@ -21,10 +21,10 @@
     "message": "Sin «Para ti», anuncios ni sugerencias"
   },
   "x_reposts": {
-    "message": "Ocultar reposts"
+    "message": "Ocultar lo que republican"
   },
   "x_reposts_hint": {
-    "message": "Traen cuentas que no sigues"
+    "message": "Reposts: traen cuentas que no sigues"
   },
   "yt_on": {
     "message": "YouTube: solo Suscripciones"
@@ -68,12 +68,6 @@
   "li_on_hint": {
     "message": "Sin promocionados ni autores que no sigues"
   },
-  "li_activity": {
-    "message": "Ocultar «A X le gusta esto»"
-  },
-  "li_activity_hint": {
-    "message": "Publicaciones que ves por la actividad de tus contactos"
-  },
   "note": {
     "message": "Los cambios se aplican al momento. Funciona en el navegador del ordenador."
   },
@@ -100,5 +94,50 @@
   },
   "tt_explore": {
     "message": "Ocultar Explorar, LIVE y Minidramas"
+  },
+  "ig_reposts": {
+    "message": "Ocultar lo que republican"
+  },
+  "ig_reposts_hint": {
+    "message": "Reposts de las cuentas que sigues"
+  },
+  "fb_shares": {
+    "message": "Ocultar lo que comparten"
+  },
+  "fb_shares_hint": {
+    "message": "Publicaciones de otros que tus amigos comparten"
+  },
+  "fb_activity": {
+    "message": "Ocultar actividad"
+  },
+  "fb_activity_hint": {
+    "message": "«A X le gusta», «X y Y siguen a…»: lo elige el algoritmo"
+  },
+  "li_reposts": {
+    "message": "Ocultar lo que comparten"
+  },
+  "li_reposts_hint": {
+    "message": "«X ha compartido esto»"
+  },
+  "li_activity": {
+    "message": "Ocultar actividad"
+  },
+  "li_activity_hint": {
+    "message": "«A X le gusta esto», «X ha comentado»: lo elige el algoritmo"
+  },
+  "tt_reposts": {
+    "message": "Ocultar lo que republican"
+  },
+  "tt_reposts_hint": {
+    "message": "Reposts de las cuentas que sigues"
+  },
+  "moreOptions": {
+    "message": "Más opciones"
+  },
+  "allNetworks": {
+    "message": "Opciones de todas las redes"
+  },
+  "optionsTitle": {
+    "message": "Opciones"
   }
 }

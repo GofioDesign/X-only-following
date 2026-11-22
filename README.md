@@ -15,7 +15,9 @@
 | **TikTok** | Inicio y «Para ti» abren **Siguiendo**; oculta los vídeos de cuentas que no sigues (TikTok los mete cuando acabas los tuyos) y los anuncios. Opcional (activado): ocultar Explorar, LIVE y Minidramas. |
 | **LinkedIn** | En el feed oculta publicaciones **promocionadas**, **sugeridas** y de **autores que no sigues**. Opcional: ocultar las que ves porque a un contacto «le gusta» o las ha comentado. |
 
-Cada red y cada opción se activan o desactivan desde el icono de la extensión.
+**Lo que publican, lo que republican y la actividad.** En cada red puedes elegir si ver también lo que republican o comparten las cuentas que sigues (visible por defecto: es una recomendación de una persona, no del algoritmo). La actividad («a X le gusta», «X y Y siguen a…») se oculta por defecto, porque la elige el algoritmo.
+
+**Ajustes.** El icono de la extensión muestra solo las opciones de la red en la que estás; fuera de ellas, un interruptor por red. Todas las opciones están en **Opciones** (clic derecho en el icono → Opciones).
 
 **Limitación:** funciona en el navegador del ordenador. Las apps del móvil no se pueden modificar.
 
