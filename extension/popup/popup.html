@@ -1,45 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Solo Siguiendo</title>
+  <title>Kill the Algorithm</title>
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
   <header>
-    <img src="../icons/icon-48.png" alt="" width="28" height="28">
-    <h1>Solo Siguiendo</h1>
+    <img src="../icons/icon-48.png" alt="" width="30" height="30">
+    <div><h1 data-i18n="extName"></h1><p data-i18n="tagline"></p></div>
   </header>
 
-  <label class="row main">
-    <span>Activado</span>
-    <input type="checkbox" data-key="enabled">
-  </label>
+  <label class="row master"><span data-i18n="masterOn"></span><input type="checkbox" data-key="enabled"></label>
 
   <div id="options">
-    <label class="row">
-      <span>Abrir siempre «Siguiendo»</span>
-      <input type="checkbox" data-key="forceFollowing">
-    </label>
-    <label class="row">
-      <span>Ocultar pestaña «Para ti»</span>
-      <input type="checkbox" data-key="hideForYou">
-    </label>
-    <label class="row">
-      <span>Ocultar anuncios</span>
-      <input type="checkbox" data-key="hideAds">
-    </label>
-    <label class="row">
-      <span>Ocultar «A quién seguir» y tendencias</span>
-      <input type="checkbox" data-key="hideSuggestions">
-    </label>
-    <label class="row">
-      <span>Ocultar reposts<small>Traen cuentas que no sigues</small></span>
-      <input type="checkbox" data-key="hideReposts">
-    </label>
+    <section>
+      <label class="row net"><span><b data-i18n="x_on"></b><small data-i18n="x_on_hint"></small></span><input type="checkbox" data-key="x_on"></label>
+      <label class="row sub" data-parent="x_on"><span><span data-i18n="x_reposts"></span><small data-i18n="x_reposts_hint"></small></span><input type="checkbox" data-key="x_reposts"></label>
+    </section>
+    <section>
+      <label class="row net"><span><b data-i18n="yt_on"></b><small data-i18n="yt_on_hint"></small></span><input type="checkbox" data-key="yt_on"></label>
+      <label class="row sub" data-parent="yt_on"><span><span data-i18n="yt_shorts"></span><small data-i18n="yt_shorts_hint"></small></span><input type="checkbox" data-key="yt_shorts"></label>
+      <label class="row sub" data-parent="yt_on"><span><span data-i18n="yt_related"></span><small data-i18n="yt_related_hint"></small></span><input type="checkbox" data-key="yt_related"></label>
+      <label class="row sub" data-parent="yt_on"><span><span data-i18n="yt_autoplay"></span></span><input type="checkbox" data-key="yt_autoplay"></label>
+    </section>
+    <section>
+      <label class="row net"><span><b data-i18n="ig_on"></b><small data-i18n="ig_on_hint"></small></span><input type="checkbox" data-key="ig_on"></label>
+      <label class="row sub" data-parent="ig_on"><span><span data-i18n="ig_explore"></span></span><input type="checkbox" data-key="ig_explore"></label>
+    </section>
+    <section>
+      <label class="row net"><span><b data-i18n="li_on"></b><small data-i18n="li_on_hint"></small></span><input type="checkbox" data-key="li_on"></label>
+      <label class="row sub" data-parent="li_on"><span><span data-i18n="li_activity"></span><small data-i18n="li_activity_hint"></small></span><input type="checkbox" data-key="li_activity"></label>
+    </section>
   </div>
 
-  <p class="note">Los cambios se aplican al momento en las pestañas de X abiertas.</p>
+  <p class="note" data-i18n="note"></p>
   <script src="popup.js"></script>
 </body>
 </html>

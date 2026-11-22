@@ -1,0 +1,80 @@
+{
+  "extName": {
+    "message": "Kill the Algorithm"
+  },
+  "extShortName": {
+    "message": "Kill the Algo"
+  },
+  "extDescription": {
+    "message": "See only what the accounts you follow post: no algorithmic feeds, suggestions or ads on your social networks."
+  },
+  "tagline": {
+    "message": "Only what you follow"
+  },
+  "masterOn": {
+    "message": "Enabled"
+  },
+  "x_on": {
+    "message": "X: “Following” only"
+  },
+  "x_on_hint": {
+    "message": "No “For you”, ads or suggestions"
+  },
+  "x_reposts": {
+    "message": "Hide reposts"
+  },
+  "x_reposts_hint": {
+    "message": "They bring in accounts you don’t follow"
+  },
+  "yt_on": {
+    "message": "YouTube: Subscriptions only"
+  },
+  "yt_on_hint": {
+    "message": "Home opens your subscriptions"
+  },
+  "yt_shorts": {
+    "message": "Hide Shorts"
+  },
+  "yt_shorts_hint": {
+    "message": "Shorts you open play as regular videos"
+  },
+  "yt_related": {
+    "message": "Hide recommended videos"
+  },
+  "yt_related_hint": {
+    "message": "Sidebar and end screen"
+  },
+  "yt_autoplay": {
+    "message": "No autoplay"
+  },
+  "yt_autoplay_hint": {
+    "message": ""
+  },
+  "ig_on": {
+    "message": "Instagram: “Following” only"
+  },
+  "ig_on_hint": {
+    "message": "Home opens the chronological feed of people you follow"
+  },
+  "ig_explore": {
+    "message": "Hide Explore and Reels"
+  },
+  "ig_explore_hint": {
+    "message": ""
+  },
+  "li_on": {
+    "message": "LinkedIn: only people you follow"
+  },
+  "li_on_hint": {
+    "message": "No promoted posts or authors you don’t follow"
+  },
+  "li_activity": {
+    "message": "Hide “X likes this”"
+  },
+  "li_activity_hint": {
+    "message": "Posts shown because of your contacts’ activity"
+  },
+  "note": {
+    "message": "Changes apply instantly. Works in the desktop browser."
+  }
+}

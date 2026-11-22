@@ -4,7 +4,7 @@ set -euo pipefail
 cd "$(dirname "$0")"
 VERSION=$(python3 -c "import json;print(json.load(open('extension/manifest.json'))['version'])")
 mkdir -p dist
-OUT="dist/solo-siguiendo-x-$VERSION.zip"
+OUT="dist/kill-the-algorithm-$VERSION.zip"
 rm -f "$OUT"
 (cd extension && zip -rq "../$OUT" . -x '.*')
 echo "Creado $OUT"

@@ -1,46 +1,40 @@
-# Solo Siguiendo para X
+# Kill the Algorithm
 
-Extensión de Chrome que limita el feed de X (Twitter) a las cuentas que sigues.
+**Solo lo que sigues.** Extensión de Chrome que quita el feed algorítmico de tus redes sociales y te deja ver únicamente lo que publican las cuentas que sigues.
 
-- Abre siempre la pestaña **Siguiendo** en lugar de **Para ti**.
-- Oculta la pestaña **Para ti**.
-- Oculta los posts promocionados (anuncios).
-- Oculta «A quién seguir» y las tendencias.
-- Opcional: oculta los reposts, que suelen traer contenido de cuentas que no sigues.
+> Versión 2.0 de «Solo Siguiendo para X», ampliada a más redes.
 
-Cada opción se activa o desactiva desde el icono de la extensión y se aplica al momento.
+## Qué hace en cada red
 
-![Captura](store/screenshot-1.png)
+| Red | Qué cambia |
+|---|---|
+| **X** | Abre siempre «Siguiendo»; oculta «Para ti», anuncios, «A quién seguir» y tendencias. Opcional: ocultar reposts. |
+| **YouTube** | Inicio abre **Suscripciones**; oculta Inicio y Explorar del menú. Opcional (activado): ocultar Shorts (los que abras se ven como vídeo normal), vídeos recomendados y pantalla final, y desactivar la reproducción automática. |
+| **Instagram** | Inicio abre el feed cronológico **Seguidos**; oculta la pestaña «Para ti» y las sugerencias. Opcional (activado): ocultar Explorar y Reels. |
+| **LinkedIn** | En el feed oculta publicaciones **promocionadas**, **sugeridas** y de **autores que no sigues**. Opcional: ocultar las que ves porque a un contacto «le gusta» o las ha comentado. |
 
-## Instalación
+Cada red y cada opción se activan o desactivan desde el icono de la extensión.
 
-**Desde la Chrome Web Store:** _(enlace cuando esté publicada)_
+**Limitación:** funciona en el navegador del ordenador. Las apps del móvil no se pueden modificar.
 
-**Manual (modo desarrollador):**
+## Instalación manual
 
-1. Descarga este repositorio (`Code → Download ZIP`) y descomprímelo.
+1. Descarga el repositorio y descomprímelo.
 2. Abre `chrome://extensions` y activa el **Modo de desarrollador**.
 3. Pulsa **Cargar descomprimida** y elige la carpeta `extension`.
-4. Recarga x.com.
 
 ## Privacidad
 
-La extensión no recoge, envía ni guarda ningún dato personal. Solo guarda tus preferencias (qué opciones tienes activadas) en el almacenamiento de Chrome. Consulta la [política de privacidad](PRIVACY.md).
+No recoge, envía ni guarda datos personales. Solo guarda tus preferencias (qué opciones tienes activadas). Ver [PRIVACY.md](PRIVACY.md).
 
-## Si deja de funcionar
+## Si una red deja de funcionar
 
-X cambia su web de vez en cuando. Si algo deja de ocultarse, abre un [issue](https://github.com/GofioDesign/X-only-following/issues) indicando qué ves.
+Las redes cambian su web a menudo. Cada red tiene su módulo en `extension/sites/`. Abre un issue indicando la red y qué ves.
 
-## Publicar una versión nueva
+## Créditos
 
-```bash
-./build.sh   # genera dist/solo-siguiendo-x-<versión>.zip listo para la Web Store
-```
+Algunos selectores de YouTube e Instagram se basan en [Escape the Algorithm](https://github.com/nestolobo/escapethealgorithm) (MIT). Ver [NOTICE.md](NOTICE.md).
 
 ## Licencia
 
-[MIT](LICENSE) © Gofio Design
-
----
-
-_Proyecto independiente, sin relación con X Corp._
+[MIT](LICENSE) © Gofio Design — proyecto independiente, sin relación con las redes mencionadas.

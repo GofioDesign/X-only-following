@@ -1,0 +1,80 @@
+{
+  "extName": {
+    "message": "Kill the Algorithm"
+  },
+  "extShortName": {
+    "message": "Kill the Algo"
+  },
+  "extDescription": {
+    "message": "Ve solo lo que publican las cuentas que sigues: sin feeds algorítmicos, sugerencias ni anuncios en tus redes sociales."
+  },
+  "tagline": {
+    "message": "Solo lo que sigues"
+  },
+  "masterOn": {
+    "message": "Activado"
+  },
+  "x_on": {
+    "message": "X: solo «Siguiendo»"
+  },
+  "x_on_hint": {
+    "message": "Sin «Para ti», anuncios ni sugerencias"
+  },
+  "x_reposts": {
+    "message": "Ocultar reposts"
+  },
+  "x_reposts_hint": {
+    "message": "Traen cuentas que no sigues"
+  },
+  "yt_on": {
+    "message": "YouTube: solo Suscripciones"
+  },
+  "yt_on_hint": {
+    "message": "Inicio abre tus suscripciones"
+  },
+  "yt_shorts": {
+    "message": "Ocultar Shorts"
+  },
+  "yt_shorts_hint": {
+    "message": "Los Shorts que abras se ven como vídeo normal"
+  },
+  "yt_related": {
+    "message": "Ocultar vídeos recomendados"
+  },
+  "yt_related_hint": {
+    "message": "Columna lateral y pantalla final"
+  },
+  "yt_autoplay": {
+    "message": "Sin reproducción automática"
+  },
+  "yt_autoplay_hint": {
+    "message": ""
+  },
+  "ig_on": {
+    "message": "Instagram: solo «Seguidos»"
+  },
+  "ig_on_hint": {
+    "message": "Inicio abre el feed cronológico de quien sigues"
+  },
+  "ig_explore": {
+    "message": "Ocultar Explorar y Reels"
+  },
+  "ig_explore_hint": {
+    "message": ""
+  },
+  "li_on": {
+    "message": "LinkedIn: solo quien sigues"
+  },
+  "li_on_hint": {
+    "message": "Sin promocionados ni autores que no sigues"
+  },
+  "li_activity": {
+    "message": "Ocultar «A X le gusta esto»"
+  },
+  "li_activity_hint": {
+    "message": "Publicaciones que ves por la actividad de tus contactos"
+  },
+  "note": {
+    "message": "Los cambios se aplican al momento. Funciona en el navegador del ordenador."
+  }
+}
