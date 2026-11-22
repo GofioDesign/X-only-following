@@ -21,7 +21,9 @@
     // Threads
     th_on: true, th_reposts: false,
     // Bluesky
-    bs_on: true, bs_reposts: false
+    bs_on: true, bs_reposts: false,
+    // Twitch
+    tw_on: true, tw_browse: true
   };
 
   const HIDDEN = 'kta-hidden';

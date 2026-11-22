@@ -19,7 +19,8 @@
     "https://www.tiktok.com/*",
     "https://www.threads.com/*",
     "https://www.threads.net/*",
-    "https://bsky.app/*"
+    "https://bsky.app/*",
+    "https://www.twitch.tv/*"
   ],
   "content_scripts": [
     {
@@ -127,6 +128,19 @@
         "content.css"
       ],
       "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://www.twitch.tv/*"
+      ],
+      "js": [
+        "sites/twitch.js",
+        "common.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_start"
     }
   ],
   "action": {

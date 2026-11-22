@@ -229,5 +229,14 @@
   },
   "welcomeRepo": {
     "message": "Open source on GitHub"
+  },
+  "tw_on": {
+    "message": "Twitch: “Following” only"
+  },
+  "tw_on_hint": {
+    "message": "No Home, recommended channels or categories"
+  },
+  "tw_browse": {
+    "message": "Hide Browse"
   }
 }

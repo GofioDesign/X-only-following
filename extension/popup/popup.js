@@ -10,7 +10,8 @@ const DEFAULTS = {
   li_on: true, li_reposts: false, li_activity: true,
   tt_on: true, tt_explore: true, tt_reposts: false,
   th_on: true, th_reposts: false,
-  bs_on: true, bs_reposts: false
+  bs_on: true, bs_reposts: false,
+  tw_on: true, tw_browse: true
 };
 const NETS = [
   { main: 'x_on', host: /(^|\.)(x|twitter)\.com$/, subs: ['x_reposts'] },
@@ -20,7 +21,8 @@ const NETS = [
   { main: 'li_on', host: /(^|\.)linkedin\.com$/, subs: ['li_reposts', 'li_activity'] },
   { main: 'tt_on', host: /(^|\.)tiktok\.com$/, subs: ['tt_explore', 'tt_reposts'] },
   { main: 'th_on', host: /(^|\.)threads\.(com|net)$/, subs: ['th_reposts'] },
-  { main: 'bs_on', host: /(^|\.)bsky\.app$/, subs: ['bs_reposts'] }
+  { main: 'bs_on', host: /(^|\.)bsky\.app$/, subs: ['bs_reposts'] },
+  { main: 'tw_on', host: /(^|\.)twitch\.tv$/, subs: ['tw_browse'] }
 ];
 const t = (k) => chrome.i18n.getMessage(k) || '';
 

@@ -229,5 +229,14 @@
   },
   "welcomeRepo": {
     "message": "Código abierto en GitHub"
+  },
+  "tw_on": {
+    "message": "Twitch: solo «Siguiendo»"
+  },
+  "tw_on_hint": {
+    "message": "Sin Inicio, canales ni categorías recomendados"
+  },
+  "tw_browse": {
+    "message": "Ocultar Explorar"
   }
 }
