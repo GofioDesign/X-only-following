@@ -39,7 +39,7 @@ La extensión no recoge, envía ni vende ningún dato. Funciona solo en x.com y 
 
 CÓDIGO ABIERTO
 El código es público y puedes revisarlo o reportar problemas en:
-https://github.com/GofioDesign/X-only-following
+https://github.com/GofioDesign/dezombify
 
 Proyecto independiente, sin relación con X Corp.
 ```
@@ -62,12 +62,12 @@ Español
 
 **Sitio web oficial / Página principal**
 ```
-https://github.com/GofioDesign/X-only-following
+https://github.com/GofioDesign/dezombify
 ```
 
 **URL de asistencia**
 ```
-https://github.com/GofioDesign/X-only-following/issues
+https://github.com/GofioDesign/dezombify/issues
 ```
 
 ---
@@ -103,7 +103,7 @@ Marcar las tres certificaciones:
 
 **URL de la política de privacidad**
 ```
-https://github.com/GofioDesign/X-only-following/blob/main/PRIVACY.md
+https://github.com/GofioDesign/dezombify/blob/main/PRIVACY.md
 ```
 
 ---

@@ -9,7 +9,7 @@ _Última actualización: 22 de noviembre de 2026_
 - Guarda solo en tu navegador la **fecha de instalación** y **cuántas veces has abierto el panel**, únicamente para mostrar de vez en cuando una invitación a valorarla (cada 5 aperturas, hasta que la valores o elijas no volver a verla) y, como mucho una vez al año, una invitación a donar. Estos datos nunca salen de tu navegador y se borran al desinstalarla.
 - No lee ni guarda tus publicaciones, mensajes ni datos de tus cuentas. No usa analítica, cookies de seguimiento ni servicios de terceros. No envía nada a ningún servidor.
 
-Contacto: https://github.com/GofioDesign/X-only-following/issues
+Contacto: https://github.com/GofioDesign/dezombify/issues
 
 ---
 
