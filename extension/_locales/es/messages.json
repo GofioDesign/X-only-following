@@ -76,5 +76,20 @@
   },
   "note": {
     "message": "Los cambios se aplican al momento. Funciona en el navegador del ordenador."
+  },
+  "fb_on": {
+    "message": "Facebook: Feeds cronológico"
+  },
+  "fb_on_hint": {
+    "message": "Amigos, grupos y páginas que sigues, sin anuncios"
+  },
+  "fb_friends": {
+    "message": "Solo amigos"
+  },
+  "fb_friends_hint": {
+    "message": "Sin grupos ni páginas"
+  },
+  "fb_reels": {
+    "message": "Ocultar Reels y Vídeo"
   }
 }

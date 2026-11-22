@@ -76,5 +76,20 @@
   },
   "note": {
     "message": "Changes apply instantly. Works in the desktop browser."
+  },
+  "fb_on": {
+    "message": "Facebook: chronological Feeds"
+  },
+  "fb_on_hint": {
+    "message": "Friends, groups and pages you follow, no ads"
+  },
+  "fb_friends": {
+    "message": "Friends only"
+  },
+  "fb_friends_hint": {
+    "message": "No groups or pages"
+  },
+  "fb_reels": {
+    "message": "Hide Reels and Video"
   }
 }

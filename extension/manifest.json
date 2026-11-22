@@ -6,38 +6,83 @@
   "version": "2.0.0",
   "default_locale": "es",
   "homepage_url": "https://github.com/GofioDesign/X-only-following",
-  "permissions": ["storage"],
+  "permissions": [
+    "storage"
+  ],
   "host_permissions": [
     "https://x.com/*",
     "https://twitter.com/*",
     "https://www.youtube.com/*",
     "https://www.instagram.com/*",
-    "https://www.linkedin.com/*"
+    "https://www.linkedin.com/*",
+    "https://www.facebook.com/*"
   ],
   "content_scripts": [
     {
-      "matches": ["https://x.com/*", "https://twitter.com/*"],
-      "js": ["sites/x.js", "common.js"],
-      "css": ["content.css"],
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ],
+      "js": [
+        "sites/x.js",
+        "common.js"
+      ],
+      "css": [
+        "content.css"
+      ],
       "run_at": "document_idle"
     },
     {
-      "matches": ["https://www.youtube.com/*"],
-      "js": ["sites/youtube.js", "common.js"],
-      "css": ["content.css"],
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "sites/youtube.js",
+        "common.js"
+      ],
+      "css": [
+        "content.css"
+      ],
       "run_at": "document_start"
     },
     {
-      "matches": ["https://www.instagram.com/*"],
-      "js": ["sites/instagram.js", "common.js"],
-      "css": ["content.css"],
+      "matches": [
+        "https://www.instagram.com/*"
+      ],
+      "js": [
+        "sites/instagram.js",
+        "common.js"
+      ],
+      "css": [
+        "content.css"
+      ],
       "run_at": "document_start"
     },
     {
-      "matches": ["https://www.linkedin.com/*"],
-      "js": ["sites/linkedin.js", "common.js"],
-      "css": ["content.css"],
+      "matches": [
+        "https://www.linkedin.com/*"
+      ],
+      "js": [
+        "sites/linkedin.js",
+        "common.js"
+      ],
+      "css": [
+        "content.css"
+      ],
       "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://www.facebook.com/*"
+      ],
+      "js": [
+        "sites/facebook.js",
+        "common.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_start"
     }
   ],
   "action": {
