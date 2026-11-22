@@ -16,7 +16,9 @@
     "https://www.instagram.com/*",
     "https://www.linkedin.com/*",
     "https://www.facebook.com/*",
-    "https://www.tiktok.com/*"
+    "https://www.tiktok.com/*",
+    "https://www.threads.com/*",
+    "https://www.threads.net/*"
   ],
   "content_scripts": [
     {
@@ -91,6 +93,20 @@
       ],
       "js": [
         "sites/tiktok.js",
+        "common.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://www.threads.com/*",
+        "https://www.threads.net/*"
+      ],
+      "js": [
+        "sites/threads.js",
         "common.js"
       ],
       "css": [

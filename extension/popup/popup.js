@@ -8,7 +8,8 @@ const DEFAULTS = {
   ig_on: true, ig_explore: true, ig_reposts: false,
   fb_on: true, fb_friends: false, fb_reels: true, fb_shares: false, fb_activity: true,
   li_on: true, li_reposts: false, li_activity: true,
-  tt_on: true, tt_explore: true, tt_reposts: false
+  tt_on: true, tt_explore: true, tt_reposts: false,
+  th_on: true, th_reposts: false
 };
 const NETS = [
   { main: 'x_on', host: /(^|\.)(x|twitter)\.com$/, subs: ['x_reposts'] },
@@ -16,7 +17,8 @@ const NETS = [
   { main: 'ig_on', host: /(^|\.)instagram\.com$/, subs: ['ig_explore', 'ig_reposts'] },
   { main: 'fb_on', host: /(^|\.)facebook\.com$/, subs: ['fb_friends', 'fb_reels', 'fb_shares', 'fb_activity'] },
   { main: 'li_on', host: /(^|\.)linkedin\.com$/, subs: ['li_reposts', 'li_activity'] },
-  { main: 'tt_on', host: /(^|\.)tiktok\.com$/, subs: ['tt_explore', 'tt_reposts'] }
+  { main: 'tt_on', host: /(^|\.)tiktok\.com$/, subs: ['tt_explore', 'tt_reposts'] },
+  { main: 'th_on', host: /(^|\.)threads\.(com|net)$/, subs: ['th_reposts'] }
 ];
 const t = (k) => chrome.i18n.getMessage(k) || '';
 

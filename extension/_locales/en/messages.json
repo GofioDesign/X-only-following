@@ -139,5 +139,17 @@
   },
   "optionsTitle": {
     "message": "Options"
+  },
+  "th_on": {
+    "message": "Threads: “Following” only"
+  },
+  "th_on_hint": {
+    "message": "No “For you” or suggestions"
+  },
+  "th_reposts": {
+    "message": "Hide what they repost"
+  },
+  "th_reposts_hint": {
+    "message": "Reposts from accounts you follow"
   }
 }

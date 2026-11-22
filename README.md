@@ -13,6 +13,7 @@
 | **Instagram** | Inicio abre el feed cronológico **Seguidos**; oculta la pestaña «Para ti» y las sugerencias. Opcional (activado): ocultar Explorar y Reels. |
 | **Facebook** | Inicio abre **Feeds → Todo**: el cronológico de amigos, grupos y páginas que sigues. Oculta los **anuncios** (también los de «X amigos siguen a…»). Opcional: solo amigos; ocultar Reels y Vídeo (activado). |
 | **TikTok** | Inicio y «Para ti» abren **Siguiendo**; oculta los vídeos de cuentas que no sigues (TikTok los mete cuando acabas los tuyos) y los anuncios. Opcional (activado): ocultar Explorar, LIVE y Minidramas. |
+| **Threads** | Inicio y «Para ti» abren **Seguidos** (cronológico); oculta anuncios y sugerencias. Opcional: ocultar lo que republican. |
 | **LinkedIn** | En el feed oculta publicaciones **promocionadas**, **sugeridas** y de **autores que no sigues**. Opcional: ocultar las que ves porque a un contacto «le gusta» o las ha comentado. |
 
 **Lo que publican, lo que republican y la actividad.** En cada red puedes elegir si ver también lo que republican o comparten las cuentas que sigues (visible por defecto: es una recomendación de una persona, no del algoritmo). La actividad («a X le gusta», «X y Y siguen a…») se oculta por defecto, porque la elige el algoritmo.

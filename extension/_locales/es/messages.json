@@ -139,5 +139,17 @@
   },
   "optionsTitle": {
     "message": "Opciones"
+  },
+  "th_on": {
+    "message": "Threads: solo «Seguidos»"
+  },
+  "th_on_hint": {
+    "message": "Sin «Para ti» ni sugerencias"
+  },
+  "th_reposts": {
+    "message": "Ocultar lo que republican"
+  },
+  "th_reposts_hint": {
+    "message": "Reposts de las cuentas que sigues"
   }
 }
