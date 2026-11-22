@@ -63,9 +63,8 @@ const REVIEW_URL = 'https://chromewebstore.google.com/detail/fhajebegoleecljdhfo
 const YEAR_MS = 365.25 * 24 * 3600 * 1000;
 
 async function maybeAsk() {
-  const st = await chrome.storage.local.get({ installDate: 0, uses: 0, donateYearsShown: 0, reviewDone: false, reviewShown: 0 });
-  const uses = st.uses + 1;
-  const update = { uses };
+  const st = await chrome.storage.local.get({ installDate: 0, donateYearsShown: 0, reviewDone: false, reviewShown: 0, reviewPending: false });
+  const update = {};
   if (!st.installDate) update.installDate = Date.now();
   const years = st.installDate ? Math.floor((Date.now() - st.installDate) / YEAR_MS) : 0;
 
@@ -79,10 +78,12 @@ async function maybeAsk() {
     box.hidden = false;
     return;
   }
-  if (!st.reviewDone && uses % 5 === 0) {
+  // La valoración se pide cada 5 usos reales (los cuenta common.js en las redes)
+  if (!st.reviewDone && st.reviewPending) {
     const shown = st.reviewShown + 1;
-    update.reviewShown = shown;
+    Object.assign(update, { reviewShown: shown, reviewPending: false });
     await chrome.storage.local.set(update);
+    try { await chrome.action.setBadgeText({ text: '' }); } catch {}
     const box = document.getElementById('reviewBox');
     const never = document.getElementById('reviewNever');
     const done = async () => { box.hidden = true; try { await chrome.storage.local.set({ reviewDone: true }); } catch {} };
@@ -93,7 +94,7 @@ async function maybeAsk() {
     box.hidden = false;
     return;
   }
-  await chrome.storage.local.set(update);
+  if (Object.keys(update).length) await chrome.storage.local.set(update);
 }
 
 async function currentNet() {

@@ -85,8 +85,21 @@
     schedule();
   });
 
+  // Uso real = abrir una red con la extensión activa (como mucho uno cada 30 min).
+  // Cada 5 usos, el service worker marca el icono y el panel pide la valoración.
+  async function countUse() {
+    try {
+      const { uses = 0, lastUse = 0, reviewDone = false } = await chrome.storage.local.get(['uses', 'lastUse', 'reviewDone']);
+      if (Date.now() - lastUse < 30 * 60 * 1000) return;
+      const n = uses + 1;
+      await chrome.storage.local.set({ uses: n, lastUse: Date.now() });
+      if (!reviewDone && n % 5 === 0) chrome.runtime.sendMessage({ type: 'reviewDue' }).catch(() => {});
+    } catch { /* contexto invalidado al actualizar la extensión */ }
+  }
+
   (async () => {
     await loadSettings();
+    if (settings.enabled && settings[site.key + '_on']) countUse();
     // Redirecciones tempranas (antes de que se pinte el feed algorítmico)
     if (settings.enabled && settings[site.key + '_on']) {
       try { site.early?.(settings); } catch (err) { console.warn(err); }

@@ -10,3 +10,15 @@ chrome.runtime.onInstalled.addListener(async ({ reason, previousVersion }) => {
     try { await chrome.tabs.create({ url: chrome.runtime.getURL('welcome/welcome.html') }); } catch (err) { console.warn(err); }
   }
 });
+
+// Cada 5 usos: marca en el icono para que se abra el panel, que muestra el aviso de valoración
+chrome.runtime.onMessage.addListener((msg) => {
+  if (msg?.type !== 'reviewDue') return;
+  (async () => {
+    try {
+      await chrome.storage.local.set({ reviewPending: true });
+      await chrome.action.setBadgeBackgroundColor({ color: '#ff5fa2' });
+      await chrome.action.setBadgeText({ text: '★' });
+    } catch (err) { console.warn(err); }
+  })();
+});
