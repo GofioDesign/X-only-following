@@ -5,7 +5,8 @@ const DEFAULTS = {
   yt_on: true, yt_shorts: true, yt_related: true, yt_autoplay: true,
   ig_on: true, ig_explore: true,
   li_on: true, li_activity: false,
-  fb_on: true, fb_friends: false, fb_reels: true
+  fb_on: true, fb_friends: false, fb_reels: true,
+  tt_on: true, tt_explore: true
 };
 
 document.querySelectorAll('[data-i18n]').forEach((el) => { el.textContent = chrome.i18n.getMessage(el.dataset.i18n) || ''; });

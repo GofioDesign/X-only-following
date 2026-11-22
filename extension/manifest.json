@@ -15,7 +15,8 @@
     "https://www.youtube.com/*",
     "https://www.instagram.com/*",
     "https://www.linkedin.com/*",
-    "https://www.facebook.com/*"
+    "https://www.facebook.com/*",
+    "https://www.tiktok.com/*"
   ],
   "content_scripts": [
     {
@@ -77,6 +78,19 @@
       ],
       "js": [
         "sites/facebook.js",
+        "common.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://www.tiktok.com/*"
+      ],
+      "js": [
+        "sites/tiktok.js",
         "common.js"
       ],
       "css": [

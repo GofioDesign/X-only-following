@@ -91,5 +91,14 @@
   },
   "fb_reels": {
     "message": "Ocultar Reels y Vídeo"
+  },
+  "tt_on": {
+    "message": "TikTok: solo «Siguiendo»"
+  },
+  "tt_on_hint": {
+    "message": "Sin «Para ti» ni sugerencias de cuentas que no sigues"
+  },
+  "tt_explore": {
+    "message": "Ocultar Explorar, LIVE y Minidramas"
   }
 }

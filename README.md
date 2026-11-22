@@ -12,6 +12,7 @@
 | **YouTube** | Inicio abre **Suscripciones**; oculta Inicio y Explorar del menú. Opcional (activado): ocultar Shorts (los que abras se ven como vídeo normal), vídeos recomendados y pantalla final, y desactivar la reproducción automática. |
 | **Instagram** | Inicio abre el feed cronológico **Seguidos**; oculta la pestaña «Para ti» y las sugerencias. Opcional (activado): ocultar Explorar y Reels. |
 | **Facebook** | Inicio abre **Feeds → Todo**: el cronológico de amigos, grupos y páginas que sigues. Oculta los **anuncios** (también los de «X amigos siguen a…»). Opcional: solo amigos; ocultar Reels y Vídeo (activado). |
+| **TikTok** | Inicio y «Para ti» abren **Siguiendo**; oculta los vídeos de cuentas que no sigues (TikTok los mete cuando acabas los tuyos) y los anuncios. Opcional (activado): ocultar Explorar, LIVE y Minidramas. |
 | **LinkedIn** | En el feed oculta publicaciones **promocionadas**, **sugeridas** y de **autores que no sigues**. Opcional: ocultar las que ves porque a un contacto «le gusta» o las ha comentado. |
 
 Cada red y cada opción se activan o desactivan desde el icono de la extensión.

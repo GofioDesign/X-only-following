@@ -15,7 +15,9 @@
     // LinkedIn
     li_on: true, li_activity: false,
     // Facebook
-    fb_on: true, fb_friends: false, fb_reels: true
+    fb_on: true, fb_friends: false, fb_reels: true,
+    // TikTok
+    tt_on: true, tt_explore: true
   };
 
   const HIDDEN = 'kta-hidden';

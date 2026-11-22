@@ -91,5 +91,14 @@
   },
   "fb_reels": {
     "message": "Hide Reels and Video"
+  },
+  "tt_on": {
+    "message": "TikTok: “Following” only"
+  },
+  "tt_on_hint": {
+    "message": "No “For You” or suggestions from accounts you don’t follow"
+  },
+  "tt_explore": {
+    "message": "Hide Explore, LIVE and Minidramas"
   }
 }
