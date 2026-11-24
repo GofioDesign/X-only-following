@@ -7,6 +7,23 @@
 
   const REPOST = /(ha republicado|republicó|reposted|a republié|hat reposted|ha ripubblicato|republicou|heeft opnieuw geplaatst|udostępnił ponownie|yeniden paylaştı|сделал репост)/i;
 
+  // Contenedor del bloque de sugerencias: el article que lo contiene o, si no hay,
+  // subir como mucho 3 niveles sin llegar a nada que contenga el feed. Antes se usaba
+  // closest('section'), y Instagram envuelve ahora toda la página (main incluido) en
+  // un <section>: al ver «Sugerencias para ti» en la barra lateral se ocultaba todo.
+  const FEED = 'main, article, [role="tab"], [role="tablist"]';
+  function suggestionBox(el) {
+    const art = el.closest('article');
+    if (art) return art;
+    let n = el;
+    for (let i = 0; i < 3 && n.parentElement; i++) {
+      const p = n.parentElement;
+      if (p.matches('main, body, html') || p.querySelector(FEED)) break;
+      n = p;
+    }
+    return n === el ? null : n;
+  }
+
   function toFollowing(s) {
     const p = location.pathname;
     const variant = new URLSearchParams(location.search).get('variant');
@@ -51,8 +68,8 @@
       // Bloques de sugerencias (cuentas o publicaciones sugeridas)
       document.querySelectorAll('span, h4, div').forEach((el) => {
         if (el.childElementCount === 0 && SUGGESTED.test(el.textContent.trim())) {
-          const box = el.closest('article') || el.closest('section') || el.parentElement?.parentElement?.parentElement;
-          if (box && !box.matches('main, body, html')) KTA.hide(box);
+          const box = suggestionBox(el);
+          if (box) KTA.hide(box);
         }
       });
     }

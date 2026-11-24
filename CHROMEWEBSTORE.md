@@ -1,15 +1,15 @@
 # Chrome Web Store — Dezombify
 
-> Última actualización: 2026-11-22 · Versión 2.0.0 (actualización del ítem «Solo Siguiendo para X», id `fhajebegoleecljdhfokiokejdkalhji`)
+> Última actualización: 2026-11-24 · Versión 2.0.1 (actualización del ítem «Solo Siguiendo para X», id `fhajebegoleecljdhfokiokejdkalhji`)
 
-Paquete a subir: `releases/dezombify-2.0.0.zip` (también en el release v2.0.0 de GitHub).
+Paquete a subir: `releases/dezombify-2.0.1.zip` (también en el release v2.0.1 de GitHub).
 Idiomas del paquete: español (predeterminado) e inglés.
 
 ---
 
 ## 1. Paquete → «Package»
 
-Sube `dezombify-2.0.0.zip` como nueva versión. El nombre y la descripción breve salen del manifest:
+Sube `dezombify-2.0.1.zip` como nueva versión. El nombre y la descripción breve salen del manifest:
 
 - **Nombre:** `Dezombify`
 - **Descripción breve (es, 127 caracteres):** Mata al algoritmo de tus redes sociales y trae a tus amigos de vuelta a casa, sanos y salvos: solo lo que publica quien sigues.
@@ -134,5 +134,6 @@ https://github.com/GofioDesign/dezombify/blob/main/PRIVACY.md
 
 | Versión | Fecha | Cambios |
 |---|---|---|
+| 2.0.1 | 2026-11-24 | Instagram: el feed salía en blanco (se ocultaba toda la página al detectar «Sugerencias para ti»). |
 | 2.0.0 | 2026-11-22 | Rechazada una vez por la lista de redes en la descripción (corregido). Pasa a llamarse Dezombify. Nueve redes sociales, opciones por red, anuncios de YouTube, nuevo logo, bienvenida, aviso de valoración cada 5 usos. |
 | 1.0.0 | 2026-11 | «Solo Siguiendo para X»: solo X. |
