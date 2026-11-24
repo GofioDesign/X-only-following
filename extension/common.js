@@ -23,13 +23,43 @@
     // Bluesky
     bs_on: true, bs_reposts: false,
     // Twitch
-    tw_on: true, tw_browse: true
+    tw_on: true, tw_browse: true,
+    // Modo demo (para grabar vídeos): no oculta ni redirige, marca lo que ocultaría
+    demo: false
   };
 
   const HIDDEN = 'kta-hidden';
-  KTA.hide = (el) => { if (el && !el.classList.contains(HIDDEN)) el.classList.add(HIDDEN); };
-  KTA.isHidden = (el) => !!el && el.classList.contains(HIDDEN);
-  KTA.unhideAll = () => document.querySelectorAll('.' + HIDDEN).forEach((el) => el.classList.remove(HIDDEN));
+  const DEMO = 'kta-demo';
+  KTA.demo = false;
+  // kind: 'ad' (anuncio) o cualquier otra cosa (contenido algorítmico). Ojo: forEach(KTA.hide)
+  // pasa el índice como segundo argumento, por eso solo cuenta la cadena 'ad'.
+  KTA.hide = (el, kind) => {
+    if (!el || KTA.isHidden(el)) return;
+    if (!KTA.demo) { el.classList.add(HIDDEN); return; }
+    // Modo demo: se deja visible y se tapa con un rótulo (ADS en negro, ALGORITHM en rojo)
+    el.classList.add(DEMO, kind === 'ad' ? 'kta-demo-ad' : 'kta-demo-algo');
+    try { if (getComputedStyle(el).position === 'static') el.classList.add('kta-demo-rel'); } catch {}
+    sizeLabel(el);
+  };
+  KTA.hideAd = (el) => KTA.hide(el, 'ad');
+  KTA.isHidden = (el) => !!el && (el.classList.contains(HIDDEN) || el.classList.contains(DEMO));
+  KTA.unhideAll = () => {
+    document.querySelectorAll('.' + HIDDEN).forEach((el) => el.classList.remove(HIDDEN));
+    document.querySelectorAll('.' + DEMO).forEach((el) => {
+      el.classList.remove(DEMO, 'kta-demo-ad', 'kta-demo-algo', 'kta-demo-rel');
+      el.style.removeProperty('--kta-fs');
+    });
+  };
+  // Tamaño del rótulo según la caja que tapa (un enlace del menú o un post entero)
+  function sizeLabel(el) {
+    const r = el.getBoundingClientRect();
+    if (!r.width || !r.height) return;
+    const word = el.classList.contains('kta-demo-ad') ? 3 : 9;
+    const fs = Math.max(9, Math.min(r.height * 0.45, (r.width * 0.85) / (word * 0.72), 72));
+    const v = Math.round(fs) + 'px';
+    if (el.style.getPropertyValue('--kta-fs') !== v) el.style.setProperty('--kta-fs', v);
+  }
+  KTA.resizeLabels = () => document.querySelectorAll('.' + DEMO).forEach(sizeLabel);
 
   // Texto «hoja» (sin hijos) de un elemento, útil para buscar etiquetas
   KTA.leafTexts = (root, max = 400) => {
@@ -52,15 +82,19 @@
 
   function run() {
     scheduled = false;
-    if (!settings.enabled || !settings[site.key + '_on']) return;
+    if (!active()) return;
     try {
       const urlChanged = location.href !== lastUrl;
       lastUrl = location.href;
       site.apply(settings, { urlChanged });
+      if (KTA.demo) KTA.resizeLabels();
     } catch (err) {
       console.warn('[Dezombify]', site.key, err);
     }
   }
+
+  // En modo demo funciona aunque la extensión esté apagada: es para grabar el «antes»
+  const active = () => settings.demo || (settings.enabled && settings[site.key + '_on']);
 
   function schedule() {
     if (scheduled) return;
@@ -71,6 +105,7 @@
   async function loadSettings() {
     try {
       settings = { ...KTA.DEFAULTS, ...(await chrome.storage.sync.get(KTA.DEFAULTS)) };
+      KTA.demo = !!settings.demo;
     } catch (err) {
       console.warn('[Dezombify] ajustes', err);
     }
@@ -99,9 +134,9 @@
 
   (async () => {
     await loadSettings();
-    if (settings.enabled && settings[site.key + '_on']) countUse();
-    // Redirecciones tempranas (antes de que se pinte el feed algorítmico)
-    if (settings.enabled && settings[site.key + '_on']) {
+    if (!KTA.demo && settings.enabled && settings[site.key + '_on']) countUse();
+    // Redirecciones tempranas (antes de que se pinte el feed algorítmico); en demo, ninguna
+    if (!KTA.demo && settings.enabled && settings[site.key + '_on']) {
       try { site.early?.(settings); } catch (err) { console.warn(err); }
     }
     const start = () => {
@@ -109,6 +144,8 @@
       // Las webs de una sola página cambian de URL sin recargar
       window.addEventListener('popstate', schedule);
       setInterval(() => { if (location.href !== lastUrl) schedule(); }, 700);
+      // Al hacer scroll cambian los tamaños (carga diferida): reajustar los rótulos
+      window.addEventListener('scroll', () => { if (KTA.demo) schedule(); }, { passive: true });
       schedule();
     };
     if (document.body) start();

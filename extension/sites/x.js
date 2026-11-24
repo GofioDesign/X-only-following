@@ -13,7 +13,7 @@
     const list = tablist ? [...tablist.querySelectorAll('[role="tab"]')] : [];
     if (list.length < 2) return;
     const [forYou, following] = list; // en /home: 1.ª «Para ti», 2.ª «Siguiendo»
-    if (following.getAttribute('aria-selected') !== 'true' && Date.now() - lastTabClick > 1500) {
+    if (!KTA.demo && following.getAttribute('aria-selected') !== 'true' && Date.now() - lastTabClick > 1500) {
       lastTabClick = Date.now();
       following.click();
     }
@@ -37,7 +37,7 @@
         if (KTA.isHidden(cell)) continue;
         const article = cell.querySelector('article');
         if (article) {
-          if (isAd(article)) { KTA.hide(cell); continue; }
+          if (isAd(article)) { KTA.hideAd(cell); continue; }
           const ctx = article.querySelector('[data-testid="socialContext"]');
           if (isHome() && s.x_reposts && ctx && REPOST_TEXT.test(ctx.textContent)) { KTA.hide(cell); continue; }
         } else if (isHome() && cell.querySelector('[data-testid="UserCell"]')) {

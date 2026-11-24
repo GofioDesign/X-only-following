@@ -1,1 +1,12 @@
 .kta-hidden { display: none !important; }
+
+/* Modo demo: en vez de ocultar, tapar con un rótulo */
+.kta-demo-rel { position: relative !important; }
+.kta-demo::after {
+  position: absolute; inset: 0; z-index: 2147483000;
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  font: 900 var(--kta-fs, 32px)/1 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  letter-spacing: .06em; color: #fff; pointer-events: none; border-radius: inherit;
+}
+.kta-demo-ad::after { content: "ADS"; background: #000; }
+.kta-demo-algo::after { content: "ALGORITHM"; background: #e11d2e; }

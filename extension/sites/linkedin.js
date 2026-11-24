@@ -32,7 +32,8 @@
           .some((b) => FOLLOW_BTN.test(b.getAttribute('aria-label').trim()));
         const activity = s.li_activity && head.slice(0, 4).some((t) => ACTIVITY.test(t));
         const repost = s.li_reposts && head.slice(0, 4).some((t) => REPOST.test(t));
-        if (promoted || suggested || notFollowed || activity || repost) KTA.hide(post);
+        if (promoted) KTA.hideAd(post);
+        else if (suggested || notFollowed || activity || repost) KTA.hide(post);
       }
       // Barra lateral: «Añadir a tu feed» y noticias recomendadas
       document.querySelectorAll('aside section, aside [data-view-name]').forEach((box) => {

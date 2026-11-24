@@ -25,6 +25,7 @@
   }
 
   function toFollowing(s) {
+    if (KTA.demo) return false;
     const p = location.pathname;
     const variant = new URLSearchParams(location.search).get('variant');
     if ((p === '/' || p === '') && variant !== 'following' && variant !== 'favorites') {
@@ -50,7 +51,7 @@
         if (FOR_YOU.test(tab.textContent.trim())) KTA.hide(tab);
       });
       // Enlaces del menú que llevan al inicio algorítmico: forzar el feed «Siguiendo»
-      document.querySelectorAll('a[href="/"]').forEach((a) => a.setAttribute('href', '/?variant=following'));
+      document.querySelectorAll('a[href="/"]').forEach((a) => { if (!KTA.demo) a.setAttribute('href', '/?variant=following'); });
 
       if (s.ig_explore) {
         // Menú lateral: ocultar Explorar y Reels

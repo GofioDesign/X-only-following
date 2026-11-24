@@ -244,5 +244,11 @@
   },
   "tw_browse": {
     "message": "Ocultar Explorar"
+  },
+  "demo": {
+    "message": "Modo demo (vídeo)"
+  },
+  "demo_hint": {
+    "message": "Muestra todo, pero tapa los anuncios (ADS) y lo algorítmico (ALGORITHM). Recarga la página."
   }
 }

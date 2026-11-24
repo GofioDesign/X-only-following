@@ -244,5 +244,11 @@
   },
   "tw_browse": {
     "message": "Hide Browse"
+  },
+  "demo": {
+    "message": "Demo mode (video)"
+  },
+  "demo_hint": {
+    "message": "Shows everything, but covers ads (ADS) and algorithmic content (ALGORITHM). Reload the page."
   }
 }

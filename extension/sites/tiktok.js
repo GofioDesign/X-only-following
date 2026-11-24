@@ -6,6 +6,7 @@
   const ALGO_PATHS = /^\/(foryou|explore|live|minidrama|short-drama)?\/?$/;
 
   function toFollowing(s) {
+    if (KTA.demo) return false;
     const p = location.pathname;
     if (p === '/' || p === '/foryou' || p === '/foryou/') { location.replace('/following'); return true; }
     if (s.tt_explore && ALGO_PATHS.test(p) && p !== '/' && !p.startsWith('/foryou')) { location.replace('/following'); return true; }
@@ -20,7 +21,7 @@
       if (urlChanged && toFollowing(s)) return;
 
       // Logo → Siguiendo; fuera «Para ti» del menú
-      document.querySelectorAll('a[data-e2e="tiktok-logo"]').forEach((a) => a.setAttribute('href', '/following'));
+      document.querySelectorAll('a[data-e2e="tiktok-logo"]').forEach((a) => { if (!KTA.demo) a.setAttribute('href', '/following'); });
       const hideNav = ['nav-foryou'];
       if (s.tt_explore) hideNav.push('nav-explore', 'nav-live', 'nav-short-drama');
       hideNav.forEach((k) => document.querySelectorAll(`[data-e2e="${k}"]`).forEach((el) => KTA.hide(el.closest('a, li') || el)));
@@ -34,12 +35,12 @@
           const repost = !!item.querySelector('[data-e2e*="repost" i]') ||
             [...item.querySelectorAll('span, div, p')].slice(0, 60).some((el) => el.childElementCount === 0 && REPOST.test(el.textContent.trim()));
           const notFollowed = !repost && !!item.querySelector('[data-e2e="feed-follow"]');
-          if (repost && s.tt_reposts) { item.querySelectorAll('video').forEach((v) => { try { v.pause(); } catch {} }); KTA.hide(item); continue; }
+          if (repost && s.tt_reposts) { if (!KTA.demo) item.querySelectorAll('video').forEach((v) => { try { v.pause(); } catch {} }); KTA.hide(item); continue; }
           const ad = !!item.querySelector('[data-e2e*="ad-tag"], [data-e2e*="sponsor"]') ||
             [...item.querySelectorAll('span, div')].some((el) => el.childElementCount === 0 && AD.test(el.textContent.trim()));
           if (notFollowed || ad) {
-            item.querySelectorAll('video').forEach((v) => { try { v.pause(); v.muted = true; } catch {} });
-            KTA.hide(item);
+            if (!KTA.demo) item.querySelectorAll('video').forEach((v) => { try { v.pause(); v.muted = true; } catch {} });
+            KTA.hide(item, ad ? 'ad' : 'algo');
           }
         }
       }
