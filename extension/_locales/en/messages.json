@@ -246,9 +246,9 @@
     "message": "Hide Browse"
   },
   "demo": {
-    "message": "Demo mode (video)"
+    "message": "Show what's left out"
   },
   "demo_hint": {
-    "message": "Shows everything, but covers ads (ADS) and algorithmic content (ALGORITHM). Reload the page."
+    "message": "Keeps everything visible and covers ads (ADS, black) and algorithmic content (ALGORITHM, red)."
   }
 }

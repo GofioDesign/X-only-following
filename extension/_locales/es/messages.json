@@ -246,9 +246,9 @@
     "message": "Ocultar Explorar"
   },
   "demo": {
-    "message": "Modo demo (vídeo)"
+    "message": "Ver lo que se omite"
   },
   "demo_hint": {
-    "message": "Muestra todo, pero tapa los anuncios (ADS) y lo algorítmico (ALGORITHM). Recarga la página."
+    "message": "Lo deja todo a la vista y tapa los anuncios (ADS, en negro) y lo algorítmico (ALGORITHM, en rojo)."
   }
 }
