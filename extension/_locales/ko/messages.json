@@ -1,0 +1,248 @@
+{
+  "extName": {
+    "message": "Dezombify"
+  },
+  "extShortName": {
+    "message": "Kill the Algo"
+  },
+  "extDescription": {
+    "message": "소셜 미디어의 알고리즘을 없애고 친구들을 무사히 집으로 데려오세요. 팔로우하는 사람의 게시물만 보여 줍니다."
+  },
+  "tagline": {
+    "message": "알고리즘을 없애라"
+  },
+  "masterOn": {
+    "message": "사용"
+  },
+  "x_on": {
+    "message": "X: ‘팔로잉’만"
+  },
+  "x_on_hint": {
+    "message": "‘추천’, 광고, 제안 없음"
+  },
+  "x_reposts": {
+    "message": "재게시물 숨기기"
+  },
+  "x_reposts_hint": {
+    "message": "재게시물은 팔로우하지 않는 계정을 데려옵니다"
+  },
+  "yt_on": {
+    "message": "YouTube: 구독만"
+  },
+  "yt_on_hint": {
+    "message": "홈에서 구독 피드를 엽니다"
+  },
+  "yt_ads": {
+    "message": "광고 숨기기"
+  },
+  "yt_ads_hint": {
+    "message": "배너와 프로모션. 동영상 광고는 건너뛸 수 있게 되면 바로 건너뜀"
+  },
+  "yt_shorts": {
+    "message": "Shorts 숨기기"
+  },
+  "yt_shorts_hint": {
+    "message": "연 Shorts는 일반 동영상으로 재생"
+  },
+  "yt_related": {
+    "message": "추천 동영상 숨기기"
+  },
+  "yt_related_hint": {
+    "message": "사이드바와 최종 화면"
+  },
+  "yt_autoplay": {
+    "message": "자동재생 끄기"
+  },
+  "yt_autoplay_hint": {
+    "message": ""
+  },
+  "ig_on": {
+    "message": "Instagram: ‘팔로잉’만"
+  },
+  "ig_on_hint": {
+    "message": "홈에서 팔로우하는 사람의 시간순 피드를 엽니다"
+  },
+  "ig_explore": {
+    "message": "탐색 탭과 릴스 숨기기"
+  },
+  "ig_explore_hint": {
+    "message": ""
+  },
+  "li_on": {
+    "message": "LinkedIn: 팔로우하는 사람만"
+  },
+  "li_on_hint": {
+    "message": "프로모션 게시물과 팔로우하지 않는 작성자 없음"
+  },
+  "note": {
+    "message": "변경 사항은 바로 적용됩니다. 컴퓨터의 브라우저에서 작동합니다."
+  },
+  "fb_on": {
+    "message": "Facebook: 시간순 피드"
+  },
+  "fb_on_hint": {
+    "message": "팔로우하는 친구, 그룹, 페이지. 광고 없음"
+  },
+  "fb_friends": {
+    "message": "친구만"
+  },
+  "fb_friends_hint": {
+    "message": "그룹과 페이지 제외"
+  },
+  "fb_reels": {
+    "message": "릴스와 동영상 숨기기"
+  },
+  "tt_on": {
+    "message": "TikTok: ‘팔로잉’만"
+  },
+  "tt_on_hint": {
+    "message": "‘추천’과 팔로우하지 않는 계정 제안 없음"
+  },
+  "tt_explore": {
+    "message": "탐색, LIVE, 미니드라마 숨기기"
+  },
+  "ig_reposts": {
+    "message": "리포스트 숨기기"
+  },
+  "ig_reposts_hint": {
+    "message": "팔로우하는 계정의 리포스트"
+  },
+  "fb_shares": {
+    "message": "공유 게시물 숨기기"
+  },
+  "fb_shares_hint": {
+    "message": "친구가 공유한 다른 사람의 게시물"
+  },
+  "fb_activity": {
+    "message": "활동 숨기기"
+  },
+  "fb_activity_hint": {
+    "message": "‘X님이 좋아합니다’, ‘X님과 Y님이 팔로우…’: 알고리즘이 고른 것"
+  },
+  "li_reposts": {
+    "message": "공유 게시물 숨기기"
+  },
+  "li_reposts_hint": {
+    "message": "‘X님이 퍼감’"
+  },
+  "li_activity": {
+    "message": "활동 숨기기"
+  },
+  "li_activity_hint": {
+    "message": "‘X님이 좋아함’, ‘X님이 댓글 작성’: 알고리즘이 고른 것"
+  },
+  "tt_reposts": {
+    "message": "리포스트 숨기기"
+  },
+  "tt_reposts_hint": {
+    "message": "팔로우하는 계정의 리포스트"
+  },
+  "moreOptions": {
+    "message": "옵션 더보기"
+  },
+  "allNetworks": {
+    "message": "모든 네트워크 옵션"
+  },
+  "optionsTitle": {
+    "message": "옵션"
+  },
+  "th_on": {
+    "message": "Threads: ‘팔로잉’만"
+  },
+  "th_on_hint": {
+    "message": "‘추천’과 제안 없음"
+  },
+  "th_reposts": {
+    "message": "리포스트 숨기기"
+  },
+  "th_reposts_hint": {
+    "message": "팔로우하는 계정의 리포스트"
+  },
+  "bs_on": {
+    "message": "Bluesky: ‘Following’만"
+  },
+  "bs_on_hint": {
+    "message": "Discover, Video 등 다른 피드 없음"
+  },
+  "bs_reposts": {
+    "message": "재게시 숨기기"
+  },
+  "bs_reposts_hint": {
+    "message": "‘…님이 재게시함’"
+  },
+  "moreLink": {
+    "message": "다른 확장 프로그램 · 프로젝트 후원 ♥"
+  },
+  "moreUrl": {
+    "message": "https://gofiodesign.eu/extensions.html"
+  },
+  "reviewTitle": {
+    "message": "도움이 되고 있나요?"
+  },
+  "reviewText": {
+    "message": "Chrome 웹 스토어에 평가를 남기면 다른 사람들이 찾는 데 도움이 됩니다."
+  },
+  "reviewButton": {
+    "message": "평가하기"
+  },
+  "reviewLater": {
+    "message": "나중에"
+  },
+  "reviewNever": {
+    "message": "다시 표시 안 함"
+  },
+  "donateTitle": {
+    "message": "오랫동안 사용해 주셔서 감사합니다!"
+  },
+  "donateText": {
+    "message": "무료이며 광고가 없습니다. 자발적인 후원은 유지 관리와 새 도구 개발에 도움이 됩니다."
+  },
+  "donateButton": {
+    "message": "후원하기"
+  },
+  "donateLater": {
+    "message": "나중에"
+  },
+  "welcomeKicker": {
+    "message": "설치 완료"
+  },
+  "welcomeLead": {
+    "message": "이제 소셜 미디어가 알고리즘이 고른 것이 아니라 팔로우하는 계정의 게시물을 보여 줍니다. 사용 방법:"
+  },
+  "artExtensions": {
+    "message": "확장 프로그램"
+  },
+  "step1Title": {
+    "message": "확장 프로그램을 툴바에 고정"
+  },
+  "step1Text": {
+    "message": "Chrome 오른쪽 위의 <strong>퍼즐 조각</strong> 아이콘을 클릭한 다음 ‘Dezombify’ 옆의 <strong>고정핀</strong>을 클릭하세요. 설정을 언제든 바로 열 수 있습니다."
+  },
+  "step2Title": {
+    "message": "평소처럼 소셜 미디어 열기"
+  },
+  "step2Text": {
+    "message": "더 할 일은 없습니다. 접속하면 팔로우하는 계정의 피드로 이동하고 제안, 추천, 광고를 숨깁니다."
+  },
+  "step3Title": {
+    "message": "네트워크별로 원하는 대로 설정"
+  },
+  "step3Text": {
+    "message": "네트워크를 연 상태에서 아이콘을 클릭하면 해당 옵션이 보입니다(예: 리포스트 숨기기). 모든 네트워크와 옵션은 <strong>옵션</strong>에 있습니다."
+  },
+  "welcomePrivacy": {
+    "message": "이 확장 프로그램은 브라우저에서 네트워크가 보이는 방식만 바꿉니다. 계정을 읽거나 서버로 아무것도 보내지 않습니다."
+  },
+  "welcomeRepo": {
+    "message": "GitHub 오픈 소스"
+  },
+  "tw_on": {
+    "message": "Twitch: ‘팔로잉’만"
+  },
+  "tw_on_hint": {
+    "message": "홈, 추천 채널과 카테고리 없음"
+  },
+  "tw_browse": {
+    "message": "찾아보기 숨기기"
+  }
+}

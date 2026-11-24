@@ -1,0 +1,248 @@
+{
+  "extName": {
+    "message": "Dezombify"
+  },
+  "extShortName": {
+    "message": "Kill the Algo"
+  },
+  "extDescription": {
+    "message": "干掉社交网络的算法，把朋友们平安带回家：只显示你关注的人发布的内容。"
+  },
+  "tagline": {
+    "message": "干掉算法"
+  },
+  "masterOn": {
+    "message": "已启用"
+  },
+  "x_on": {
+    "message": "X：只看“正在关注”"
+  },
+  "x_on_hint": {
+    "message": "不显示“为你推荐”、广告和建议"
+  },
+  "x_reposts": {
+    "message": "隐藏转帖"
+  },
+  "x_reposts_hint": {
+    "message": "转帖会带来你没有关注的账号"
+  },
+  "yt_on": {
+    "message": "YouTube：只看订阅"
+  },
+  "yt_on_hint": {
+    "message": "首页打开你的订阅内容"
+  },
+  "yt_ads": {
+    "message": "隐藏广告"
+  },
+  "yt_ads_hint": {
+    "message": "横幅和推广内容；视频广告一可跳过就跳过"
+  },
+  "yt_shorts": {
+    "message": "隐藏 Shorts"
+  },
+  "yt_shorts_hint": {
+    "message": "打开的 Shorts 以普通视频播放"
+  },
+  "yt_related": {
+    "message": "隐藏推荐视频"
+  },
+  "yt_related_hint": {
+    "message": "侧栏和片尾画面"
+  },
+  "yt_autoplay": {
+    "message": "关闭自动播放"
+  },
+  "yt_autoplay_hint": {
+    "message": ""
+  },
+  "ig_on": {
+    "message": "Instagram：只看“关注”"
+  },
+  "ig_on_hint": {
+    "message": "首页打开你关注的人的时间顺序动态"
+  },
+  "ig_explore": {
+    "message": "隐藏“发现”和 Reels"
+  },
+  "ig_explore_hint": {
+    "message": ""
+  },
+  "li_on": {
+    "message": "LinkedIn：只看你关注的人"
+  },
+  "li_on_hint": {
+    "message": "不显示推广内容和你没有关注的作者"
+  },
+  "note": {
+    "message": "更改立即生效。适用于电脑上的浏览器。"
+  },
+  "fb_on": {
+    "message": "Facebook：按时间顺序的动态"
+  },
+  "fb_on_hint": {
+    "message": "你关注的好友、小组和公共主页，没有广告"
+  },
+  "fb_friends": {
+    "message": "只看好友"
+  },
+  "fb_friends_hint": {
+    "message": "不显示小组和公共主页"
+  },
+  "fb_reels": {
+    "message": "隐藏 Reels 和视频"
+  },
+  "tt_on": {
+    "message": "TikTok：只看“关注”"
+  },
+  "tt_on_hint": {
+    "message": "不显示“推荐”和你没有关注的账号"
+  },
+  "tt_explore": {
+    "message": "隐藏“探索”、LIVE 和短剧"
+  },
+  "ig_reposts": {
+    "message": "隐藏转发"
+  },
+  "ig_reposts_hint": {
+    "message": "你关注的账号的转发"
+  },
+  "fb_shares": {
+    "message": "隐藏分享"
+  },
+  "fb_shares_hint": {
+    "message": "好友分享的其他人的帖子"
+  },
+  "fb_activity": {
+    "message": "隐藏动态"
+  },
+  "fb_activity_hint": {
+    "message": "“X 赞了”“X 和 Y 关注了……”：由算法挑选"
+  },
+  "li_reposts": {
+    "message": "隐藏分享"
+  },
+  "li_reposts_hint": {
+    "message": "“X 转发了此内容”"
+  },
+  "li_activity": {
+    "message": "隐藏动态"
+  },
+  "li_activity_hint": {
+    "message": "“X 赞了”“X 评论了”：由算法挑选"
+  },
+  "tt_reposts": {
+    "message": "隐藏转发"
+  },
+  "tt_reposts_hint": {
+    "message": "你关注的账号的转发"
+  },
+  "moreOptions": {
+    "message": "更多选项"
+  },
+  "allNetworks": {
+    "message": "所有网络的选项"
+  },
+  "optionsTitle": {
+    "message": "选项"
+  },
+  "th_on": {
+    "message": "Threads：只看“关注”"
+  },
+  "th_on_hint": {
+    "message": "不显示“为你推荐”和建议"
+  },
+  "th_reposts": {
+    "message": "隐藏转发"
+  },
+  "th_reposts_hint": {
+    "message": "你关注的账号的转发"
+  },
+  "bs_on": {
+    "message": "Bluesky：只看“Following”"
+  },
+  "bs_on_hint": {
+    "message": "不显示 Discover、Video 等其他动态"
+  },
+  "bs_reposts": {
+    "message": "隐藏转发"
+  },
+  "bs_reposts_hint": {
+    "message": "“……转发了”"
+  },
+  "moreLink": {
+    "message": "更多扩展程序 · 支持这个项目 ♥"
+  },
+  "moreUrl": {
+    "message": "https://gofiodesign.eu/extensions.html"
+  },
+  "reviewTitle": {
+    "message": "觉得有用吗？"
+  },
+  "reviewText": {
+    "message": "在 Chrome 应用商店评分可以帮助更多人找到它。"
+  },
+  "reviewButton": {
+    "message": "评分"
+  },
+  "reviewLater": {
+    "message": "以后再说"
+  },
+  "reviewNever": {
+    "message": "不再显示"
+  },
+  "donateTitle": {
+    "message": "感谢你一直以来的使用！"
+  },
+  "donateText": {
+    "message": "它免费且没有广告。自愿捐助可以支持维护并开发新工具。"
+  },
+  "donateButton": {
+    "message": "捐助支持"
+  },
+  "donateLater": {
+    "message": "以后再说"
+  },
+  "welcomeKicker": {
+    "message": "安装完成"
+  },
+  "welcomeLead": {
+    "message": "从现在起，你的社交网络显示的是你关注的账号发布的内容，而不是算法挑选的内容。使用方法："
+  },
+  "artExtensions": {
+    "message": "扩展程序"
+  },
+  "step1Title": {
+    "message": "将扩展程序固定到工具栏"
+  },
+  "step1Text": {
+    "message": "点击 Chrome 右上角的<strong>拼图</strong>图标，再点击“Dezombify”旁边的<strong>图钉</strong>。这样设置就随时可用。"
+  },
+  "step2Title": {
+    "message": "像平常一样打开社交网络"
+  },
+  "step2Text": {
+    "message": "无需其他操作：进入后，扩展程序会带你到关注账号的动态，并隐藏建议、推荐和广告。"
+  },
+  "step3Title": {
+    "message": "按喜好设置每个网络"
+  },
+  "step3Text": {
+    "message": "在某个网络上点击图标即可查看它的选项（例如隐藏转发）。所有网络和选项都在<strong>选项</strong>中。"
+  },
+  "welcomePrivacy": {
+    "message": "扩展程序只改变社交网络在你浏览器中的显示方式。它不会读取你的账号，也不会向任何服务器发送数据。"
+  },
+  "welcomeRepo": {
+    "message": "GitHub 开源"
+  },
+  "tw_on": {
+    "message": "Twitch：只看“关注”"
+  },
+  "tw_on_hint": {
+    "message": "不显示首页、推荐的频道和类别"
+  },
+  "tw_browse": {
+    "message": "隐藏“浏览”"
+  }
+}

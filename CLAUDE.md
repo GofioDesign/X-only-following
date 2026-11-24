@@ -18,7 +18,8 @@ extension/
   popup/             popup.html|css|js: panel del icono y, con data-mode="full", la página de opciones
   options/           options.html (misma UI que el popup en modo completo)
   welcome/           pantalla de bienvenida (cómo fijar el icono)
-  _locales/es|en     solo español e inglés por ahora
+  _locales/<idioma>  15 idiomas, generados con tools/locales.py (no editar a mano)
+tools/locales.py     fuente única de los textos de la extensión en todos los idiomas
 store/es|en          imágenes de la tienda; store/src/ tiene el HTML y scripts (playwright) que las generan
 releases/            zips publicados
 build.sh             genera dist/dezombify-<versión>.zip (archivos en la raíz del zip, si no Chrome dice «falta el manifiesto»)
@@ -44,7 +45,7 @@ Cada `content_scripts` del manifest carga `[sites/<red>.js, common.js]` + `conte
 ### Añadir una opción
 1. Valor por defecto en `DEFAULTS` de **common.js y popup/popup.js** (están duplicados).
 2. Añadirla a `subs` de su red en `NETS` (popup.js).
-3. Textos `<clave>` y `<clave>_hint` en `_locales/es` y `_locales/en`.
+3. Textos `<clave>` y `<clave>_hint` en `tools/locales.py` (en `KEYS` y en cada idioma) y `python3 tools/locales.py`.
 4. Usarla en `sites/<red>.js` (`if (s.clave) …`).
 
 ### Añadir una red
@@ -108,6 +109,6 @@ Módulo en `sites/`, host en `host_permissions` y `content_scripts`, entrada en 
 ## Pendiente
 
 1. Revisión de la 2.0.0 en la tienda (reenviada tras quitar la lista de redes).
-2. Traducir a los **15 idiomas** que tiene la otra extensión del usuario, IA → PDF (repo GofioDesign/AI-PDF, `tools/locales.py` sirve de modelo), y después la ficha y las imágenes por idioma.
+2. Extensión traducida a 15 idiomas (como IA → PDF); falta la ficha de la tienda y las imágenes por idioma.
 3. Actualizar la página de la extensión en gofiodesign.eu (ES/EN/DE/FR) con el nuevo nombre, logo y capturas (por PR).
 4. Posibles redes futuras, de momento descartadas por el usuario: Reddit, Tumblr, Pinterest, Medium, Substack.

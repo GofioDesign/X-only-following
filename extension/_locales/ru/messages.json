@@ -1,0 +1,248 @@
+{
+  "extName": {
+    "message": "Dezombify"
+  },
+  "extShortName": {
+    "message": "Kill the Algo"
+  },
+  "extDescription": {
+    "message": "Убейте алгоритм своих соцсетей и верните друзей домой целыми и невредимыми: только посты тех, на кого вы подписаны."
+  },
+  "tagline": {
+    "message": "Убей алгоритм"
+  },
+  "masterOn": {
+    "message": "Включено"
+  },
+  "x_on": {
+    "message": "X: только «Подписки»"
+  },
+  "x_on_hint": {
+    "message": "Без «Для вас», рекламы и рекомендаций"
+  },
+  "x_reposts": {
+    "message": "Скрыть репосты"
+  },
+  "x_reposts_hint": {
+    "message": "Репосты приводят аккаунты, на которые вы не подписаны"
+  },
+  "yt_on": {
+    "message": "YouTube: только Подписки"
+  },
+  "yt_on_hint": {
+    "message": "Главная открывает ваши подписки"
+  },
+  "yt_ads": {
+    "message": "Скрыть рекламу"
+  },
+  "yt_ads_hint": {
+    "message": "Баннеры и промо; пропускает видеорекламу, как только можно"
+  },
+  "yt_shorts": {
+    "message": "Скрыть Shorts"
+  },
+  "yt_shorts_hint": {
+    "message": "Открытые Shorts воспроизводятся как обычное видео"
+  },
+  "yt_related": {
+    "message": "Скрыть рекомендованные видео"
+  },
+  "yt_related_hint": {
+    "message": "Боковая колонка и конечная заставка"
+  },
+  "yt_autoplay": {
+    "message": "Без автовоспроизведения"
+  },
+  "yt_autoplay_hint": {
+    "message": ""
+  },
+  "ig_on": {
+    "message": "Instagram: только «Подписки»"
+  },
+  "ig_on_hint": {
+    "message": "Главная открывает хронологическую ленту подписок"
+  },
+  "ig_explore": {
+    "message": "Скрыть «Интересное» и Reels"
+  },
+  "ig_explore_hint": {
+    "message": ""
+  },
+  "li_on": {
+    "message": "LinkedIn: только те, на кого вы подписаны"
+  },
+  "li_on_hint": {
+    "message": "Без продвигаемых постов и авторов, на которых вы не подписаны"
+  },
+  "note": {
+    "message": "Изменения применяются сразу. Работает в браузере на компьютере."
+  },
+  "fb_on": {
+    "message": "Facebook: хронологическая лента"
+  },
+  "fb_on_hint": {
+    "message": "Друзья, группы и страницы, на которые вы подписаны, без рекламы"
+  },
+  "fb_friends": {
+    "message": "Только друзья"
+  },
+  "fb_friends_hint": {
+    "message": "Без групп и страниц"
+  },
+  "fb_reels": {
+    "message": "Скрыть Reels и Видео"
+  },
+  "tt_on": {
+    "message": "TikTok: только «Подписки»"
+  },
+  "tt_on_hint": {
+    "message": "Без «Рекомендуем» и аккаунтов, на которые вы не подписаны"
+  },
+  "tt_explore": {
+    "message": "Скрыть «Обзор», LIVE и мини-сериалы"
+  },
+  "ig_reposts": {
+    "message": "Скрыть репосты"
+  },
+  "ig_reposts_hint": {
+    "message": "Репосты аккаунтов, на которые вы подписаны"
+  },
+  "fb_shares": {
+    "message": "Скрыть то, чем делятся"
+  },
+  "fb_shares_hint": {
+    "message": "Чужие публикации, которыми делятся ваши друзья"
+  },
+  "fb_activity": {
+    "message": "Скрыть активность"
+  },
+  "fb_activity_hint": {
+    "message": "«X нравится», «X и Y подписаны на…»: выбирает алгоритм"
+  },
+  "li_reposts": {
+    "message": "Скрыть то, чем делятся"
+  },
+  "li_reposts_hint": {
+    "message": "«X поделился(-ась) этим»"
+  },
+  "li_activity": {
+    "message": "Скрыть активность"
+  },
+  "li_activity_hint": {
+    "message": "«X нравится», «X прокомментировал(а)»: выбирает алгоритм"
+  },
+  "tt_reposts": {
+    "message": "Скрыть репосты"
+  },
+  "tt_reposts_hint": {
+    "message": "Репосты аккаунтов, на которые вы подписаны"
+  },
+  "moreOptions": {
+    "message": "Ещё настройки"
+  },
+  "allNetworks": {
+    "message": "Настройки всех сетей"
+  },
+  "optionsTitle": {
+    "message": "Настройки"
+  },
+  "th_on": {
+    "message": "Threads: только «Подписки»"
+  },
+  "th_on_hint": {
+    "message": "Без «Для вас» и рекомендаций"
+  },
+  "th_reposts": {
+    "message": "Скрыть репосты"
+  },
+  "th_reposts_hint": {
+    "message": "Репосты аккаунтов, на которые вы подписаны"
+  },
+  "bs_on": {
+    "message": "Bluesky: только «Following»"
+  },
+  "bs_on_hint": {
+    "message": "Без Discover, Video и других лент"
+  },
+  "bs_reposts": {
+    "message": "Скрыть репосты"
+  },
+  "bs_reposts_hint": {
+    "message": "«Репост от…»"
+  },
+  "moreLink": {
+    "message": "Другие расширения · Поддержать проект ♥"
+  },
+  "moreUrl": {
+    "message": "https://gofiodesign.eu/extensions.html"
+  },
+  "reviewTitle": {
+    "message": "Расширение полезно?"
+  },
+  "reviewText": {
+    "message": "Оценка в Интернет-магазине Chrome помогает другим его найти."
+  },
+  "reviewButton": {
+    "message": "Оценить"
+  },
+  "reviewLater": {
+    "message": "Не сейчас"
+  },
+  "reviewNever": {
+    "message": "Больше не показывать"
+  },
+  "donateTitle": {
+    "message": "Спасибо, что пользуетесь им так долго!"
+  },
+  "donateText": {
+    "message": "Оно бесплатное и без рекламы. Добровольное пожертвование помогает поддерживать его и создавать новые инструменты."
+  },
+  "donateButton": {
+    "message": "Поддержать"
+  },
+  "donateLater": {
+    "message": "Не сейчас"
+  },
+  "welcomeKicker": {
+    "message": "Установлено и готово"
+  },
+  "welcomeLead": {
+    "message": "Теперь соцсети показывают вам то, что публикуют ваши подписки, а не то, что выбирает алгоритм. Как пользоваться:"
+  },
+  "artExtensions": {
+    "message": "Расширения"
+  },
+  "step1Title": {
+    "message": "Закрепите расширение на панели"
+  },
+  "step1Text": {
+    "message": "Нажмите значок <strong>пазла</strong> в правом верхнем углу Chrome, затем <strong>булавку</strong> рядом с «Dezombify». Так настройки всегда будут под рукой."
+  },
+  "step2Title": {
+    "message": "Открывайте соцсети как обычно"
+  },
+  "step2Text": {
+    "message": "Больше ничего делать не нужно: при входе расширение открывает ленту ваших подписок и скрывает рекомендации, подборки и рекламу."
+  },
+  "step3Title": {
+    "message": "Настройте каждую сеть под себя"
+  },
+  "step3Text": {
+    "message": "Нажмите значок, находясь в соцсети, чтобы увидеть её настройки (например, скрыть репосты). Все сети и настройки — в разделе <strong>Настройки</strong>."
+  },
+  "welcomePrivacy": {
+    "message": "Расширение меняет только то, как соцсети выглядят в вашем браузере. Оно не читает ваши аккаунты и ничего не отправляет на серверы."
+  },
+  "welcomeRepo": {
+    "message": "Открытый код на GitHub"
+  },
+  "tw_on": {
+    "message": "Twitch: только «Отслеживаемое»"
+  },
+  "tw_on_hint": {
+    "message": "Без главной, рекомендованных каналов и категорий"
+  },
+  "tw_browse": {
+    "message": "Скрыть «Просмотр»"
+  }
+}

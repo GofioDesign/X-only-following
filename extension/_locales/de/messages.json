@@ -1,0 +1,248 @@
+{
+  "extName": {
+    "message": "Dezombify"
+  },
+  "extShortName": {
+    "message": "Kill the Algo"
+  },
+  "extDescription": {
+    "message": "Töten Sie den Algorithmus Ihrer sozialen Netzwerke und holen Sie Ihre Freunde heil nach Hause: nur Konten, denen Sie folgen."
+  },
+  "tagline": {
+    "message": "Töte den Algorithmus"
+  },
+  "masterOn": {
+    "message": "Aktiviert"
+  },
+  "x_on": {
+    "message": "X: nur „Folge ich“"
+  },
+  "x_on_hint": {
+    "message": "Ohne „Für dich“, Werbung und Vorschläge"
+  },
+  "x_reposts": {
+    "message": "Reposts ausblenden"
+  },
+  "x_reposts_hint": {
+    "message": "Reposts bringen Konten, denen Sie nicht folgen"
+  },
+  "yt_on": {
+    "message": "YouTube: nur Abos"
+  },
+  "yt_on_hint": {
+    "message": "Die Startseite öffnet Ihre Abos"
+  },
+  "yt_ads": {
+    "message": "Werbung ausblenden"
+  },
+  "yt_ads_hint": {
+    "message": "Banner und Gesponsertes; überspringt Videowerbung, sobald es geht"
+  },
+  "yt_shorts": {
+    "message": "Shorts ausblenden"
+  },
+  "yt_shorts_hint": {
+    "message": "Geöffnete Shorts laufen als normales Video"
+  },
+  "yt_related": {
+    "message": "Empfohlene Videos ausblenden"
+  },
+  "yt_related_hint": {
+    "message": "Seitenleiste und Abspann"
+  },
+  "yt_autoplay": {
+    "message": "Kein Autoplay"
+  },
+  "yt_autoplay_hint": {
+    "message": ""
+  },
+  "ig_on": {
+    "message": "Instagram: nur „Gefolgt“"
+  },
+  "ig_on_hint": {
+    "message": "Die Startseite öffnet den chronologischen Feed Ihrer Konten"
+  },
+  "ig_explore": {
+    "message": "„Entdecken“ und Reels ausblenden"
+  },
+  "ig_explore_hint": {
+    "message": ""
+  },
+  "li_on": {
+    "message": "LinkedIn: nur, wem Sie folgen"
+  },
+  "li_on_hint": {
+    "message": "Ohne Gesponsertes und Autoren, denen Sie nicht folgen"
+  },
+  "note": {
+    "message": "Änderungen gelten sofort. Funktioniert im Browser am Computer."
+  },
+  "fb_on": {
+    "message": "Facebook: chronologische Feeds"
+  },
+  "fb_on_hint": {
+    "message": "Freunde, Gruppen und Seiten, denen Sie folgen, ohne Werbung"
+  },
+  "fb_friends": {
+    "message": "Nur Freunde"
+  },
+  "fb_friends_hint": {
+    "message": "Ohne Gruppen und Seiten"
+  },
+  "fb_reels": {
+    "message": "Reels und Video ausblenden"
+  },
+  "tt_on": {
+    "message": "TikTok: nur „Folge ich“"
+  },
+  "tt_on_hint": {
+    "message": "Ohne „Für dich“ und Vorschläge von Konten, denen Sie nicht folgen"
+  },
+  "tt_explore": {
+    "message": "Entdecken, LIVE und Minidramen ausblenden"
+  },
+  "ig_reposts": {
+    "message": "Reposts ausblenden"
+  },
+  "ig_reposts_hint": {
+    "message": "Reposts der Konten, denen Sie folgen"
+  },
+  "fb_shares": {
+    "message": "Geteiltes ausblenden"
+  },
+  "fb_shares_hint": {
+    "message": "Beiträge anderer, die Ihre Freunde teilen"
+  },
+  "fb_activity": {
+    "message": "Aktivität ausblenden"
+  },
+  "fb_activity_hint": {
+    "message": "„X gefällt das“, „X und Y folgen …“: vom Algorithmus gewählt"
+  },
+  "li_reposts": {
+    "message": "Geteiltes ausblenden"
+  },
+  "li_reposts_hint": {
+    "message": "„X hat das geteilt“"
+  },
+  "li_activity": {
+    "message": "Aktivität ausblenden"
+  },
+  "li_activity_hint": {
+    "message": "„X gefällt das“, „X hat kommentiert“: vom Algorithmus gewählt"
+  },
+  "tt_reposts": {
+    "message": "Reposts ausblenden"
+  },
+  "tt_reposts_hint": {
+    "message": "Reposts der Konten, denen Sie folgen"
+  },
+  "moreOptions": {
+    "message": "Weitere Optionen"
+  },
+  "allNetworks": {
+    "message": "Optionen für alle Netzwerke"
+  },
+  "optionsTitle": {
+    "message": "Optionen"
+  },
+  "th_on": {
+    "message": "Threads: nur „Gefolgt“"
+  },
+  "th_on_hint": {
+    "message": "Ohne „Für dich“ und Vorschläge"
+  },
+  "th_reposts": {
+    "message": "Reposts ausblenden"
+  },
+  "th_reposts_hint": {
+    "message": "Reposts der Konten, denen Sie folgen"
+  },
+  "bs_on": {
+    "message": "Bluesky: nur „Following“"
+  },
+  "bs_on_hint": {
+    "message": "Ohne Discover, Video und andere Feeds"
+  },
+  "bs_reposts": {
+    "message": "Reposts ausblenden"
+  },
+  "bs_reposts_hint": {
+    "message": "„Repostet von …“"
+  },
+  "moreLink": {
+    "message": "Weitere Erweiterungen · Projekt unterstützen ♥"
+  },
+  "moreUrl": {
+    "message": "https://gofiodesign.eu/erweiterungen.html"
+  },
+  "reviewTitle": {
+    "message": "Ist sie hilfreich?"
+  },
+  "reviewText": {
+    "message": "Eine Bewertung im Chrome Web Store hilft anderen, sie zu finden."
+  },
+  "reviewButton": {
+    "message": "Bewerten"
+  },
+  "reviewLater": {
+    "message": "Jetzt nicht"
+  },
+  "reviewNever": {
+    "message": "Nicht mehr anzeigen"
+  },
+  "donateTitle": {
+    "message": "Danke, dass Sie sie schon so lange nutzen!"
+  },
+  "donateText": {
+    "message": "Sie ist kostenlos und werbefrei. Eine freiwillige Spende hilft, sie zu pflegen und neue Werkzeuge zu entwickeln."
+  },
+  "donateButton": {
+    "message": "Unterstützen"
+  },
+  "donateLater": {
+    "message": "Jetzt nicht"
+  },
+  "welcomeKicker": {
+    "message": "Installiert und bereit"
+  },
+  "welcomeLead": {
+    "message": "Ab jetzt zeigen Ihnen Ihre sozialen Netzwerke, was die Konten posten, denen Sie folgen, nicht was der Algorithmus auswählt. So geht’s:"
+  },
+  "artExtensions": {
+    "message": "Erweiterungen"
+  },
+  "step1Title": {
+    "message": "Erweiterung an die Leiste anheften"
+  },
+  "step1Text": {
+    "message": "Klicken Sie oben rechts in Chrome auf das <strong>Puzzleteil</strong> und dann auf die <strong>Stecknadel</strong> neben „Dezombify“. So haben Sie die Einstellungen immer zur Hand."
+  },
+  "step2Title": {
+    "message": "Öffnen Sie Ihre Netzwerke wie gewohnt"
+  },
+  "step2Text": {
+    "message": "Mehr ist nicht zu tun: Beim Öffnen bringt Sie die Erweiterung zum Feed der Konten, denen Sie folgen, und blendet Vorschläge, Empfehlungen und Werbung aus."
+  },
+  "step3Title": {
+    "message": "Jedes Netzwerk nach Wunsch einstellen"
+  },
+  "step3Text": {
+    "message": "Klicken Sie auf einem Netzwerk auf das Symbol, um seine Optionen zu sehen (zum Beispiel Reposts ausblenden). Alle Netzwerke und Optionen finden Sie unter <strong>Optionen</strong>."
+  },
+  "welcomePrivacy": {
+    "message": "Die Erweiterung ändert nur, wie die Netzwerke in Ihrem Browser aussehen. Sie liest Ihre Konten nicht und sendet nichts an einen Server."
+  },
+  "welcomeRepo": {
+    "message": "Open Source auf GitHub"
+  },
+  "tw_on": {
+    "message": "Twitch: nur „Gefolgt“"
+  },
+  "tw_on_hint": {
+    "message": "Ohne Startseite, empfohlene Kanäle und Kategorien"
+  },
+  "tw_browse": {
+    "message": "„Durchsuchen“ ausblenden"
+  }
+}

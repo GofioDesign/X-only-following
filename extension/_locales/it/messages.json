@@ -1,0 +1,248 @@
+{
+  "extName": {
+    "message": "Dezombify"
+  },
+  "extShortName": {
+    "message": "Kill the Algo"
+  },
+  "extDescription": {
+    "message": "Uccidi l’algoritmo dei tuoi social e riporta a casa i tuoi amici sani e salvi: solo ciò che pubblica chi segui."
+  },
+  "tagline": {
+    "message": "Uccidi l’algoritmo"
+  },
+  "masterOn": {
+    "message": "Attivata"
+  },
+  "x_on": {
+    "message": "X: solo «Seguiti»"
+  },
+  "x_on_hint": {
+    "message": "Senza «Per te», annunci né suggerimenti"
+  },
+  "x_reposts": {
+    "message": "Nascondi i repost"
+  },
+  "x_reposts_hint": {
+    "message": "I repost portano account che non segui"
+  },
+  "yt_on": {
+    "message": "YouTube: solo Iscrizioni"
+  },
+  "yt_on_hint": {
+    "message": "La Home apre le tue iscrizioni"
+  },
+  "yt_ads": {
+    "message": "Nascondi gli annunci"
+  },
+  "yt_ads_hint": {
+    "message": "Banner e contenuti sponsorizzati; salta gli annunci video appena possibile"
+  },
+  "yt_shorts": {
+    "message": "Nascondi gli Shorts"
+  },
+  "yt_shorts_hint": {
+    "message": "Gli Shorts che apri si vedono come video normali"
+  },
+  "yt_related": {
+    "message": "Nascondi i video consigliati"
+  },
+  "yt_related_hint": {
+    "message": "Colonna laterale e schermata finale"
+  },
+  "yt_autoplay": {
+    "message": "Senza riproduzione automatica"
+  },
+  "yt_autoplay_hint": {
+    "message": ""
+  },
+  "ig_on": {
+    "message": "Instagram: solo «Seguiti»"
+  },
+  "ig_on_hint": {
+    "message": "La Home apre il feed cronologico di chi segui"
+  },
+  "ig_explore": {
+    "message": "Nascondi Esplora e Reels"
+  },
+  "ig_explore_hint": {
+    "message": ""
+  },
+  "li_on": {
+    "message": "LinkedIn: solo chi segui"
+  },
+  "li_on_hint": {
+    "message": "Senza post sponsorizzati né autori che non segui"
+  },
+  "note": {
+    "message": "Le modifiche si applicano subito. Funziona nel browser del computer."
+  },
+  "fb_on": {
+    "message": "Facebook: feed cronologico"
+  },
+  "fb_on_hint": {
+    "message": "Amici, gruppi e pagine che segui, senza annunci"
+  },
+  "fb_friends": {
+    "message": "Solo amici"
+  },
+  "fb_friends_hint": {
+    "message": "Senza gruppi né pagine"
+  },
+  "fb_reels": {
+    "message": "Nascondi Reels e Video"
+  },
+  "tt_on": {
+    "message": "TikTok: solo «Seguiti»"
+  },
+  "tt_on_hint": {
+    "message": "Senza «Per te» né suggerimenti di account che non segui"
+  },
+  "tt_explore": {
+    "message": "Nascondi Esplora, LIVE e Minidrama"
+  },
+  "ig_reposts": {
+    "message": "Nascondi i repost"
+  },
+  "ig_reposts_hint": {
+    "message": "Repost degli account che segui"
+  },
+  "fb_shares": {
+    "message": "Nascondi ciò che condividono"
+  },
+  "fb_shares_hint": {
+    "message": "Post di altri condivisi dai tuoi amici"
+  },
+  "fb_activity": {
+    "message": "Nascondi l’attività"
+  },
+  "fb_activity_hint": {
+    "message": "«A X piace», «X e Y seguono…»: lo sceglie l’algoritmo"
+  },
+  "li_reposts": {
+    "message": "Nascondi ciò che condividono"
+  },
+  "li_reposts_hint": {
+    "message": "«X ha diffuso questo post»"
+  },
+  "li_activity": {
+    "message": "Nascondi l’attività"
+  },
+  "li_activity_hint": {
+    "message": "«A X piace», «X ha commentato»: lo sceglie l’algoritmo"
+  },
+  "tt_reposts": {
+    "message": "Nascondi i repost"
+  },
+  "tt_reposts_hint": {
+    "message": "Repost degli account che segui"
+  },
+  "moreOptions": {
+    "message": "Altre opzioni"
+  },
+  "allNetworks": {
+    "message": "Opzioni di tutti i social"
+  },
+  "optionsTitle": {
+    "message": "Opzioni"
+  },
+  "th_on": {
+    "message": "Threads: solo «Seguiti»"
+  },
+  "th_on_hint": {
+    "message": "Senza «Per te» né suggerimenti"
+  },
+  "th_reposts": {
+    "message": "Nascondi i repost"
+  },
+  "th_reposts_hint": {
+    "message": "Repost degli account che segui"
+  },
+  "bs_on": {
+    "message": "Bluesky: solo «Following»"
+  },
+  "bs_on_hint": {
+    "message": "Senza Discover, Video né altri feed"
+  },
+  "bs_reposts": {
+    "message": "Nascondi i repost"
+  },
+  "bs_reposts_hint": {
+    "message": "«Ripubblicato da…»"
+  },
+  "moreLink": {
+    "message": "Altre estensioni · Sostieni il progetto ♥"
+  },
+  "moreUrl": {
+    "message": "https://gofiodesign.eu/extensions.html"
+  },
+  "reviewTitle": {
+    "message": "Ti è utile?"
+  },
+  "reviewText": {
+    "message": "Una valutazione sul Chrome Web Store aiuta altre persone a trovarla."
+  },
+  "reviewButton": {
+    "message": "Valuta"
+  },
+  "reviewLater": {
+    "message": "Non ora"
+  },
+  "reviewNever": {
+    "message": "Non mostrare più"
+  },
+  "donateTitle": {
+    "message": "Grazie per averla usata tutto questo tempo!"
+  },
+  "donateText": {
+    "message": "È gratuita e senza pubblicità. Una donazione volontaria aiuta a mantenerla e a creare nuovi strumenti."
+  },
+  "donateButton": {
+    "message": "Sostieni"
+  },
+  "donateLater": {
+    "message": "Non ora"
+  },
+  "welcomeKicker": {
+    "message": "Installata e pronta"
+  },
+  "welcomeLead": {
+    "message": "D’ora in poi i tuoi social ti mostrano ciò che pubblicano gli account che segui, non ciò che sceglie l’algoritmo. Ecco come funziona:"
+  },
+  "artExtensions": {
+    "message": "Estensioni"
+  },
+  "step1Title": {
+    "message": "Fissa l’estensione nella barra"
+  },
+  "step1Text": {
+    "message": "Fai clic sull’icona del <strong>pezzo di puzzle</strong> in alto a destra in Chrome e poi sulla <strong>puntina</strong> accanto a «Dezombify». Così avrai sempre a portata di mano le impostazioni."
+  },
+  "step2Title": {
+    "message": "Apri i tuoi social come sempre"
+  },
+  "step2Text": {
+    "message": "Non devi fare altro: quando entri, l’estensione ti porta al feed degli account che segui e nasconde suggerimenti, consigliati e annunci."
+  },
+  "step3Title": {
+    "message": "Regola ogni social come preferisci"
+  },
+  "step3Text": {
+    "message": "Fai clic sull’icona mentre sei su un social per vederne le opzioni (per esempio, nascondere i repost). Tutti i social e le opzioni sono in <strong>Opzioni</strong>."
+  },
+  "welcomePrivacy": {
+    "message": "L’estensione cambia solo l’aspetto dei social nel tuo browser. Non legge i tuoi account e non invia nulla a nessun server."
+  },
+  "welcomeRepo": {
+    "message": "Codice aperto su GitHub"
+  },
+  "tw_on": {
+    "message": "Twitch: solo «Seguiti»"
+  },
+  "tw_on_hint": {
+    "message": "Senza Home, canali né categorie consigliati"
+  },
+  "tw_browse": {
+    "message": "Nascondi Sfoglia"
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "extName": {
+    "message": "Dezombify"
+  },
+  "extShortName": {
+    "message": "Kill the Algo"
+  },
+  "extDescription": {
+    "message": "幹掉社群網路的演算法，把朋友們平安帶回家：只顯示你追蹤的人發布的內容。"
+  },
+  "tagline": {
+    "message": "幹掉演算法"
+  },
+  "masterOn": {
+    "message": "已啟用"
+  },
+  "x_on": {
+    "message": "X：只看「跟隨中」"
+  },
+  "x_on_hint": {
+    "message": "不顯示「為你推薦」、廣告和建議"
+  },
+  "x_reposts": {
+    "message": "隱藏轉貼"
+  },
+  "x_reposts_hint": {
+    "message": "轉貼會帶來你沒有追蹤的帳號"
+  },
+  "yt_on": {
+    "message": "YouTube：只看訂閱內容"
+  },
+  "yt_on_hint": {
+    "message": "首頁開啟你的訂閱內容"
+  },
+  "yt_ads": {
+    "message": "隱藏廣告"
+  },
+  "yt_ads_hint": {
+    "message": "橫幅和推廣內容；影片廣告一可略過就略過"
+  },
+  "yt_shorts": {
+    "message": "隱藏 Shorts"
+  },
+  "yt_shorts_hint": {
+    "message": "開啟的 Shorts 以一般影片播放"
+  },
+  "yt_related": {
+    "message": "隱藏推薦影片"
+  },
+  "yt_related_hint": {
+    "message": "側欄和片尾畫面"
+  },
+  "yt_autoplay": {
+    "message": "關閉自動播放"
+  },
+  "yt_autoplay_hint": {
+    "message": ""
+  },
+  "ig_on": {
+    "message": "Instagram：只看「追蹤中」"
+  },
+  "ig_on_hint": {
+    "message": "首頁開啟你追蹤的人的時間順序動態"
+  },
+  "ig_explore": {
+    "message": "隱藏「探索」和 Reels"
+  },
+  "ig_explore_hint": {
+    "message": ""
+  },
+  "li_on": {
+    "message": "LinkedIn：只看你追蹤的人"
+  },
+  "li_on_hint": {
+    "message": "不顯示推廣內容和你沒有追蹤的作者"
+  },
+  "note": {
+    "message": "變更會立即生效。適用於電腦上的瀏覽器。"
+  },
+  "fb_on": {
+    "message": "Facebook：依時間排序的動態"
+  },
+  "fb_on_hint": {
+    "message": "你追蹤的朋友、社團和粉絲專頁，沒有廣告"
+  },
+  "fb_friends": {
+    "message": "只看朋友"
+  },
+  "fb_friends_hint": {
+    "message": "不顯示社團和粉絲專頁"
+  },
+  "fb_reels": {
+    "message": "隱藏 Reels 和影片"
+  },
+  "tt_on": {
+    "message": "TikTok：只看「追蹤中」"
+  },
+  "tt_on_hint": {
+    "message": "不顯示「為你推薦」和你沒有追蹤的帳號"
+  },
+  "tt_explore": {
+    "message": "隱藏「探索」、LIVE 和短劇"
+  },
+  "ig_reposts": {
+    "message": "隱藏轉發"
+  },
+  "ig_reposts_hint": {
+    "message": "你追蹤的帳號的轉發"
+  },
+  "fb_shares": {
+    "message": "隱藏分享"
+  },
+  "fb_shares_hint": {
+    "message": "朋友分享的其他人的貼文"
+  },
+  "fb_activity": {
+    "message": "隱藏動態"
+  },
+  "fb_activity_hint": {
+    "message": "「X 說讚」「X 和 Y 追蹤了……」：由演算法挑選"
+  },
+  "li_reposts": {
+    "message": "隱藏分享"
+  },
+  "li_reposts_hint": {
+    "message": "「X 轉發了這則內容」"
+  },
+  "li_activity": {
+    "message": "隱藏動態"
+  },
+  "li_activity_hint": {
+    "message": "「X 說讚」「X 留言了」：由演算法挑選"
+  },
+  "tt_reposts": {
+    "message": "隱藏轉發"
+  },
+  "tt_reposts_hint": {
+    "message": "你追蹤的帳號的轉發"
+  },
+  "moreOptions": {
+    "message": "更多選項"
+  },
+  "allNetworks": {
+    "message": "所有社群網路的選項"
+  },
+  "optionsTitle": {
+    "message": "選項"
+  },
+  "th_on": {
+    "message": "Threads：只看「追蹤中」"
+  },
+  "th_on_hint": {
+    "message": "不顯示「為你推薦」和建議"
+  },
+  "th_reposts": {
+    "message": "隱藏轉發"
+  },
+  "th_reposts_hint": {
+    "message": "你追蹤的帳號的轉發"
+  },
+  "bs_on": {
+    "message": "Bluesky：只看「Following」"
+  },
+  "bs_on_hint": {
+    "message": "不顯示 Discover、Video 等其他動態"
+  },
+  "bs_reposts": {
+    "message": "隱藏轉發"
+  },
+  "bs_reposts_hint": {
+    "message": "「……轉發了」"
+  },
+  "moreLink": {
+    "message": "更多擴充功能 · 支持這個專案 ♥"
+  },
+  "moreUrl": {
+    "message": "https://gofiodesign.eu/extensions.html"
+  },
+  "reviewTitle": {
+    "message": "覺得實用嗎？"
+  },
+  "reviewText": {
+    "message": "在 Chrome 線上應用程式商店給予評分，可以幫助更多人找到它。"
+  },
+  "reviewButton": {
+    "message": "評分"
+  },
+  "reviewLater": {
+    "message": "稍後再說"
+  },
+  "reviewNever": {
+    "message": "不再顯示"
+  },
+  "donateTitle": {
+    "message": "感謝你一直以來的使用！"
+  },
+  "donateText": {
+    "message": "它免費且沒有廣告。自願捐款可以支持維護並開發新工具。"
+  },
+  "donateButton": {
+    "message": "捐款支持"
+  },
+  "donateLater": {
+    "message": "稍後再說"
+  },
+  "welcomeKicker": {
+    "message": "安裝完成"
+  },
+  "welcomeLead": {
+    "message": "從現在起，你的社群網路顯示的是你追蹤的帳號發布的內容，而不是演算法挑選的內容。使用方法："
+  },
+  "artExtensions": {
+    "message": "擴充功能"
+  },
+  "step1Title": {
+    "message": "將擴充功能固定到工具列"
+  },
+  "step1Text": {
+    "message": "點選 Chrome 右上角的<strong>拼圖</strong>圖示，再點選「Dezombify」旁的<strong>圖釘</strong>。這樣設定就隨時可用。"
+  },
+  "step2Title": {
+    "message": "像平常一樣開啟社群網路"
+  },
+  "step2Text": {
+    "message": "不需要其他操作：進入後，擴充功能會帶你到追蹤帳號的動態，並隱藏建議、推薦和廣告。"
+  },
+  "step3Title": {
+    "message": "依喜好設定每個社群網路"
+  },
+  "step3Text": {
+    "message": "在某個社群網路上點選圖示即可查看它的選項（例如隱藏轉發）。所有社群網路和選項都在<strong>選項</strong>中。"
+  },
+  "welcomePrivacy": {
+    "message": "擴充功能只會改變社群網路在你瀏覽器中的顯示方式。它不會讀取你的帳號，也不會傳送任何資料到伺服器。"
+  },
+  "welcomeRepo": {
+    "message": "GitHub 開放原始碼"
+  },
+  "tw_on": {
+    "message": "Twitch：只看「追蹤中」"
+  },
+  "tw_on_hint": {
+    "message": "不顯示首頁、推薦的頻道和分類"
+  },
+  "tw_browse": {
+    "message": "隱藏「瀏覽」"
+  }
+}

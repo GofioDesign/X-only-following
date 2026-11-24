@@ -1,0 +1,248 @@
+{
+  "extName": {
+    "message": "Dezombify"
+  },
+  "extShortName": {
+    "message": "Kill the Algo"
+  },
+  "extDescription": {
+    "message": "Tuez l’algorithme de vos réseaux sociaux et ramenez vos amis à la maison, sains et saufs : seulement les comptes que vous suivez."
+  },
+  "tagline": {
+    "message": "Tuez l’algorithme"
+  },
+  "masterOn": {
+    "message": "Activé"
+  },
+  "x_on": {
+    "message": "X : uniquement « Abonnements »"
+  },
+  "x_on_hint": {
+    "message": "Sans « Pour vous », publicités ni suggestions"
+  },
+  "x_reposts": {
+    "message": "Masquer ce qu’ils repostent"
+  },
+  "x_reposts_hint": {
+    "message": "Les reposts amènent des comptes que vous ne suivez pas"
+  },
+  "yt_on": {
+    "message": "YouTube : uniquement Abonnements"
+  },
+  "yt_on_hint": {
+    "message": "L’accueil ouvre vos abonnements"
+  },
+  "yt_ads": {
+    "message": "Masquer les publicités"
+  },
+  "yt_ads_hint": {
+    "message": "Bannières et contenus sponsorisés ; passe les pubs vidéo dès que possible"
+  },
+  "yt_shorts": {
+    "message": "Masquer les Shorts"
+  },
+  "yt_shorts_hint": {
+    "message": "Les Shorts que vous ouvrez s’affichent comme des vidéos normales"
+  },
+  "yt_related": {
+    "message": "Masquer les vidéos recommandées"
+  },
+  "yt_related_hint": {
+    "message": "Colonne latérale et écran de fin"
+  },
+  "yt_autoplay": {
+    "message": "Sans lecture automatique"
+  },
+  "yt_autoplay_hint": {
+    "message": ""
+  },
+  "ig_on": {
+    "message": "Instagram : uniquement « Abonnements »"
+  },
+  "ig_on_hint": {
+    "message": "L’accueil ouvre le fil chronologique des comptes suivis"
+  },
+  "ig_explore": {
+    "message": "Masquer Explorer et Reels"
+  },
+  "ig_explore_hint": {
+    "message": ""
+  },
+  "li_on": {
+    "message": "LinkedIn : uniquement ceux que vous suivez"
+  },
+  "li_on_hint": {
+    "message": "Sans posts sponsorisés ni auteurs que vous ne suivez pas"
+  },
+  "note": {
+    "message": "Les changements s’appliquent immédiatement. Fonctionne dans le navigateur de l’ordinateur."
+  },
+  "fb_on": {
+    "message": "Facebook : fil chronologique"
+  },
+  "fb_on_hint": {
+    "message": "Amis, groupes et pages que vous suivez, sans publicités"
+  },
+  "fb_friends": {
+    "message": "Amis uniquement"
+  },
+  "fb_friends_hint": {
+    "message": "Sans groupes ni pages"
+  },
+  "fb_reels": {
+    "message": "Masquer Reels et Vidéo"
+  },
+  "tt_on": {
+    "message": "TikTok : uniquement « Abonnements »"
+  },
+  "tt_on_hint": {
+    "message": "Sans « Pour toi » ni suggestions de comptes non suivis"
+  },
+  "tt_explore": {
+    "message": "Masquer Explorer, LIVE et Minidrames"
+  },
+  "ig_reposts": {
+    "message": "Masquer ce qu’ils repostent"
+  },
+  "ig_reposts_hint": {
+    "message": "Reposts des comptes que vous suivez"
+  },
+  "fb_shares": {
+    "message": "Masquer ce qu’ils partagent"
+  },
+  "fb_shares_hint": {
+    "message": "Publications d’autres personnes partagées par vos amis"
+  },
+  "fb_activity": {
+    "message": "Masquer l’activité"
+  },
+  "fb_activity_hint": {
+    "message": "« X aime ça », « X et Y suivent… » : choisi par l’algorithme"
+  },
+  "li_reposts": {
+    "message": "Masquer ce qu’ils partagent"
+  },
+  "li_reposts_hint": {
+    "message": "« X a republié ceci »"
+  },
+  "li_activity": {
+    "message": "Masquer l’activité"
+  },
+  "li_activity_hint": {
+    "message": "« X aime ça », « X a commenté » : choisi par l’algorithme"
+  },
+  "tt_reposts": {
+    "message": "Masquer ce qu’ils repostent"
+  },
+  "tt_reposts_hint": {
+    "message": "Reposts des comptes que vous suivez"
+  },
+  "moreOptions": {
+    "message": "Plus d’options"
+  },
+  "allNetworks": {
+    "message": "Options de tous les réseaux"
+  },
+  "optionsTitle": {
+    "message": "Options"
+  },
+  "th_on": {
+    "message": "Threads : uniquement « Abonnements »"
+  },
+  "th_on_hint": {
+    "message": "Sans « Pour vous » ni suggestions"
+  },
+  "th_reposts": {
+    "message": "Masquer ce qu’ils repostent"
+  },
+  "th_reposts_hint": {
+    "message": "Reposts des comptes que vous suivez"
+  },
+  "bs_on": {
+    "message": "Bluesky : uniquement « Following »"
+  },
+  "bs_on_hint": {
+    "message": "Sans Discover, Video ni autres fils"
+  },
+  "bs_reposts": {
+    "message": "Masquer ce qu’ils repostent"
+  },
+  "bs_reposts_hint": {
+    "message": "« Reposté par… »"
+  },
+  "moreLink": {
+    "message": "Plus d’extensions · Soutenir le projet ♥"
+  },
+  "moreUrl": {
+    "message": "https://gofiodesign.eu/extensions-fr.html"
+  },
+  "reviewTitle": {
+    "message": "Elle vous est utile ?"
+  },
+  "reviewText": {
+    "message": "Une note sur le Chrome Web Store aide d’autres personnes à la trouver."
+  },
+  "reviewButton": {
+    "message": "Noter"
+  },
+  "reviewLater": {
+    "message": "Plus tard"
+  },
+  "reviewNever": {
+    "message": "Ne plus afficher"
+  },
+  "donateTitle": {
+    "message": "Merci de l’utiliser depuis tout ce temps !"
+  },
+  "donateText": {
+    "message": "Elle est gratuite et sans publicité. Un don volontaire aide à la maintenir et à créer de nouveaux outils."
+  },
+  "donateButton": {
+    "message": "Faire un don"
+  },
+  "donateLater": {
+    "message": "Plus tard"
+  },
+  "welcomeKicker": {
+    "message": "Installée et prête"
+  },
+  "welcomeLead": {
+    "message": "Désormais, vos réseaux sociaux vous montrent ce que publient les comptes que vous suivez, pas ce que choisit l’algorithme. Mode d’emploi :"
+  },
+  "artExtensions": {
+    "message": "Extensions"
+  },
+  "step1Title": {
+    "message": "Épinglez l’extension dans la barre"
+  },
+  "step1Text": {
+    "message": "Cliquez sur l’icône de la <strong>pièce de puzzle</strong> en haut à droite de Chrome, puis sur l’<strong>épingle</strong> à côté de « Dezombify ». Ses réglages seront toujours à portée de main."
+  },
+  "step2Title": {
+    "message": "Ouvrez vos réseaux comme d’habitude"
+  },
+  "step2Text": {
+    "message": "Rien d’autre à faire : quand vous y entrez, l’extension vous emmène au fil des comptes que vous suivez et masque suggestions, recommandations et publicités."
+  },
+  "step3Title": {
+    "message": "Réglez chaque réseau à votre goût"
+  },
+  "step3Text": {
+    "message": "Cliquez sur l’icône sur un réseau pour voir ses options (par exemple, masquer ce qu’ils repostent). Tous les réseaux et options sont dans <strong>Options</strong>."
+  },
+  "welcomePrivacy": {
+    "message": "L’extension change seulement l’affichage des réseaux dans votre navigateur. Elle ne lit pas vos comptes et n’envoie rien à aucun serveur."
+  },
+  "welcomeRepo": {
+    "message": "Code source ouvert sur GitHub"
+  },
+  "tw_on": {
+    "message": "Twitch : uniquement « Suivis »"
+  },
+  "tw_on_hint": {
+    "message": "Sans Accueil, chaînes ni catégories recommandées"
+  },
+  "tw_browse": {
+    "message": "Masquer Parcourir"
+  }
+}

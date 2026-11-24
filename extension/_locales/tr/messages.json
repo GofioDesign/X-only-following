@@ -1,0 +1,248 @@
+{
+  "extName": {
+    "message": "Dezombify"
+  },
+  "extShortName": {
+    "message": "Kill the Algo"
+  },
+  "extDescription": {
+    "message": "Sosyal medyanın algoritmasını öldürün, arkadaşlarınızı eve sağ salim geri getirin: yalnızca takip ettiklerinizin paylaşımları."
+  },
+  "tagline": {
+    "message": "Algoritmayı öldür"
+  },
+  "masterOn": {
+    "message": "Etkin"
+  },
+  "x_on": {
+    "message": "X: yalnızca “Takip edilenler”"
+  },
+  "x_on_hint": {
+    "message": "“Sana özel”, reklam ve öneri yok"
+  },
+  "x_reposts": {
+    "message": "Yeniden gönderileri gizle"
+  },
+  "x_reposts_hint": {
+    "message": "Yeniden gönderiler takip etmediğiniz hesapları getirir"
+  },
+  "yt_on": {
+    "message": "YouTube: yalnızca Abonelikler"
+  },
+  "yt_on_hint": {
+    "message": "Ana sayfa aboneliklerinizi açar"
+  },
+  "yt_ads": {
+    "message": "Reklamları gizle"
+  },
+  "yt_ads_hint": {
+    "message": "Banner ve sponsorlu içerikler; video reklamlarını izin verilir verilmez atlar"
+  },
+  "yt_shorts": {
+    "message": "Shorts’u gizle"
+  },
+  "yt_shorts_hint": {
+    "message": "Açtığınız Shorts normal video olarak oynar"
+  },
+  "yt_related": {
+    "message": "Önerilen videoları gizle"
+  },
+  "yt_related_hint": {
+    "message": "Yan sütun ve bitiş ekranı"
+  },
+  "yt_autoplay": {
+    "message": "Otomatik oynatma yok"
+  },
+  "yt_autoplay_hint": {
+    "message": ""
+  },
+  "ig_on": {
+    "message": "Instagram: yalnızca “Takip edilenler”"
+  },
+  "ig_on_hint": {
+    "message": "Ana sayfa takip ettiklerinizin kronolojik akışını açar"
+  },
+  "ig_explore": {
+    "message": "Keşfet ve Reels’i gizle"
+  },
+  "ig_explore_hint": {
+    "message": ""
+  },
+  "li_on": {
+    "message": "LinkedIn: yalnızca takip ettikleriniz"
+  },
+  "li_on_hint": {
+    "message": "Tanıtılan gönderi ve takip etmediğiniz yazarlar yok"
+  },
+  "note": {
+    "message": "Değişiklikler hemen uygulanır. Bilgisayardaki tarayıcıda çalışır."
+  },
+  "fb_on": {
+    "message": "Facebook: kronolojik akış"
+  },
+  "fb_on_hint": {
+    "message": "Takip ettiğiniz arkadaşlar, gruplar ve sayfalar, reklamsız"
+  },
+  "fb_friends": {
+    "message": "Yalnızca arkadaşlar"
+  },
+  "fb_friends_hint": {
+    "message": "Grup ve sayfa yok"
+  },
+  "fb_reels": {
+    "message": "Reels ve Video’yu gizle"
+  },
+  "tt_on": {
+    "message": "TikTok: yalnızca “Takip edilen”"
+  },
+  "tt_on_hint": {
+    "message": "“Senin İçin” ve takip etmediğiniz hesap önerileri yok"
+  },
+  "tt_explore": {
+    "message": "Keşfet, LIVE ve Mini dizileri gizle"
+  },
+  "ig_reposts": {
+    "message": "Yeniden gönderileri gizle"
+  },
+  "ig_reposts_hint": {
+    "message": "Takip ettiğiniz hesapların yeniden gönderileri"
+  },
+  "fb_shares": {
+    "message": "Paylaşımları gizle"
+  },
+  "fb_shares_hint": {
+    "message": "Arkadaşlarınızın paylaştığı başkalarına ait gönderiler"
+  },
+  "fb_activity": {
+    "message": "Etkinliği gizle"
+  },
+  "fb_activity_hint": {
+    "message": "“X bunu beğendi”, “X ve Y şunu takip ediyor…”: algoritma seçer"
+  },
+  "li_reposts": {
+    "message": "Paylaşımları gizle"
+  },
+  "li_reposts_hint": {
+    "message": "“X bunu yeniden yayınladı”"
+  },
+  "li_activity": {
+    "message": "Etkinliği gizle"
+  },
+  "li_activity_hint": {
+    "message": "“X bunu beğendi”, “X yorum yaptı”: algoritma seçer"
+  },
+  "tt_reposts": {
+    "message": "Yeniden gönderileri gizle"
+  },
+  "tt_reposts_hint": {
+    "message": "Takip ettiğiniz hesapların yeniden gönderileri"
+  },
+  "moreOptions": {
+    "message": "Diğer seçenekler"
+  },
+  "allNetworks": {
+    "message": "Tüm ağların seçenekleri"
+  },
+  "optionsTitle": {
+    "message": "Seçenekler"
+  },
+  "th_on": {
+    "message": "Threads: yalnızca “Takip edilenler”"
+  },
+  "th_on_hint": {
+    "message": "“Sana özel” ve öneri yok"
+  },
+  "th_reposts": {
+    "message": "Yeniden gönderileri gizle"
+  },
+  "th_reposts_hint": {
+    "message": "Takip ettiğiniz hesapların yeniden gönderileri"
+  },
+  "bs_on": {
+    "message": "Bluesky: yalnızca “Following”"
+  },
+  "bs_on_hint": {
+    "message": "Discover, Video ve diğer akışlar yok"
+  },
+  "bs_reposts": {
+    "message": "Yeniden gönderileri gizle"
+  },
+  "bs_reposts_hint": {
+    "message": "“Yeniden gönderen…”"
+  },
+  "moreLink": {
+    "message": "Diğer uzantılar · Projeye destek olun ♥"
+  },
+  "moreUrl": {
+    "message": "https://gofiodesign.eu/extensions.html"
+  },
+  "reviewTitle": {
+    "message": "İşinize yarıyor mu?"
+  },
+  "reviewText": {
+    "message": "Chrome Web Mağazası’ndaki bir değerlendirme, başkalarının onu bulmasına yardım eder."
+  },
+  "reviewButton": {
+    "message": "Değerlendir"
+  },
+  "reviewLater": {
+    "message": "Şimdi değil"
+  },
+  "reviewNever": {
+    "message": "Bir daha gösterme"
+  },
+  "donateTitle": {
+    "message": "Bunca zamandır kullandığınız için teşekkürler!"
+  },
+  "donateText": {
+    "message": "Ücretsiz ve reklamsızdır. Gönüllü bir bağış, bakımına ve yeni araçlar geliştirilmesine yardım eder."
+  },
+  "donateButton": {
+    "message": "Destek ol"
+  },
+  "donateLater": {
+    "message": "Şimdi değil"
+  },
+  "welcomeKicker": {
+    "message": "Kuruldu ve hazır"
+  },
+  "welcomeLead": {
+    "message": "Artık sosyal medyanız size algoritmanın seçtiklerini değil, takip ettiğiniz hesapların paylaşımlarını gösterir. Nasıl kullanılır:"
+  },
+  "artExtensions": {
+    "message": "Uzantılar"
+  },
+  "step1Title": {
+    "message": "Uzantıyı araç çubuğuna sabitleyin"
+  },
+  "step1Text": {
+    "message": "Chrome’un sağ üstündeki <strong>yapboz parçası</strong> simgesine, ardından “Dezombify” yanındaki <strong>raptiyeye</strong> tıklayın. Ayarları hep elinizin altında olur."
+  },
+  "step2Title": {
+    "message": "Ağlarınızı her zamanki gibi açın"
+  },
+  "step2Text": {
+    "message": "Başka bir şey yapmanız gerekmez: girdiğinizde uzantı sizi takip ettiğiniz hesapların akışına götürür ve önerileri, tavsiyeleri ve reklamları gizler."
+  },
+  "step3Title": {
+    "message": "Her ağı zevkinize göre ayarlayın"
+  },
+  "step3Text": {
+    "message": "Bir ağdayken simgeye tıklayarak seçeneklerini görün (örneğin yeniden gönderileri gizlemek). Tüm ağlar ve seçenekler <strong>Seçenekler</strong>’dedir."
+  },
+  "welcomePrivacy": {
+    "message": "Uzantı yalnızca ağların tarayıcınızdaki görünümünü değiştirir. Hesaplarınızı okumaz ve hiçbir sunucuya bir şey göndermez."
+  },
+  "welcomeRepo": {
+    "message": "GitHub’da açık kaynak"
+  },
+  "tw_on": {
+    "message": "Twitch: yalnızca “Takip edilenler”"
+  },
+  "tw_on_hint": {
+    "message": "Ana sayfa, önerilen kanal ve kategoriler yok"
+  },
+  "tw_browse": {
+    "message": "Göz At’ı gizle"
+  }
+}
