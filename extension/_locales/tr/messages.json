@@ -244,5 +244,11 @@
   },
   "tw_browse": {
     "message": "Göz At’ı gizle"
+  },
+  "demo": {
+    "message": "Atlananları göster"
+  },
+  "demo_hint": {
+    "message": "Her şeyi görünür bırakır; reklamları (ADS, siyah) ve algoritmik içeriği (ALGORITHM, kırmızı) kapatır."
   }
 }

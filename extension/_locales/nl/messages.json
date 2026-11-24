@@ -244,5 +244,11 @@
   },
   "tw_browse": {
     "message": "Bladeren verbergen"
+  },
+  "demo": {
+    "message": "Tonen wat wordt weggelaten"
+  },
+  "demo_hint": {
+    "message": "Laat alles zichtbaar en bedekt advertenties (ADS, zwart) en algoritmische inhoud (ALGORITHM, rood)."
   }
 }

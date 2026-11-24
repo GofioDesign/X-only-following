@@ -244,5 +244,11 @@
   },
   "tw_browse": {
     "message": "「さがす」を隠す"
+  },
+  "demo": {
+    "message": "省いているものを表示"
+  },
+  "demo_hint": {
+    "message": "すべて表示したまま、広告（ADS・黒）とアルゴリズムによるコンテンツ（ALGORITHM・赤）を覆います。"
   }
 }

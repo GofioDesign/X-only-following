@@ -244,5 +244,11 @@
   },
   "tw_browse": {
     "message": "„Durchsuchen“ ausblenden"
+  },
+  "demo": {
+    "message": "Zeigen, was ausgelassen wird"
+  },
+  "demo_hint": {
+    "message": "Lässt alles sichtbar und überdeckt Werbung (ADS, schwarz) und algorithmische Inhalte (ALGORITHM, rot)."
   }
 }

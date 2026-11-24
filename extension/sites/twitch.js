@@ -6,6 +6,7 @@
   const FOLLOWED = /(seguid|followed|suivies|gefolgt|seguiti|gevolgd|obserwowan|takip edilen|отслеживаемые|フォロー中|팔로우|关注|關注)/i;
 
   function toFollowing() {
+    if (KTA.demo) return false;
     if (location.pathname === '/') { location.replace('/directory/following'); return true; }
     return false;
   }
@@ -28,7 +29,7 @@
       if (urlChanged && toFollowing()) return;
 
       // Inicio (recomendaciones) → Siguiendo
-      document.querySelectorAll('a[data-a-target="home-link"], a[href="/"]').forEach((a) => a.setAttribute('href', '/directory/following'));
+      document.querySelectorAll('a[data-a-target="home-link"], a[href="/"]').forEach((a) => { if (!KTA.demo) a.setAttribute('href', '/directory/following'); });
       document.querySelectorAll('a[data-a-target="home-link"]').forEach((a) => { if (a.closest('nav')) KTA.hide(a.closest('[class*="navigation-link"]') || a); });
       if (s.tw_browse) document.querySelectorAll('a[data-a-target="browse-link"]').forEach((a) => KTA.hide(a.parentElement?.matches('div') ? a.parentElement : a));
 

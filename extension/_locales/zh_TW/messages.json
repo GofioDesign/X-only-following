@@ -244,5 +244,11 @@
   },
   "tw_browse": {
     "message": "隱藏「瀏覽」"
+  },
+  "demo": {
+    "message": "查看被省略的內容"
+  },
+  "demo_hint": {
+    "message": "保留全部內容可見，並遮蓋廣告（ADS，黑色）和演算法內容（ALGORITHM，紅色）。"
   }
 }

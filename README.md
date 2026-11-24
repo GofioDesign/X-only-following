@@ -22,6 +22,8 @@
 
 **Ajustes.** El icono de la extensión muestra solo las opciones de la red en la que estás; fuera de ellas, un interruptor por red. Todas las opciones están en **Opciones** (clic derecho en el icono → Opciones).
 
+**Ver lo que se omite.** Con esta casilla la extensión no oculta nada: deja la red tal cual y tapa los anuncios con un bloque negro (ADS) y el contenido algorítmico con uno rojo (ALGORITHM), para que veas todo lo que te ahorra.
+
 **Limitación:** funciona en el navegador del ordenador. Las apps del móvil no se pueden modificar.
 
 ## Al instalarla

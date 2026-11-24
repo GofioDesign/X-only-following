@@ -94,6 +94,8 @@ KEYS = [
     'tw_on',
     'tw_on_hint',
     'tw_browse',
+    'demo',
+    'demo_hint',
 ]
 
 L['es'] = dict(
@@ -888,6 +890,27 @@ L['zh_TW'] = dict(
   welcomePrivacy='擴充功能只會改變社群網路在你瀏覽器中的顯示方式。它不會讀取你的帳號，也不會傳送任何資料到伺服器。',
   welcomeRepo='GitHub 開放原始碼',
   tw_on='Twitch：只看「追蹤中」', tw_on_hint='不顯示首頁、推薦的頻道和分類', tw_browse='隱藏「瀏覽」')
+
+# «Ver lo que se omite» (modo demo, desde la 2.0.2). ADS y ALGORITHM no se traducen: son los rótulos.
+DEMO = {
+  'es': ('Ver lo que se omite', 'Lo deja todo a la vista y tapa los anuncios (ADS, en negro) y lo algorítmico (ALGORITHM, en rojo).'),
+  'en': ("Show what's left out", 'Keeps everything visible and covers ads (ADS, black) and algorithmic content (ALGORITHM, red).'),
+  'fr': ('Voir ce qui est omis', 'Laisse tout visible et recouvre les publicités (ADS, en noir) et le contenu algorithmique (ALGORITHM, en rouge).'),
+  'de': ('Zeigen, was ausgelassen wird', 'Lässt alles sichtbar und überdeckt Werbung (ADS, schwarz) und algorithmische Inhalte (ALGORITHM, rot).'),
+  'it': ('Mostra ciò che viene omesso', 'Lascia tutto visibile e copre gli annunci (ADS, in nero) e i contenuti algoritmici (ALGORITHM, in rosso).'),
+  'pt_BR': ('Ver o que é omitido', 'Deixa tudo visível e cobre os anúncios (ADS, em preto) e o conteúdo algorítmico (ALGORITHM, em vermelho).'),
+  'pt_PT': ('Ver o que é omitido', 'Deixa tudo visível e tapa os anúncios (ADS, a preto) e o conteúdo algorítmico (ALGORITHM, a vermelho).'),
+  'nl': ('Tonen wat wordt weggelaten', 'Laat alles zichtbaar en bedekt advertenties (ADS, zwart) en algoritmische inhoud (ALGORITHM, rood).'),
+  'pl': ('Pokaż, co jest pomijane', 'Zostawia wszystko widoczne i zakrywa reklamy (ADS, na czarno) i treści algorytmiczne (ALGORITHM, na czerwono).'),
+  'tr': ('Atlananları göster', 'Her şeyi görünür bırakır; reklamları (ADS, siyah) ve algoritmik içeriği (ALGORITHM, kırmızı) kapatır.'),
+  'ru': ('Показать, что пропускается', 'Оставляет всё на виду и закрывает рекламу (ADS, чёрным) и алгоритмический контент (ALGORITHM, красным).'),
+  'ja': ('省いているものを表示', 'すべて表示したまま、広告（ADS・黒）とアルゴリズムによるコンテンツ（ALGORITHM・赤）を覆います。'),
+  'ko': ('생략되는 항목 보기', '모두 보이게 두고 광고(ADS, 검정)와 알고리즘 콘텐츠(ALGORITHM, 빨강)를 가립니다.'),
+  'zh_CN': ('查看被省略的内容', '保留全部内容可见，并遮盖广告（ADS，黑色）和算法内容（ALGORITHM，红色）。'),
+  'zh_TW': ('查看被省略的內容', '保留全部內容可見，並遮蓋廣告（ADS，黑色）和演算法內容（ALGORITHM，紅色）。'),
+}
+for _lang, (_t, _h) in DEMO.items():
+    L[_lang].update(demo=_t, demo_hint=_h)
 
 
 def build(root):

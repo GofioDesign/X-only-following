@@ -244,5 +244,11 @@
   },
   "tw_browse": {
     "message": "隐藏“浏览”"
+  },
+  "demo": {
+    "message": "查看被省略的内容"
+  },
+  "demo_hint": {
+    "message": "保留全部内容可见，并遮盖广告（ADS，黑色）和算法内容（ALGORITHM，红色）。"
   }
 }

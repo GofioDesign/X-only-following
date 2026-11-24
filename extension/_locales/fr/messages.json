@@ -244,5 +244,11 @@
   },
   "tw_browse": {
     "message": "Masquer Parcourir"
+  },
+  "demo": {
+    "message": "Voir ce qui est omis"
+  },
+  "demo_hint": {
+    "message": "Laisse tout visible et recouvre les publicités (ADS, en noir) et le contenu algorithmique (ALGORITHM, en rouge)."
   }
 }

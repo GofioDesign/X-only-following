@@ -244,5 +244,11 @@
   },
   "tw_browse": {
     "message": "Ocultar Navegar"
+  },
+  "demo": {
+    "message": "Ver o que é omitido"
+  },
+  "demo_hint": {
+    "message": "Deixa tudo visível e cobre os anúncios (ADS, em preto) e o conteúdo algorítmico (ALGORITHM, em vermelho)."
   }
 }

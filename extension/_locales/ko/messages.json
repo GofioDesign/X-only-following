@@ -244,5 +244,11 @@
   },
   "tw_browse": {
     "message": "찾아보기 숨기기"
+  },
+  "demo": {
+    "message": "생략되는 항목 보기"
+  },
+  "demo_hint": {
+    "message": "모두 보이게 두고 광고(ADS, 검정)와 알고리즘 콘텐츠(ALGORITHM, 빨강)를 가립니다."
   }
 }

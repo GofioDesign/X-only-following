@@ -244,5 +244,11 @@
   },
   "tw_browse": {
     "message": "Nascondi Sfoglia"
+  },
+  "demo": {
+    "message": "Mostra ciò che viene omesso"
+  },
+  "demo_hint": {
+    "message": "Lascia tutto visibile e copre gli annunci (ADS, in nero) e i contenuti algoritmici (ALGORITHM, in rosso)."
   }
 }

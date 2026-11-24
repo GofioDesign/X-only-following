@@ -66,7 +66,7 @@ Módulo en `sites/`, host en `host_permissions` y `content_scripts`, entrada en 
 |---|---|---|
 | X | `/home` pestaña «Siguiendo» | reposts opcionales |
 | YouTube | `/` → `/feed/subscriptions` | Shorts abiertos → `/watch?v=`; anuncios: `ytd-ad-slot-renderer`, `ytd-in-feed-ad-layout-renderer`, `ytd-search-pyv-renderer`, `#player-ads`… (ocultar el `ytd-rich-item-renderer` contenedor); vídeo: solo pulsa «Saltar» cuando aparece. **No** bloquear anuncios no saltables (YouTube detecta bloqueadores) |
-| Instagram | `/?variant=following` | |
+| Instagram | `/?variant=following` | toda la página va dentro de un `<section>`: nunca usar `closest('section')` para ocultar bloques (dejó el feed en blanco en 2.0.0) |
 | Facebook | `/?filter=all&sk=h_chr` (o `filter=friends`) | ver abajo |
 | LinkedIn | — | oculta promocionados, sugeridos y posts con botón «Seguir a…» (autor no seguido) |
 | TikTok | `/following` | `[data-e2e="feed-follow"]` = sugerencia |
@@ -108,7 +108,10 @@ Módulo en `sites/`, host en `host_permissions` y `content_scripts`, entrada en 
 
 ## Pendiente
 
-1. Revisión de la 2.0.0 en la tienda (reenviada tras quitar la lista de redes).
+1. Revisión en la tienda: la 2.0.0 se reenvió tras quitar la lista de redes; la 2.0.1 arregla el feed en blanco de Instagram.
 2. Extensión traducida a 15 idiomas (como IA → PDF); falta la ficha de la tienda y las imágenes por idioma.
 3. Actualizar la página de la extensión en gofiodesign.eu (ES/EN/DE/FR) con el nuevo nombre, logo y capturas (por PR).
 4. Posibles redes futuras, de momento descartadas por el usuario: Reddit, Tumblr, Pinterest, Medium, Substack.
+
+## «Ver lo que se omite» (modo demo, desde la 2.0.2)
+Ajuste `demo` (casilla en el panel, debajo de «Activado»). No oculta, no redirige ni pulsa pestañas: tapa con `::after` lo que ocultaría. `KTA.hideAd(el)` → negro «ADS»; `KTA.hide(el)` → rojo «ALGORITHM». Los módulos comprueban `KTA.demo` antes de redirigir, reescribir enlaces o hacer clic. Funciona aunque la extensión esté apagada. Al marcar un anuncio nuevo, usar siempre `KTA.hideAd`.

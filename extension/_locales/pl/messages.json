@@ -244,5 +244,11 @@
   },
   "tw_browse": {
     "message": "Ukryj Przeglądaj"
+  },
+  "demo": {
+    "message": "Pokaż, co jest pomijane"
+  },
+  "demo_hint": {
+    "message": "Zostawia wszystko widoczne i zakrywa reklamy (ADS, na czarno) i treści algorytmiczne (ALGORITHM, na czerwono)."
   }
 }

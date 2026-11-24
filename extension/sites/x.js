@@ -13,7 +13,7 @@
     const list = tablist ? [...tablist.querySelectorAll('[role="tab"]')] : [];
     if (list.length < 2) return;
     const [forYou, following] = list; // en /home: 1.ª «Para ti», 2.ª «Siguiendo»
-    if (following.getAttribute('aria-selected') !== 'true' && Date.now() - lastTabClick > 1500) {
+    if (!KTA.demo && following.getAttribute('aria-selected') !== 'true' && Date.now() - lastTabClick > 1500) {
       lastTabClick = Date.now();
       following.click();
     }
@@ -37,7 +37,7 @@
         if (KTA.isHidden(cell)) continue;
         const article = cell.querySelector('article');
         if (article) {
-          if (isAd(article)) { KTA.hide(cell); continue; }
+          if (isAd(article)) { KTA.hideAd(cell); continue; }
           const ctx = article.querySelector('[data-testid="socialContext"]');
           if (isHome() && s.x_reposts && ctx && REPOST_TEXT.test(ctx.textContent)) { KTA.hide(cell); continue; }
         } else if (isHome() && cell.querySelector('[data-testid="UserCell"]')) {
@@ -52,6 +52,18 @@
       // Barra lateral: tendencias y sugerencias de cuentas
       document.querySelectorAll('[data-testid="sidebarColumn"] section, [data-testid="sidebarColumn"] aside').forEach((b) => {
         if (b.querySelector('[data-testid="trend"], [data-testid="UserCell"]')) KTA.hide(b.parentElement || b);
+      });
+      // «Suscríbete a Premium» es publicidad de X
+      document.querySelectorAll('[data-testid="sidebarColumn"] aside').forEach((b) => {
+        if (b.querySelector('a[href^="/i/premium_sign_up"], a[href^="/i/verified"]')) KTA.hideAd(b.parentElement || b);
+      });
+      // «En directo en X»: emisiones elegidas por el algoritmo. Desde cada emisión se sube
+      // hasta el bloque que tiene el título.
+      const side = document.querySelector('[data-testid="sidebarColumn"]');
+      side?.querySelectorAll('[data-testid="placementTracking"]').forEach((pt) => {
+        let box = pt;
+        while (box.parentElement && box.parentElement !== side && !box.querySelector('h2, [role="heading"]')) box = box.parentElement;
+        if (box !== pt && box.querySelector('h2, [role="heading"]') && !box.querySelector('aside, section')) KTA.hide(box);
       });
     }
   };
