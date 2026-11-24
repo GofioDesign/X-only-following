@@ -5,6 +5,7 @@
   const FOR_YOU = /^(para ti|for you|pour vous|für dich|per te|voor jou|dla ciebie|senin için|для вас|おすすめ|추천|为你推荐|為你推薦|para você)$/i;
   const SUGGESTED = /^(sugerencias para ti|suggested for you|suggestions pour vous|vorschläge für dich|suggeriti per te|sugestões para você|voorgesteld voor jou|propozycje dla ciebie|senin için öneriler|рекомендации для вас|おすすめ|회원님을 위한 추천|为你推荐|為你推薦|publicaciones sugeridas|suggested posts)$/i;
 
+  const AD = /^(publicidad|patrocinado|sponsored|sponsorisé|gesponsert|sponsorizzato|gesponsord|sponsorowane|sponsorlu|реклама|広告|광고|赞助内容|贊助)$/i;
   const REPOST = /(ha republicado|republicó|reposted|a republié|hat reposted|ha ripubblicato|republicou|heeft opnieuw geplaatst|udostępnił ponownie|yeniden paylaştı|сделал репост)/i;
 
   // Contenedor del bloque de sugerencias: el article que lo contiene o, si no hay,
@@ -57,6 +58,11 @@
         // Menú lateral: ocultar Explorar y Reels
         document.querySelectorAll('a[href="/explore/"], a[href="/reels/"]').forEach((a) => KTA.hide(a));
       }
+
+      // Publicaciones patrocinadas («Publicidad» bajo el nombre de la cuenta)
+      document.querySelectorAll('main article').forEach((art) => {
+        if (!KTA.isHidden(art) && KTA.leafTexts(art, 12).some((t) => AD.test(t))) KTA.hideAd(art);
+      });
 
       // Reposts de cuentas que sigues
       if (s.ig_reposts) {
