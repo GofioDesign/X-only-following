@@ -15,7 +15,7 @@ header img { border-radius: 16px; }
 h1 { margin: 2px 0 0; font-size: 30px; line-height: 1.15; letter-spacing: -.4px; }
 .period { margin: 4px 0 0; color: var(--muted); font-size: 14px; }
 .lead { font-size: 18px; color: var(--muted); margin: 22px 0 0; max-width: 700px; }
-.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 28px 0 16px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 28px 0 16px; }
 .card { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 6px; }
 .card b { font-size: 32px; line-height: 1.05; letter-spacing: -.8px; }
 .card span { color: var(--muted); font-size: 14px; line-height: 1.35; }
@@ -27,7 +27,7 @@ h1 { margin: 2px 0 0; font-size: 30px; line-height: 1.15; letter-spacing: -.4px;
 .nets th:first-child, .nets td:first-child { text-align: left; }
 .nets th { color: var(--muted); font-weight: 600; font-size: 13px; }
 .nets tr:last-child td { border-bottom: 0; }
-.nets tfoot td, .nets .total td { font-weight: 700; }
+.nets tfoot td { font-weight: 700; border-top: 1px solid var(--line); border-bottom: 0; }
 .empty { margin: 28px 0; padding: 18px; border: 1px dashed var(--line); border-radius: 16px; color: var(--muted); }
 .asks { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 28px 0; }
 .ask { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 20px; }
@@ -42,7 +42,9 @@ footer p { color: var(--muted); font-size: 13.5px; margin: 6px 0; }
 footer a { color: var(--pink-text); font-weight: 600; text-decoration: none; }
 [hidden] { display: none !important; }
 @media (max-width: 720px) {
-  .cards { grid-template-columns: 1fr 1fr; }
   .asks { grid-template-columns: 1fr; }
   .nets th, .nets td { padding: 9px 10px; }
 }
+.table-wrap { overflow-x: auto; border-radius: 16px; }
+.nets td { white-space: nowrap; }
+@media (max-width: 480px) { .nets { font-size: 14px; } .nets th, .nets td { padding: 8px 8px; } h1 { font-size: 26px; } }

@@ -203,24 +203,6 @@
   "donateLater": {
     "message": "Jetzt nicht"
   },
-  "donateYearTitle": {
-    "message": "Ein Jahr nur mit dem, dem Sie folgen"
-  },
-  "donateYearText": {
-    "message": "Wir hoffen, Dezombify hat Ihnen geholfen, Zeit für das zurückzugewinnen, was Ihnen wirklich wichtig ist. Sie ist kostenlos, werbefrei und Open Source. Würden Sie ihre Entwicklung und weitere Werkzeuge von Gofio Design unterstützen?"
-  },
-  "statHours": {
-    "message": "in Ihren Netzwerken, nur mit dem, dem Sie folgen"
-  },
-  "statHidden": {
-    "message": "Werbung, Vorschläge und Empfehlungen ausgeblendet"
-  },
-  "statSaved": {
-    "message": "Algorithmus erspart (ungefähr)"
-  },
-  "donateNote": {
-    "message": "Nur in Ihrem Browser berechnet, etwa 6 Sekunden pro ausgeblendetem Element. Die Zähler beginnen jedes Jahr ab dem Installationsdatum neu."
-  },
   "welcomeKicker": {
     "message": "Installiert und bereit"
   },
@@ -262,5 +244,79 @@
   },
   "tw_browse": {
     "message": "„Durchsuchen“ ausblenden"
+  },
+  "demo": {
+    "message": "Zeigen, was ausgelassen wird"
+  },
+  "demo_hint": {
+    "message": "Lässt alles sichtbar und überdeckt Werbung (ADS, schwarz) und algorithmische Inhalte (ALGORITHM, rot)."
+  },
+  "statsLink": {
+    "message": "Statistik"
+  },
+  "statsTitle": {
+    "message": "Ihre Statistik"
+  },
+  "statsPeriod": {
+    "message": "$FROM$ – $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "donateYearTitle": {
+    "message": "Ein Jahr nur mit dem, dem Sie folgen"
+  },
+  "donateYearText": {
+    "message": "Wir hoffen, Dezombify hat Ihnen geholfen, Zeit für das zurückzugewinnen, was Ihnen wirklich wichtig ist. Sie ist kostenlos, werbefrei und Open Source."
+  },
+  "statHours": {
+    "message": "in Ihren Netzwerken, nur mit dem, dem Sie folgen"
+  },
+  "statDaily": {
+    "message": "im Tagesschnitt"
+  },
+  "statAds": {
+    "message": "Anzeigen ausgeblendet"
+  },
+  "statAlgo": {
+    "message": "Vorschläge und Algorithmus-Inhalte ausgeblendet"
+  },
+  "statSaved": {
+    "message": "Algorithmus und Werbung erspart (ungefähr)"
+  },
+  "statNet": {
+    "message": "Netzwerk"
+  },
+  "statTime": {
+    "message": "Zeit"
+  },
+  "statAdsShort": {
+    "message": "Werbung"
+  },
+  "statAlgoShort": {
+    "message": "Algorithmus"
+  },
+  "statSavedShort": {
+    "message": "Erspart"
+  },
+  "statEmpty": {
+    "message": "Noch keine Daten: Öffnen Sie eines Ihrer Netzwerke mit aktivierter Erweiterung."
+  },
+  "donateAskTitle": {
+    "message": "Projekt unterstützen"
+  },
+  "remindNextYear": {
+    "message": "Nächstes Jahr erinnern"
+  },
+  "remindSet": {
+    "message": "Erledigt: Wir erinnern Sie in einem Jahr."
+  },
+  "donateNote": {
+    "message": "Alles wird nur in Ihrem Browser gezählt und nirgendwohin gesendet. Die ersparte Zeit ist eine Schätzung von etwa 6 Sekunden pro ausgeblendetem Element. Die Zähler beginnen jedes Jahr ab dem Installationsdatum neu."
   }
 }

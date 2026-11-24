@@ -203,24 +203,6 @@
   "donateLater": {
     "message": "Not now"
   },
-  "donateYearTitle": {
-    "message": "A year of only what you follow"
-  },
-  "donateYearText": {
-    "message": "We hope Dezombify has helped you win back time for what really matters to you. It is free, ad-free and open source. Would you consider supporting its development and other Gofio Design tools?"
-  },
-  "statHours": {
-    "message": "on your networks, seeing only what you follow"
-  },
-  "statHidden": {
-    "message": "ads, suggestions and recommendations hidden"
-  },
-  "statSaved": {
-    "message": "of algorithm you were spared (approx.)"
-  },
-  "donateNote": {
-    "message": "Counted only in your browser, about 6 seconds per hidden item. The counters reset every year from the install date."
-  },
   "welcomeKicker": {
     "message": "Installed and ready"
   },
@@ -262,5 +244,79 @@
   },
   "tw_browse": {
     "message": "Hide Browse"
+  },
+  "demo": {
+    "message": "Show what's left out"
+  },
+  "demo_hint": {
+    "message": "Keeps everything visible and covers ads (ADS, black) and algorithmic content (ALGORITHM, red)."
+  },
+  "statsLink": {
+    "message": "Statistics"
+  },
+  "statsTitle": {
+    "message": "Your statistics"
+  },
+  "statsPeriod": {
+    "message": "$FROM$ – $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "donateYearTitle": {
+    "message": "A year of only what you follow"
+  },
+  "donateYearText": {
+    "message": "We hope Dezombify has helped you win back time for what really matters to you. It is free, ad-free and open source."
+  },
+  "statHours": {
+    "message": "on your networks, seeing only what you follow"
+  },
+  "statDaily": {
+    "message": "daily average"
+  },
+  "statAds": {
+    "message": "ads hidden"
+  },
+  "statAlgo": {
+    "message": "suggestions and algorithmic posts hidden"
+  },
+  "statSaved": {
+    "message": "of algorithm and ads you were spared (approx.)"
+  },
+  "statNet": {
+    "message": "Network"
+  },
+  "statTime": {
+    "message": "Time"
+  },
+  "statAdsShort": {
+    "message": "Ads"
+  },
+  "statAlgoShort": {
+    "message": "Algorithm"
+  },
+  "statSavedShort": {
+    "message": "Saved"
+  },
+  "statEmpty": {
+    "message": "No data yet: open one of your networks with the extension enabled."
+  },
+  "donateAskTitle": {
+    "message": "Support the project"
+  },
+  "remindNextYear": {
+    "message": "Remind me next year"
+  },
+  "remindSet": {
+    "message": "Done: we’ll remind you in a year."
+  },
+  "donateNote": {
+    "message": "Everything is counted only in your browser and sent nowhere. Time saved is an estimate of about 6 seconds per hidden item. The counters reset every year from the install date."
   }
 }

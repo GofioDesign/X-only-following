@@ -36,27 +36,33 @@ function dur(ms) {
   if (from) { const lead = document.getElementById('lead'); lead.textContent = t('donateYearText'); lead.hidden = false; }
   document.getElementById('period').textContent = t('statsPeriod', [date(data.since), date(until)]);
 
-  let ms = 0, hidden = 0;
-  const rows = document.getElementById('rows');
-  for (const [key, name] of NETS) {
-    const n = data.nets?.[key];
-    if (!n || (!n.ms && !n.hidden)) continue;
-    ms += n.ms; hidden += n.hidden;
+  const tot = { ms: 0, ads: 0, algo: 0 };
+  const saved = (n) => '≈ ' + dur((n.ads + n.algo) * SECONDS_PER_ITEM * 1000);
+  const line = (cells) => {
     const tr = document.createElement('tr');
-    [name, dur(n.ms), num(n.hidden), '≈ ' + dur(n.hidden * SECONDS_PER_ITEM * 1000)].forEach((v) => {
-      const td = document.createElement('td'); td.textContent = v; tr.appendChild(td);
-    });
-    rows.appendChild(tr);
+    cells.forEach((v) => { const td = document.createElement('td'); td.textContent = v; tr.appendChild(td); });
+    return tr;
+  };
+  const rows = document.getElementById('rows');
+  let count = 0;
+  for (const [key, name] of NETS) {
+    const n = { ms: 0, ads: 0, algo: 0, ...data.nets?.[key] };
+    if (!n.ms && !n.ads && !n.algo) continue;
+    count++;
+    tot.ms += n.ms; tot.ads += n.ads; tot.algo += n.algo;
+    rows.appendChild(line([name, dur(n.ms), num(n.ads), num(n.algo), saved(n)]));
   }
-  if (!ms && !hidden) {
+  if (count > 1) document.getElementById('foot').appendChild(line(['', dur(tot.ms), num(tot.ads), num(tot.algo), saved(tot)]));
+  if (!count) {
     document.getElementById('summary').hidden = true;
     document.getElementById('empty').hidden = false;
   }
   const days = Math.max(1, (until - data.since) / 864e5);
-  document.getElementById('totHours').textContent = dur(ms);
-  document.getElementById('totDaily').textContent = dur(ms / days);
-  document.getElementById('totHidden').textContent = num(hidden);
-  document.getElementById('totSaved').textContent = '≈ ' + dur(hidden * SECONDS_PER_ITEM * 1000);
+  document.getElementById('totHours').textContent = dur(tot.ms);
+  document.getElementById('totDaily').textContent = dur(tot.ms / days);
+  document.getElementById('totAds').textContent = num(tot.ads);
+  document.getElementById('totAlgo').textContent = num(tot.algo);
+  document.getElementById('totSaved').textContent = saved(tot);
 
   // Donar: el botón y «recuérdamelo» dejan el siguiente aviso para el próximo año
   const snooze = (k, box, msg) => async () => {

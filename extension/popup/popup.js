@@ -11,7 +11,8 @@ const DEFAULTS = {
   tt_on: true, tt_explore: true, tt_reposts: false,
   th_on: true, th_reposts: false,
   bs_on: true, bs_reposts: false,
-  tw_on: true, tw_browse: true
+  tw_on: true, tw_browse: true,
+  demo: false
 };
 const NETS = [
   { main: 'x_on', host: /(^|\.)(x|twitter)\.com$/, subs: ['x_reposts'] },

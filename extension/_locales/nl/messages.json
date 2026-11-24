@@ -203,24 +203,6 @@
   "donateLater": {
     "message": "Niet nu"
   },
-  "donateYearTitle": {
-    "message": "Een jaar alleen wat je volgt"
-  },
-  "donateYearText": {
-    "message": "We hopen dat Dezombify je heeft geholpen tijd terug te winnen voor wat echt belangrijk is. Ze is gratis, zonder advertenties en open source. Zou je overwegen haar ontwikkeling en andere tools van Gofio Design te steunen?"
-  },
-  "statHours": {
-    "message": "op je netwerken, met alleen wat je volgt"
-  },
-  "statHidden": {
-    "message": "advertenties, suggesties en aanbevelingen verborgen"
-  },
-  "statSaved": {
-    "message": "algoritme bespaard (ongeveer)"
-  },
-  "donateNote": {
-    "message": "Alleen in je browser berekend, ongeveer 6 seconden per verborgen item. De tellers beginnen elk jaar opnieuw vanaf de installatiedatum."
-  },
   "welcomeKicker": {
     "message": "Geïnstalleerd en klaar"
   },
@@ -262,5 +244,79 @@
   },
   "tw_browse": {
     "message": "Bladeren verbergen"
+  },
+  "demo": {
+    "message": "Tonen wat wordt weggelaten"
+  },
+  "demo_hint": {
+    "message": "Laat alles zichtbaar en bedekt advertenties (ADS, zwart) en algoritmische inhoud (ALGORITHM, rood)."
+  },
+  "statsLink": {
+    "message": "Statistieken"
+  },
+  "statsTitle": {
+    "message": "Je statistieken"
+  },
+  "statsPeriod": {
+    "message": "$FROM$ – $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "donateYearTitle": {
+    "message": "Een jaar alleen wat je volgt"
+  },
+  "donateYearText": {
+    "message": "We hopen dat Dezombify je heeft geholpen tijd terug te winnen voor wat echt belangrijk is. Ze is gratis, zonder advertenties en open source."
+  },
+  "statHours": {
+    "message": "op je netwerken, met alleen wat je volgt"
+  },
+  "statDaily": {
+    "message": "gemiddeld per dag"
+  },
+  "statAds": {
+    "message": "advertenties verborgen"
+  },
+  "statAlgo": {
+    "message": "suggesties en algoritmische inhoud verborgen"
+  },
+  "statSaved": {
+    "message": "algoritme en reclame bespaard (ongeveer)"
+  },
+  "statNet": {
+    "message": "Netwerk"
+  },
+  "statTime": {
+    "message": "Tijd"
+  },
+  "statAdsShort": {
+    "message": "Advertenties"
+  },
+  "statAlgoShort": {
+    "message": "Algoritme"
+  },
+  "statSavedShort": {
+    "message": "Bespaard"
+  },
+  "statEmpty": {
+    "message": "Nog geen gegevens: open een van je netwerken met de extensie ingeschakeld."
+  },
+  "donateAskTitle": {
+    "message": "Steun het project"
+  },
+  "remindNextYear": {
+    "message": "Herinner me volgend jaar"
+  },
+  "remindSet": {
+    "message": "Gedaan: we herinneren je over een jaar."
+  },
+  "donateNote": {
+    "message": "Alles wordt alleen in je browser geteld en nergens heen gestuurd. De bespaarde tijd is een schatting van ongeveer 6 seconden per verborgen item. De tellers beginnen elk jaar opnieuw vanaf de installatiedatum."
   }
 }

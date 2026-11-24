@@ -203,24 +203,6 @@
   "donateLater": {
     "message": "Şimdi değil"
   },
-  "donateYearTitle": {
-    "message": "Yalnızca takip ettiklerinizle bir yıl"
-  },
-  "donateYearText": {
-    "message": "Dezombify’ın gerçekten önemli olanlara zaman ayırmanıza yardım ettiğini umuyoruz. Ücretsiz, reklamsız ve açık kaynaklıdır. Geliştirilmesini ve Gofio Design’ın diğer araçlarını desteklemeyi düşünür müsünüz?"
-  },
-  "statHours": {
-    "message": "ağlarınızda, yalnızca takip ettiklerinizle"
-  },
-  "statHidden": {
-    "message": "gizlenen reklam, öneri ve tavsiye"
-  },
-  "statSaved": {
-    "message": "algoritmadan kurtulduğunuz süre (yaklaşık)"
-  },
-  "donateNote": {
-    "message": "Yalnızca tarayıcınızda hesaplanır; gizlenen her öğe için yaklaşık 6 saniye. Sayaçlar kurulum tarihinden itibaren her yıl sıfırlanır."
-  },
   "welcomeKicker": {
     "message": "Kuruldu ve hazır"
   },
@@ -262,5 +244,79 @@
   },
   "tw_browse": {
     "message": "Göz At’ı gizle"
+  },
+  "demo": {
+    "message": "Atlananları göster"
+  },
+  "demo_hint": {
+    "message": "Her şeyi görünür bırakır; reklamları (ADS, siyah) ve algoritmik içeriği (ALGORITHM, kırmızı) kapatır."
+  },
+  "statsLink": {
+    "message": "İstatistikler"
+  },
+  "statsTitle": {
+    "message": "İstatistikleriniz"
+  },
+  "statsPeriod": {
+    "message": "$FROM$ – $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "donateYearTitle": {
+    "message": "Yalnızca takip ettiklerinizle bir yıl"
+  },
+  "donateYearText": {
+    "message": "Dezombify’ın gerçekten önemli olanlara zaman ayırmanıza yardım ettiğini umuyoruz. Ücretsiz, reklamsız ve açık kaynaklıdır."
+  },
+  "statHours": {
+    "message": "ağlarınızda, yalnızca takip ettiklerinizle"
+  },
+  "statDaily": {
+    "message": "günlük ortalama"
+  },
+  "statAds": {
+    "message": "gizlenen reklam"
+  },
+  "statAlgo": {
+    "message": "gizlenen öneri ve algoritmik içerik"
+  },
+  "statSaved": {
+    "message": "algoritma ve reklamdan kurtulduğunuz süre (yaklaşık)"
+  },
+  "statNet": {
+    "message": "Ağ"
+  },
+  "statTime": {
+    "message": "Süre"
+  },
+  "statAdsShort": {
+    "message": "Reklam"
+  },
+  "statAlgoShort": {
+    "message": "Algoritma"
+  },
+  "statSavedShort": {
+    "message": "Kazanılan"
+  },
+  "statEmpty": {
+    "message": "Henüz veri yok: uzantı etkinken ağlarınızdan birini açın."
+  },
+  "donateAskTitle": {
+    "message": "Projeye destek olun"
+  },
+  "remindNextYear": {
+    "message": "Gelecek yıl hatırlat"
+  },
+  "remindSet": {
+    "message": "Tamam: bir yıl sonra hatırlatacağız."
+  },
+  "donateNote": {
+    "message": "Her şey yalnızca tarayıcınızda sayılır ve hiçbir yere gönderilmez. Kazanılan süre, gizlenen her öğe için yaklaşık 6 saniyelik bir tahmindir. Sayaçlar kurulum tarihinden itibaren her yıl sıfırlanır."
   }
 }

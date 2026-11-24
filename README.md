@@ -22,11 +22,13 @@
 
 **Ajustes.** El icono de la extensión muestra solo las opciones de la red en la que estás; fuera de ellas, un interruptor por red. Todas las opciones están en **Opciones** (clic derecho en el icono → Opciones).
 
+**Ver lo que se omite.** Con esta casilla la extensión no oculta nada: deja la red tal cual y tapa los anuncios con un bloque negro (ADS) y el contenido algorítmico con uno rojo (ALGORITHM), para que veas todo lo que te ahorra.
+
 **Limitación:** funciona en el navegador del ordenador. Las apps del móvil no se pueden modificar.
 
 ## Al instalarla
 
-Se abre una pantalla de bienvenida (en el idioma del navegador) que explica cómo fijar la extensión y cómo ajustar cada red. El panel incluye un enlace a [más extensiones de Gofio Design](https://gofiodesign.eu/extensiones.html), una invitación a valorarla cada 5 usos (el icono muestra una ★ y el aviso aparece al abrir el panel) y, una vez al año, a donar; todo voluntario y contado solo en local.
+Se abre una pantalla de bienvenida (en el idioma del navegador) que explica cómo fijar la extensión y cómo ajustar cada red. El panel incluye un enlace a [más extensiones de Gofio Design](https://gofiodesign.eu/extensiones.html), una invitación a valorarla cada 5 usos (el icono muestra una ★ y el aviso aparece al abrir el panel) y el enlace a **Estadísticas**: el tiempo que pasas en cada red y cuántos anuncios y contenidos del algoritmo te ha quitado de en medio. A los 20 usos, y luego una vez al año, esa página se abre sola con el resumen y una invitación a donar (con «Recuérdamelo el próximo año»). Todo voluntario y contado solo en local.
 
 ## Idiomas
 

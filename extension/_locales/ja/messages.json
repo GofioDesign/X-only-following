@@ -203,24 +203,6 @@
   "donateLater": {
     "message": "今はしない"
   },
-  "donateYearTitle": {
-    "message": "フォローしている人だけの 1 年"
-  },
-  "donateYearText": {
-    "message": "Dezombify が、本当に大切なことのための時間を取り戻すお役に立てていればうれしいです。無料・広告なし・オープンソースです。この拡張機能と Gofio Design のほかのツールの開発を応援していただけませんか？"
-  },
-  "statHours": {
-    "message": "SNS でフォロー中の投稿だけを見た時間"
-  },
-  "statHidden": {
-    "message": "非表示にした広告・提案・おすすめ"
-  },
-  "statSaved": {
-    "message": "避けられたアルゴリズムの時間（概算）"
-  },
-  "donateNote": {
-    "message": "ブラウザ内だけで計算しています。非表示 1 件あたり約 6 秒として算出。カウンターはインストール日から毎年リセットされます。"
-  },
   "welcomeKicker": {
     "message": "インストール完了"
   },
@@ -262,5 +244,79 @@
   },
   "tw_browse": {
     "message": "「さがす」を隠す"
+  },
+  "demo": {
+    "message": "省いているものを表示"
+  },
+  "demo_hint": {
+    "message": "すべて表示したまま、広告（ADS・黒）とアルゴリズムによるコンテンツ（ALGORITHM・赤）を覆います。"
+  },
+  "statsLink": {
+    "message": "統計"
+  },
+  "statsTitle": {
+    "message": "あなたの統計"
+  },
+  "statsPeriod": {
+    "message": "$FROM$～$TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "donateYearTitle": {
+    "message": "フォローしている人だけの 1 年"
+  },
+  "donateYearText": {
+    "message": "Dezombify が、本当に大切なことのための時間を取り戻すお役に立てていればうれしいです。無料・広告なし・オープンソースです。"
+  },
+  "statHours": {
+    "message": "SNS でフォロー中の投稿だけを見た時間"
+  },
+  "statDaily": {
+    "message": "1 日あたりの平均"
+  },
+  "statAds": {
+    "message": "非表示にした広告"
+  },
+  "statAlgo": {
+    "message": "非表示にした提案・アルゴリズムのコンテンツ"
+  },
+  "statSaved": {
+    "message": "避けられたアルゴリズムと広告の時間（概算）"
+  },
+  "statNet": {
+    "message": "SNS"
+  },
+  "statTime": {
+    "message": "時間"
+  },
+  "statAdsShort": {
+    "message": "広告"
+  },
+  "statAlgoShort": {
+    "message": "アルゴリズム"
+  },
+  "statSavedShort": {
+    "message": "節約"
+  },
+  "statEmpty": {
+    "message": "まだデータがありません。拡張機能を有効にして SNS を開いてください。"
+  },
+  "donateAskTitle": {
+    "message": "プロジェクトを応援"
+  },
+  "remindNextYear": {
+    "message": "来年また知らせる"
+  },
+  "remindSet": {
+    "message": "了解です。1 年後にお知らせします。"
+  },
+  "donateNote": {
+    "message": "すべてブラウザ内だけで集計し、どこにも送信しません。節約時間は非表示 1 件あたり約 6 秒として算出した概算です。カウンターはインストール日から毎年リセットされます。"
   }
 }

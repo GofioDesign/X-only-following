@@ -2,7 +2,7 @@
 # Genera extension/_locales/<idioma>/messages.json
 #   python3 tools/locales.py
 # Para añadir un texto: añade la clave a KEYS y su traducción en cada idioma.
-import json, os
+import json, os, re
 
 EXT_ES = 'https://gofiodesign.eu/extensiones.html'
 EXT_EN = 'https://gofiodesign.eu/extensions.html'
@@ -80,12 +80,6 @@ KEYS = [
     'donateText',
     'donateButton',
     'donateLater',
-    'donateYearTitle',
-    'donateYearText',
-    'statHours',
-    'statHidden',
-    'statSaved',
-    'donateNote',
     'welcomeKicker',
     'welcomeLead',
     'artExtensions',
@@ -100,6 +94,8 @@ KEYS = [
     'tw_on',
     'tw_on_hint',
     'tw_browse',
+    'demo',
+    'demo_hint',
 ]
 
 L['es'] = dict(
@@ -895,86 +891,128 @@ L['zh_TW'] = dict(
   welcomeRepo='GitHub 開放原始碼',
   tw_on='Twitch：只看「追蹤中」', tw_on_hint='不顯示首頁、推薦的頻道和分類', tw_browse='隱藏「瀏覽」')
 
-# Página de donación (a los 20 usos y en cada aniversario de la instalación)
-DONATE = {
-  'es': dict(donateYearTitle='Un año viendo solo lo que sigues',
-    donateYearText='Esperamos que Dezombify te haya ayudado a recuperar tiempo para lo que de verdad te importa. Es gratuita, sin anuncios y de código abierto. ¿Considerarías apoyar su desarrollo y el de otras herramientas de Gofio Design?',
-    statHours='en tus redes, viendo solo lo que sigues', statHidden='anuncios, sugerencias y recomendaciones ocultados',
-    statSaved='de algoritmo que te has ahorrado (aprox.)',
-    donateNote='Calculado solo en tu navegador, unos 6 segundos por cada elemento ocultado. Los contadores vuelven a cero cada año desde la instalación.'),
-  'en': dict(donateYearTitle='A year of only what you follow',
-    donateYearText='We hope Dezombify has helped you win back time for what really matters to you. It is free, ad-free and open source. Would you consider supporting its development and other Gofio Design tools?',
-    statHours='on your networks, seeing only what you follow', statHidden='ads, suggestions and recommendations hidden',
-    statSaved='of algorithm you were spared (approx.)',
-    donateNote='Counted only in your browser, about 6 seconds per hidden item. The counters reset every year from the install date.'),
-  'fr': dict(donateYearTitle='Un an à ne voir que ce que vous suivez',
-    donateYearText='Nous espérons que Dezombify vous a aidé à retrouver du temps pour ce qui compte vraiment. Elle est gratuite, sans publicité et open source. Envisageriez-vous de soutenir son développement et celui d’autres outils de Gofio Design ?',
-    statHours='sur vos réseaux, à ne voir que ce que vous suivez', statHidden='publicités, suggestions et recommandations masquées',
-    statSaved='d’algorithme évitées (environ)',
-    donateNote='Calculé uniquement dans votre navigateur, environ 6 secondes par élément masqué. Les compteurs repartent à zéro chaque année depuis l’installation.'),
-  'de': dict(donateYearTitle='Ein Jahr nur mit dem, dem Sie folgen',
-    donateYearText='Wir hoffen, Dezombify hat Ihnen geholfen, Zeit für das zurückzugewinnen, was Ihnen wirklich wichtig ist. Sie ist kostenlos, werbefrei und Open Source. Würden Sie ihre Entwicklung und weitere Werkzeuge von Gofio Design unterstützen?',
-    statHours='in Ihren Netzwerken, nur mit dem, dem Sie folgen', statHidden='Werbung, Vorschläge und Empfehlungen ausgeblendet',
-    statSaved='Algorithmus erspart (ungefähr)',
-    donateNote='Nur in Ihrem Browser berechnet, etwa 6 Sekunden pro ausgeblendetem Element. Die Zähler beginnen jedes Jahr ab dem Installationsdatum neu.'),
-  'it': dict(donateYearTitle='Un anno vedendo solo chi segui',
-    donateYearText='Speriamo che Dezombify ti abbia aiutato a recuperare tempo per ciò che conta davvero. È gratuita, senza pubblicità e open source. Prenderesti in considerazione di sostenerne lo sviluppo e quello di altri strumenti di Gofio Design?',
-    statHours='sui tuoi social, vedendo solo chi segui', statHidden='annunci, suggerimenti e consigliati nascosti',
-    statSaved='di algoritmo risparmiate (circa)',
-    donateNote='Calcolato solo nel tuo browser, circa 6 secondi per ogni elemento nascosto. I contatori si azzerano ogni anno dalla data di installazione.'),
-  'pt_BR': dict(donateYearTitle='Um ano vendo só quem você segue',
-    donateYearText='Esperamos que a Dezombify tenha ajudado você a recuperar tempo para o que realmente importa. Ela é gratuita, sem anúncios e de código aberto. Você consideraria apoiar o desenvolvimento dela e de outras ferramentas da Gofio Design?',
-    statHours='nas suas redes, vendo só quem você segue', statHidden='anúncios, sugestões e recomendações ocultados',
-    statSaved='de algoritmo que você evitou (aprox.)',
-    donateNote='Calculado só no seu navegador, cerca de 6 segundos por item ocultado. Os contadores zeram todo ano a partir da instalação.'),
-  'pt_PT': dict(donateYearTitle='Um ano a ver só quem segue',
-    donateYearText='Esperamos que a Dezombify o tenha ajudado a recuperar tempo para o que realmente importa. É gratuita, sem anúncios e de código aberto. Consideraria apoiar o seu desenvolvimento e o de outras ferramentas da Gofio Design?',
-    statHours='nas suas redes, a ver só quem segue', statHidden='anúncios, sugestões e recomendações ocultados',
-    statSaved='de algoritmo que poupou (aprox.)',
-    donateNote='Calculado apenas no seu navegador, cerca de 6 segundos por elemento ocultado. Os contadores voltam a zero todos os anos a partir da instalação.'),
-  'nl': dict(donateYearTitle='Een jaar alleen wat je volgt',
-    donateYearText='We hopen dat Dezombify je heeft geholpen tijd terug te winnen voor wat echt belangrijk is. Ze is gratis, zonder advertenties en open source. Zou je overwegen haar ontwikkeling en andere tools van Gofio Design te steunen?',
-    statHours='op je netwerken, met alleen wat je volgt', statHidden='advertenties, suggesties en aanbevelingen verborgen',
-    statSaved='algoritme bespaard (ongeveer)',
-    donateNote='Alleen in je browser berekend, ongeveer 6 seconden per verborgen item. De tellers beginnen elk jaar opnieuw vanaf de installatiedatum.'),
-  'pl': dict(donateYearTitle='Rok tylko z tym, co obserwujesz',
-    donateYearText='Mamy nadzieję, że Dezombify pomogło ci odzyskać czas na to, co naprawdę ważne. Jest darmowe, bez reklam i open source. Czy rozważysz wsparcie jego rozwoju i innych narzędzi Gofio Design?',
-    statHours='w twoich sieciach, tylko z obserwowanymi', statHidden='ukrytych reklam, sugestii i poleceń',
-    statSaved='algorytmu zaoszczędzone (w przybliżeniu)',
-    donateNote='Liczone tylko w twojej przeglądarce, ok. 6 sekund na każdy ukryty element. Liczniki zerują się co roku od daty instalacji.'),
-  'tr': dict(donateYearTitle='Yalnızca takip ettiklerinizle bir yıl',
-    donateYearText='Dezombify’ın gerçekten önemli olanlara zaman ayırmanıza yardım ettiğini umuyoruz. Ücretsiz, reklamsız ve açık kaynaklıdır. Geliştirilmesini ve Gofio Design’ın diğer araçlarını desteklemeyi düşünür müsünüz?',
-    statHours='ağlarınızda, yalnızca takip ettiklerinizle', statHidden='gizlenen reklam, öneri ve tavsiye',
-    statSaved='algoritmadan kurtulduğunuz süre (yaklaşık)',
-    donateNote='Yalnızca tarayıcınızda hesaplanır; gizlenen her öğe için yaklaşık 6 saniye. Sayaçlar kurulum tarihinden itibaren her yıl sıfırlanır.'),
-  'ru': dict(donateYearTitle='Год только с тем, на что вы подписаны',
-    donateYearText='Надеемся, Dezombify помогло вам вернуть время для того, что действительно важно. Оно бесплатное, без рекламы и с открытым кодом. Не хотите поддержать его развитие и другие инструменты Gofio Design?',
-    statHours='в соцсетях, только с вашими подписками', statHidden='скрыто рекламы, подсказок и рекомендаций',
-    statSaved='алгоритма сэкономлено (примерно)',
-    donateNote='Считается только в вашем браузере, примерно 6 секунд на каждый скрытый элемент. Счётчики обнуляются каждый год с даты установки.'),
-  'ja': dict(donateYearTitle='フォローしている人だけの 1 年',
-    donateYearText='Dezombify が、本当に大切なことのための時間を取り戻すお役に立てていればうれしいです。無料・広告なし・オープンソースです。この拡張機能と Gofio Design のほかのツールの開発を応援していただけませんか？',
-    statHours='SNS でフォロー中の投稿だけを見た時間', statHidden='非表示にした広告・提案・おすすめ',
-    statSaved='避けられたアルゴリズムの時間（概算）',
-    donateNote='ブラウザ内だけで計算しています。非表示 1 件あたり約 6 秒として算出。カウンターはインストール日から毎年リセットされます。'),
-  'ko': dict(donateYearTitle='팔로우하는 것만 본 1년',
-    donateYearText='Dezombify가 정말 중요한 일에 쓸 시간을 되찾는 데 도움이 되었기를 바랍니다. 무료이고 광고가 없으며 오픈 소스입니다. 이 확장 프로그램과 Gofio Design의 다른 도구 개발을 후원해 주시겠어요?',
-    statHours='소셜 미디어에서 팔로우하는 것만 본 시간', statHidden='숨긴 광고, 제안, 추천',
-    statSaved='아낀 알고리즘 시간(대략)',
-    donateNote='브라우저 안에서만 계산하며, 숨긴 항목 하나당 약 6초로 셉니다. 카운터는 설치일부터 매년 초기화됩니다.'),
-  'zh_CN': dict(donateYearTitle='只看你关注的内容的一年',
-    donateYearText='希望 Dezombify 帮你把时间还给真正重要的事。它免费、无广告且开源。你愿意支持它以及 Gofio Design 其他工具的开发吗？',
-    statHours='在社交网络上只看你关注的内容', statHidden='已隐藏的广告、建议和推荐',
-    statSaved='省下的算法时间（约）',
-    donateNote='仅在你的浏览器中计算，每个隐藏项约按 6 秒计。计数器从安装日起每年清零。'),
-  'zh_TW': dict(donateYearTitle='只看你追蹤內容的一年',
-    donateYearText='希望 Dezombify 幫你把時間還給真正重要的事。它免費、無廣告且開放原始碼。你願意支持它以及 Gofio Design 其他工具的開發嗎？',
-    statHours='在社群網路上只看你追蹤的內容', statHidden='已隱藏的廣告、建議和推薦',
-    statSaved='省下的演算法時間（約）',
-    donateNote='僅在你的瀏覽器中計算，每個隱藏項目約以 6 秒計。計數器從安裝日起每年歸零。'),
+# «Ver lo que se omite» (modo demo, desde la 2.0.2). ADS y ALGORITHM no se traducen: son los rótulos.
+DEMO = {
+  'es': ('Ver lo que se omite', 'Lo deja todo a la vista y tapa los anuncios (ADS, en negro) y lo algorítmico (ALGORITHM, en rojo).'),
+  'en': ("Show what's left out", 'Keeps everything visible and covers ads (ADS, black) and algorithmic content (ALGORITHM, red).'),
+  'fr': ('Voir ce qui est omis', 'Laisse tout visible et recouvre les publicités (ADS, en noir) et le contenu algorithmique (ALGORITHM, en rouge).'),
+  'de': ('Zeigen, was ausgelassen wird', 'Lässt alles sichtbar und überdeckt Werbung (ADS, schwarz) und algorithmische Inhalte (ALGORITHM, rot).'),
+  'it': ('Mostra ciò che viene omesso', 'Lascia tutto visibile e copre gli annunci (ADS, in nero) e i contenuti algoritmici (ALGORITHM, in rosso).'),
+  'pt_BR': ('Ver o que é omitido', 'Deixa tudo visível e cobre os anúncios (ADS, em preto) e o conteúdo algorítmico (ALGORITHM, em vermelho).'),
+  'pt_PT': ('Ver o que é omitido', 'Deixa tudo visível e tapa os anúncios (ADS, a preto) e o conteúdo algorítmico (ALGORITHM, a vermelho).'),
+  'nl': ('Tonen wat wordt weggelaten', 'Laat alles zichtbaar en bedekt advertenties (ADS, zwart) en algoritmische inhoud (ALGORITHM, rood).'),
+  'pl': ('Pokaż, co jest pomijane', 'Zostawia wszystko widoczne i zakrywa reklamy (ADS, na czarno) i treści algorytmiczne (ALGORITHM, na czerwono).'),
+  'tr': ('Atlananları göster', 'Her şeyi görünür bırakır; reklamları (ADS, siyah) ve algoritmik içeriği (ALGORITHM, kırmızı) kapatır.'),
+  'ru': ('Показать, что пропускается', 'Оставляет всё на виду и закрывает рекламу (ADS, чёрным) и алгоритмический контент (ALGORITHM, красным).'),
+  'ja': ('省いているものを表示', 'すべて表示したまま、広告（ADS・黒）とアルゴリズムによるコンテンツ（ALGORITHM・赤）を覆います。'),
+  'ko': ('생략되는 항목 보기', '모두 보이게 두고 광고(ADS, 검정)와 알고리즘 콘텐츠(ALGORITHM, 빨강)를 가립니다.'),
+  'zh_CN': ('查看被省略的内容', '保留全部内容可见，并遮盖广告（ADS，黑色）和算法内容（ALGORITHM，红色）。'),
+  'zh_TW': ('查看被省略的內容', '保留全部內容可見，並遮蓋廣告（ADS，黑色）和演算法內容（ALGORITHM，紅色）。'),
 }
-for _lang, _d in DONATE.items():
-    L[_lang].update(_d)
+for _lang, (_t, _h) in DEMO.items():
+    L[_lang].update(demo=_t, demo_hint=_h)
+
+# Página de estadísticas (panel → Estadísticas; sola a los 20 usos y en cada aniversario)
+STATS_KEYS = ['statsLink', 'statsTitle', 'statsPeriod', 'donateYearTitle', 'donateYearText',
+  'statHours', 'statDaily', 'statAds', 'statAlgo', 'statSaved',
+  'statNet', 'statTime', 'statAdsShort', 'statAlgoShort', 'statSavedShort', 'statEmpty',
+  'donateAskTitle', 'remindNextYear', 'remindSet', 'donateNote']
+KEYS += STATS_KEYS
+STATS = {
+  'es': ['Estadísticas', 'Tus estadísticas', 'Del $FROM$ al $TO$', 'Un año viendo solo lo que sigues',
+    'Esperamos que Dezombify te haya ayudado a recuperar tiempo para lo que de verdad te importa. Es gratuita, sin anuncios y de código abierto.',
+    'en tus redes, viendo solo lo que sigues', 'de media al día', 'anuncios ocultados', 'sugerencias y contenidos del algoritmo ocultados', 'de algoritmo y publicidad que te has ahorrado (aprox.)',
+    'Red', 'Tiempo', 'Anuncios', 'Algoritmo', 'Ahorrado', 'Aún no hay datos: abre una de tus redes con la extensión activa.',
+    'Apoya el proyecto', 'Recuérdamelo el próximo año', 'Hecho: te lo recordaremos dentro de un año.',
+    'Todo se cuenta solo en tu navegador y no se envía a ningún sitio. El tiempo ahorrado es una estimación de unos 6 segundos por cada elemento ocultado. Los contadores vuelven a cero cada año desde la instalación.'],
+  'en': ['Statistics', 'Your statistics', '$FROM$ – $TO$', 'A year of only what you follow',
+    'We hope Dezombify has helped you win back time for what really matters to you. It is free, ad-free and open source.',
+    'on your networks, seeing only what you follow', 'daily average', 'ads hidden', 'suggestions and algorithmic posts hidden', 'of algorithm and ads you were spared (approx.)',
+    'Network', 'Time', 'Ads', 'Algorithm', 'Saved', 'No data yet: open one of your networks with the extension enabled.',
+    'Support the project', 'Remind me next year', 'Done: we’ll remind you in a year.',
+    'Everything is counted only in your browser and sent nowhere. Time saved is an estimate of about 6 seconds per hidden item. The counters reset every year from the install date.'],
+  'fr': ['Statistiques', 'Vos statistiques', 'Du $FROM$ au $TO$', 'Un an à ne voir que ce que vous suivez',
+    'Nous espérons que Dezombify vous a aidé à retrouver du temps pour ce qui compte vraiment. Elle est gratuite, sans publicité et open source.',
+    'sur vos réseaux, à ne voir que ce que vous suivez', 'en moyenne par jour', 'publicités masquées', 'suggestions et contenus algorithmiques masqués', 'd’algorithme et de pub évitées (environ)',
+    'Réseau', 'Temps', 'Pubs', 'Algorithme', 'Gagné', 'Pas encore de données : ouvrez un de vos réseaux avec l’extension activée.',
+    'Soutenir le projet', 'Me le rappeler l’an prochain', 'C’est noté : nous vous le rappellerons dans un an.',
+    'Tout est compté uniquement dans votre navigateur et n’est envoyé nulle part. Le temps gagné est une estimation d’environ 6 secondes par élément masqué. Les compteurs repartent à zéro chaque année depuis l’installation.'],
+  'de': ['Statistik', 'Ihre Statistik', '$FROM$ – $TO$', 'Ein Jahr nur mit dem, dem Sie folgen',
+    'Wir hoffen, Dezombify hat Ihnen geholfen, Zeit für das zurückzugewinnen, was Ihnen wirklich wichtig ist. Sie ist kostenlos, werbefrei und Open Source.',
+    'in Ihren Netzwerken, nur mit dem, dem Sie folgen', 'im Tagesschnitt', 'Anzeigen ausgeblendet', 'Vorschläge und Algorithmus-Inhalte ausgeblendet', 'Algorithmus und Werbung erspart (ungefähr)',
+    'Netzwerk', 'Zeit', 'Werbung', 'Algorithmus', 'Erspart', 'Noch keine Daten: Öffnen Sie eines Ihrer Netzwerke mit aktivierter Erweiterung.',
+    'Projekt unterstützen', 'Nächstes Jahr erinnern', 'Erledigt: Wir erinnern Sie in einem Jahr.',
+    'Alles wird nur in Ihrem Browser gezählt und nirgendwohin gesendet. Die ersparte Zeit ist eine Schätzung von etwa 6 Sekunden pro ausgeblendetem Element. Die Zähler beginnen jedes Jahr ab dem Installationsdatum neu.'],
+  'it': ['Statistiche', 'Le tue statistiche', 'Dal $FROM$ al $TO$', 'Un anno vedendo solo chi segui',
+    'Speriamo che Dezombify ti abbia aiutato a recuperare tempo per ciò che conta davvero. È gratuita, senza pubblicità e open source.',
+    'sui tuoi social, vedendo solo chi segui', 'di media al giorno', 'annunci nascosti', 'suggerimenti e contenuti algoritmici nascosti', 'di algoritmo e pubblicità risparmiate (circa)',
+    'Social', 'Tempo', 'Annunci', 'Algoritmo', 'Risparmiato', 'Ancora nessun dato: apri uno dei tuoi social con l’estensione attiva.',
+    'Sostieni il progetto', 'Ricordamelo l’anno prossimo', 'Fatto: te lo ricorderemo tra un anno.',
+    'Tutto viene contato solo nel tuo browser e non viene inviato da nessuna parte. Il tempo risparmiato è una stima di circa 6 secondi per elemento nascosto. I contatori si azzerano ogni anno dalla data di installazione.'],
+  'pt_BR': ['Estatísticas', 'Suas estatísticas', 'De $FROM$ a $TO$', 'Um ano vendo só quem você segue',
+    'Esperamos que a Dezombify tenha ajudado você a recuperar tempo para o que realmente importa. Ela é gratuita, sem anúncios e de código aberto.',
+    'nas suas redes, vendo só quem você segue', 'de média por dia', 'anúncios ocultados', 'sugestões e conteúdos do algoritmo ocultados', 'de algoritmo e publicidade que você evitou (aprox.)',
+    'Rede', 'Tempo', 'Anúncios', 'Algoritmo', 'Economizado', 'Ainda não há dados: abra uma das suas redes com a extensão ativada.',
+    'Apoie o projeto', 'Lembrar no ano que vem', 'Pronto: vamos lembrar você daqui a um ano.',
+    'Tudo é contado só no seu navegador e não é enviado a lugar nenhum. O tempo economizado é uma estimativa de cerca de 6 segundos por item ocultado. Os contadores zeram todo ano a partir da instalação.'],
+  'pt_PT': ['Estatísticas', 'As suas estatísticas', 'De $FROM$ a $TO$', 'Um ano a ver só quem segue',
+    'Esperamos que a Dezombify o tenha ajudado a recuperar tempo para o que realmente importa. É gratuita, sem anúncios e de código aberto.',
+    'nas suas redes, a ver só quem segue', 'de média por dia', 'anúncios ocultados', 'sugestões e conteúdos do algoritmo ocultados', 'de algoritmo e publicidade que poupou (aprox.)',
+    'Rede', 'Tempo', 'Anúncios', 'Algoritmo', 'Poupado', 'Ainda não há dados: abra uma das suas redes com a extensão ativada.',
+    'Apoie o projeto', 'Lembrar-me para o ano', 'Feito: vamos lembrá-lo daqui a um ano.',
+    'Tudo é contado apenas no seu navegador e não é enviado para lado nenhum. O tempo poupado é uma estimativa de cerca de 6 segundos por elemento ocultado. Os contadores voltam a zero todos os anos a partir da instalação.'],
+  'nl': ['Statistieken', 'Je statistieken', '$FROM$ – $TO$', 'Een jaar alleen wat je volgt',
+    'We hopen dat Dezombify je heeft geholpen tijd terug te winnen voor wat echt belangrijk is. Ze is gratis, zonder advertenties en open source.',
+    'op je netwerken, met alleen wat je volgt', 'gemiddeld per dag', 'advertenties verborgen', 'suggesties en algoritmische inhoud verborgen', 'algoritme en reclame bespaard (ongeveer)',
+    'Netwerk', 'Tijd', 'Advertenties', 'Algoritme', 'Bespaard', 'Nog geen gegevens: open een van je netwerken met de extensie ingeschakeld.',
+    'Steun het project', 'Herinner me volgend jaar', 'Gedaan: we herinneren je over een jaar.',
+    'Alles wordt alleen in je browser geteld en nergens heen gestuurd. De bespaarde tijd is een schatting van ongeveer 6 seconden per verborgen item. De tellers beginnen elk jaar opnieuw vanaf de installatiedatum.'],
+  'pl': ['Statystyki', 'Twoje statystyki', '$FROM$ – $TO$', 'Rok tylko z tym, co obserwujesz',
+    'Mamy nadzieję, że Dezombify pomogło ci odzyskać czas na to, co naprawdę ważne. Jest darmowe, bez reklam i open source.',
+    'w twoich sieciach, tylko z obserwowanymi', 'średnio dziennie', 'ukrytych reklam', 'ukrytych sugestii i treści algorytmu', 'algorytmu i reklam zaoszczędzone (w przybliżeniu)',
+    'Sieć', 'Czas', 'Reklamy', 'Algorytm', 'Zaoszczędzone', 'Brak danych: otwórz jedną ze swoich sieci z włączonym rozszerzeniem.',
+    'Wesprzyj projekt', 'Przypomnij za rok', 'Gotowe: przypomnimy ci za rok.',
+    'Wszystko jest liczone tylko w twojej przeglądarce i nigdzie nie jest wysyłane. Zaoszczędzony czas to szacunek ok. 6 sekund na każdy ukryty element. Liczniki zerują się co roku od daty instalacji.'],
+  'tr': ['İstatistikler', 'İstatistikleriniz', '$FROM$ – $TO$', 'Yalnızca takip ettiklerinizle bir yıl',
+    'Dezombify’ın gerçekten önemli olanlara zaman ayırmanıza yardım ettiğini umuyoruz. Ücretsiz, reklamsız ve açık kaynaklıdır.',
+    'ağlarınızda, yalnızca takip ettiklerinizle', 'günlük ortalama', 'gizlenen reklam', 'gizlenen öneri ve algoritmik içerik', 'algoritma ve reklamdan kurtulduğunuz süre (yaklaşık)',
+    'Ağ', 'Süre', 'Reklam', 'Algoritma', 'Kazanılan', 'Henüz veri yok: uzantı etkinken ağlarınızdan birini açın.',
+    'Projeye destek olun', 'Gelecek yıl hatırlat', 'Tamam: bir yıl sonra hatırlatacağız.',
+    'Her şey yalnızca tarayıcınızda sayılır ve hiçbir yere gönderilmez. Kazanılan süre, gizlenen her öğe için yaklaşık 6 saniyelik bir tahmindir. Sayaçlar kurulum tarihinden itibaren her yıl sıfırlanır.'],
+  'ru': ['Статистика', 'Ваша статистика', '$FROM$ – $TO$', 'Год только с тем, на что вы подписаны',
+    'Надеемся, Dezombify помогло вам вернуть время для того, что действительно важно. Оно бесплатное, без рекламы и с открытым кодом.',
+    'в соцсетях, только с вашими подписками', 'в среднем в день', 'скрыто рекламы', 'скрыто подсказок и алгоритмического контента', 'алгоритма и рекламы сэкономлено (примерно)',
+    'Сеть', 'Время', 'Реклама', 'Алгоритм', 'Сэкономлено', 'Пока нет данных: откройте одну из ваших соцсетей с включённым расширением.',
+    'Поддержать проект', 'Напомнить через год', 'Готово: напомним через год.',
+    'Всё считается только в вашем браузере и никуда не отправляется. Сэкономленное время — оценка примерно 6 секунд на каждый скрытый элемент. Счётчики обнуляются каждый год с даты установки.'],
+  'ja': ['統計', 'あなたの統計', '$FROM$～$TO$', 'フォローしている人だけの 1 年',
+    'Dezombify が、本当に大切なことのための時間を取り戻すお役に立てていればうれしいです。無料・広告なし・オープンソースです。',
+    'SNS でフォロー中の投稿だけを見た時間', '1 日あたりの平均', '非表示にした広告', '非表示にした提案・アルゴリズムのコンテンツ', '避けられたアルゴリズムと広告の時間（概算）',
+    'SNS', '時間', '広告', 'アルゴリズム', '節約', 'まだデータがありません。拡張機能を有効にして SNS を開いてください。',
+    'プロジェクトを応援', '来年また知らせる', '了解です。1 年後にお知らせします。',
+    'すべてブラウザ内だけで集計し、どこにも送信しません。節約時間は非表示 1 件あたり約 6 秒として算出した概算です。カウンターはインストール日から毎年リセットされます。'],
+  'ko': ['통계', '내 통계', '$FROM$ ~ $TO$', '팔로우하는 것만 본 1년',
+    'Dezombify가 정말 중요한 일에 쓸 시간을 되찾는 데 도움이 되었기를 바랍니다. 무료이고 광고가 없으며 오픈 소스입니다.',
+    '소셜 미디어에서 팔로우하는 것만 본 시간', '하루 평균', '숨긴 광고', '숨긴 제안과 알고리즘 콘텐츠', '아낀 알고리즘·광고 시간(대략)',
+    '네트워크', '시간', '광고', '알고리즘', '절약', '아직 데이터가 없습니다. 확장 프로그램을 켠 상태로 소셜 미디어를 열어 보세요.',
+    '프로젝트 후원', '내년에 다시 알림', '알겠습니다. 1년 뒤에 알려 드릴게요.',
+    '모든 것은 브라우저 안에서만 집계되며 어디에도 전송되지 않습니다. 절약 시간은 숨긴 항목 하나당 약 6초로 계산한 추정치입니다. 카운터는 설치일부터 매년 초기화됩니다.'],
+  'zh_CN': ['统计', '你的统计', '$FROM$ – $TO$', '只看你关注的内容的一年',
+    '希望 Dezombify 帮你把时间还给真正重要的事。它免费、无广告且开源。',
+    '在社交网络上只看你关注的内容', '日均', '已隐藏的广告', '已隐藏的建议和算法内容', '省下的算法和广告时间（约）',
+    '网络', '时间', '广告', '算法', '节省', '还没有数据：请在启用扩展程序的情况下打开你的社交网络。',
+    '支持这个项目', '明年再提醒我', '好的，一年后再提醒你。',
+    '所有数据只在你的浏览器中统计，不会发送到任何地方。节省时间按每个隐藏项约 6 秒估算。计数器从安装日起每年清零。'],
+  'zh_TW': ['統計', '你的統計', '$FROM$ – $TO$', '只看你追蹤內容的一年',
+    '希望 Dezombify 幫你把時間還給真正重要的事。它免費、無廣告且開放原始碼。',
+    '在社群網路上只看你追蹤的內容', '每日平均', '已隱藏的廣告', '已隱藏的建議和演算法內容', '省下的演算法和廣告時間（約）',
+    '社群網路', '時間', '廣告', '演算法', '節省', '還沒有資料：請在啟用擴充功能的情況下開啟你的社群網路。',
+    '支持這個專案', '明年再提醒我', '好的，一年後再提醒你。',
+    '所有資料只在你的瀏覽器中統計，不會傳送到任何地方。節省時間以每個隱藏項目約 6 秒估算。計數器從安裝日起每年歸零。'],
+}
+for _lang, _vals in STATS.items():
+    assert len(_vals) == len(STATS_KEYS), _lang
+    L[_lang].update(zip(STATS_KEYS, _vals))
 
 
 def build(root):
@@ -993,7 +1031,15 @@ def build(root):
                 errors.append(f'{lang}: {k} tiene distintas etiquetas <strong>')
             if bool(d[k]) != bool(L['es'][k]):
                 errors.append(f'{lang}: {k} vacío o sobrante')
-        out = {k: {'message': d[k]} for k in KEYS}
+        out = {}
+        for k in KEYS:
+            out[k] = {'message': d[k]}
+            # $FROM$, $TO$…: marcadores que se rellenan con getMessage(k, [a, b]) en orden
+            names = re.findall(r'\$([A-Z]+)\$', L['es'][k])
+            if names:
+                if sorted(re.findall(r'\$([A-Z]+)\$', d[k])) != sorted(names):
+                    errors.append(f'{lang}: {k} no tiene los marcadores {names}')
+                out[k]['placeholders'] = {n.lower(): {'content': f'${i + 1}'} for i, n in enumerate(names)}
         os.makedirs(f'{root}/{lang}', exist_ok=True)
         with open(f'{root}/{lang}/messages.json', 'w', encoding='utf-8') as f:
             f.write(json.dumps(out, ensure_ascii=False, indent=2) + '\n')

@@ -203,24 +203,6 @@
   "donateLater": {
     "message": "稍後再說"
   },
-  "donateYearTitle": {
-    "message": "只看你追蹤內容的一年"
-  },
-  "donateYearText": {
-    "message": "希望 Dezombify 幫你把時間還給真正重要的事。它免費、無廣告且開放原始碼。你願意支持它以及 Gofio Design 其他工具的開發嗎？"
-  },
-  "statHours": {
-    "message": "在社群網路上只看你追蹤的內容"
-  },
-  "statHidden": {
-    "message": "已隱藏的廣告、建議和推薦"
-  },
-  "statSaved": {
-    "message": "省下的演算法時間（約）"
-  },
-  "donateNote": {
-    "message": "僅在你的瀏覽器中計算，每個隱藏項目約以 6 秒計。計數器從安裝日起每年歸零。"
-  },
   "welcomeKicker": {
     "message": "安裝完成"
   },
@@ -262,5 +244,79 @@
   },
   "tw_browse": {
     "message": "隱藏「瀏覽」"
+  },
+  "demo": {
+    "message": "查看被省略的內容"
+  },
+  "demo_hint": {
+    "message": "保留全部內容可見，並遮蓋廣告（ADS，黑色）和演算法內容（ALGORITHM，紅色）。"
+  },
+  "statsLink": {
+    "message": "統計"
+  },
+  "statsTitle": {
+    "message": "你的統計"
+  },
+  "statsPeriod": {
+    "message": "$FROM$ – $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "donateYearTitle": {
+    "message": "只看你追蹤內容的一年"
+  },
+  "donateYearText": {
+    "message": "希望 Dezombify 幫你把時間還給真正重要的事。它免費、無廣告且開放原始碼。"
+  },
+  "statHours": {
+    "message": "在社群網路上只看你追蹤的內容"
+  },
+  "statDaily": {
+    "message": "每日平均"
+  },
+  "statAds": {
+    "message": "已隱藏的廣告"
+  },
+  "statAlgo": {
+    "message": "已隱藏的建議和演算法內容"
+  },
+  "statSaved": {
+    "message": "省下的演算法和廣告時間（約）"
+  },
+  "statNet": {
+    "message": "社群網路"
+  },
+  "statTime": {
+    "message": "時間"
+  },
+  "statAdsShort": {
+    "message": "廣告"
+  },
+  "statAlgoShort": {
+    "message": "演算法"
+  },
+  "statSavedShort": {
+    "message": "節省"
+  },
+  "statEmpty": {
+    "message": "還沒有資料：請在啟用擴充功能的情況下開啟你的社群網路。"
+  },
+  "donateAskTitle": {
+    "message": "支持這個專案"
+  },
+  "remindNextYear": {
+    "message": "明年再提醒我"
+  },
+  "remindSet": {
+    "message": "好的，一年後再提醒你。"
+  },
+  "donateNote": {
+    "message": "所有資料只在你的瀏覽器中統計，不會傳送到任何地方。節省時間以每個隱藏項目約 6 秒估算。計數器從安裝日起每年歸零。"
   }
 }

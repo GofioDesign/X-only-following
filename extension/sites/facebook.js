@@ -14,6 +14,7 @@
   }
 
   function toFeeds(s) {
+    if (KTA.demo) return false;
     const params = new URLSearchParams(location.search);
     if ((location.pathname === '/' || location.pathname === '/home.php') && params.get('sk') !== 'h_chr') {
       location.replace(feedUrl(s));
@@ -79,13 +80,13 @@
 
       // Logo y botón de Inicio → Feeds
       document.querySelectorAll('a[href="/"], a[href="https://www.facebook.com/"]').forEach((a) => {
-        a.setAttribute('href', feedUrl(s));
+        if (!KTA.demo) a.setAttribute('href', feedUrl(s));
       });
 
       // Anuncios dentro del feed
       for (const post of document.querySelectorAll('div[role="main"] [aria-posinset]')) {
         if (KTA.isHidden(post) || !post.innerText.trim()) continue;
-        if (isAd(post)) { KTA.hide(post); continue; }
+        if (isAd(post)) { KTA.hideAd(post); continue; }
         const head = post.innerText.split('\n').map((t) => t.trim()).filter((t) => t && t !== 'Facebook').slice(0, 3).join(' ');
         if (s.fb_activity && ACTIVITY.test(head.slice(0, 160))) { KTA.hide(post); continue; }
         if (s.fb_shares && (timeLabels(post) >= 2 || SHARED.test(head.slice(0, 160)))) KTA.hide(post);
@@ -96,7 +97,7 @@
         if (el.childElementCount === 0 && SIDEBAR_SPONSORED.test(el.textContent.trim())) {
           let box = el;
           for (let i = 0; i < 5 && box.parentElement && !box.parentElement.matches('[role="complementary"]'); i++) box = box.parentElement;
-          KTA.hide(box);
+          KTA.hideAd(box);
         }
       });
 

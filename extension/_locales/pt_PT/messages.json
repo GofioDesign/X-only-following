@@ -203,24 +203,6 @@
   "donateLater": {
     "message": "Agora não"
   },
-  "donateYearTitle": {
-    "message": "Um ano a ver só quem segue"
-  },
-  "donateYearText": {
-    "message": "Esperamos que a Dezombify o tenha ajudado a recuperar tempo para o que realmente importa. É gratuita, sem anúncios e de código aberto. Consideraria apoiar o seu desenvolvimento e o de outras ferramentas da Gofio Design?"
-  },
-  "statHours": {
-    "message": "nas suas redes, a ver só quem segue"
-  },
-  "statHidden": {
-    "message": "anúncios, sugestões e recomendações ocultados"
-  },
-  "statSaved": {
-    "message": "de algoritmo que poupou (aprox.)"
-  },
-  "donateNote": {
-    "message": "Calculado apenas no seu navegador, cerca de 6 segundos por elemento ocultado. Os contadores voltam a zero todos os anos a partir da instalação."
-  },
   "welcomeKicker": {
     "message": "Instalada e pronta"
   },
@@ -262,5 +244,79 @@
   },
   "tw_browse": {
     "message": "Ocultar Explorar"
+  },
+  "demo": {
+    "message": "Ver o que é omitido"
+  },
+  "demo_hint": {
+    "message": "Deixa tudo visível e tapa os anúncios (ADS, a preto) e o conteúdo algorítmico (ALGORITHM, a vermelho)."
+  },
+  "statsLink": {
+    "message": "Estatísticas"
+  },
+  "statsTitle": {
+    "message": "As suas estatísticas"
+  },
+  "statsPeriod": {
+    "message": "De $FROM$ a $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "donateYearTitle": {
+    "message": "Um ano a ver só quem segue"
+  },
+  "donateYearText": {
+    "message": "Esperamos que a Dezombify o tenha ajudado a recuperar tempo para o que realmente importa. É gratuita, sem anúncios e de código aberto."
+  },
+  "statHours": {
+    "message": "nas suas redes, a ver só quem segue"
+  },
+  "statDaily": {
+    "message": "de média por dia"
+  },
+  "statAds": {
+    "message": "anúncios ocultados"
+  },
+  "statAlgo": {
+    "message": "sugestões e conteúdos do algoritmo ocultados"
+  },
+  "statSaved": {
+    "message": "de algoritmo e publicidade que poupou (aprox.)"
+  },
+  "statNet": {
+    "message": "Rede"
+  },
+  "statTime": {
+    "message": "Tempo"
+  },
+  "statAdsShort": {
+    "message": "Anúncios"
+  },
+  "statAlgoShort": {
+    "message": "Algoritmo"
+  },
+  "statSavedShort": {
+    "message": "Poupado"
+  },
+  "statEmpty": {
+    "message": "Ainda não há dados: abra uma das suas redes com a extensão ativada."
+  },
+  "donateAskTitle": {
+    "message": "Apoie o projeto"
+  },
+  "remindNextYear": {
+    "message": "Lembrar-me para o ano"
+  },
+  "remindSet": {
+    "message": "Feito: vamos lembrá-lo daqui a um ano."
+  },
+  "donateNote": {
+    "message": "Tudo é contado apenas no seu navegador e não é enviado para lado nenhum. O tempo poupado é uma estimativa de cerca de 6 segundos por elemento ocultado. Os contadores voltam a zero todos os anos a partir da instalação."
   }
 }

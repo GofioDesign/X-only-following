@@ -23,13 +23,15 @@
       <div class="cards">
         <div class="card"><b id="totHours"></b><span data-i18n="statHours"></span></div>
         <div class="card"><b id="totDaily"></b><span data-i18n="statDaily"></span></div>
-        <div class="card"><b id="totHidden"></b><span data-i18n="statHidden"></span></div>
+        <div class="card"><b id="totAds"></b><span data-i18n="statAds"></span></div>
+        <div class="card"><b id="totAlgo"></b><span data-i18n="statAlgo"></span></div>
         <div class="card accent"><b id="totSaved"></b><span data-i18n="statSaved"></span></div>
       </div>
-      <table class="nets">
-        <thead><tr><th data-i18n="statNet"></th><th data-i18n="statTime"></th><th data-i18n="statHiddenShort"></th><th data-i18n="statSavedShort"></th></tr></thead>
+      <div class="table-wrap"><table class="nets">
+        <thead><tr><th data-i18n="statNet"></th><th data-i18n="statTime"></th><th data-i18n="statAdsShort"></th><th data-i18n="statAlgoShort"></th><th data-i18n="statSavedShort"></th></tr></thead>
         <tbody id="rows"></tbody>
-      </table>
+        <tfoot id="foot"></tfoot>
+      </table></div>
     </section>
     <p class="empty" id="empty" data-i18n="statEmpty" hidden></p>
 
