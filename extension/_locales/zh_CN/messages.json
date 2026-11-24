@@ -203,6 +203,24 @@
   "donateLater": {
     "message": "以后再说"
   },
+  "donateYearTitle": {
+    "message": "只看你关注的内容的一年"
+  },
+  "donateYearText": {
+    "message": "希望 Dezombify 帮你把时间还给真正重要的事。它免费、无广告且开源。你愿意支持它以及 Gofio Design 其他工具的开发吗？"
+  },
+  "statHours": {
+    "message": "在社交网络上只看你关注的内容"
+  },
+  "statHidden": {
+    "message": "已隐藏的广告、建议和推荐"
+  },
+  "statSaved": {
+    "message": "省下的算法时间（约）"
+  },
+  "donateNote": {
+    "message": "仅在你的浏览器中计算，每个隐藏项约按 6 秒计。计数器从安装日起每年清零。"
+  },
   "welcomeKicker": {
     "message": "安装完成"
   },

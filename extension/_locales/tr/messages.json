@@ -203,6 +203,24 @@
   "donateLater": {
     "message": "Şimdi değil"
   },
+  "donateYearTitle": {
+    "message": "Yalnızca takip ettiklerinizle bir yıl"
+  },
+  "donateYearText": {
+    "message": "Dezombify’ın gerçekten önemli olanlara zaman ayırmanıza yardım ettiğini umuyoruz. Ücretsiz, reklamsız ve açık kaynaklıdır. Geliştirilmesini ve Gofio Design’ın diğer araçlarını desteklemeyi düşünür müsünüz?"
+  },
+  "statHours": {
+    "message": "ağlarınızda, yalnızca takip ettiklerinizle"
+  },
+  "statHidden": {
+    "message": "gizlenen reklam, öneri ve tavsiye"
+  },
+  "statSaved": {
+    "message": "algoritmadan kurtulduğunuz süre (yaklaşık)"
+  },
+  "donateNote": {
+    "message": "Yalnızca tarayıcınızda hesaplanır; gizlenen her öğe için yaklaşık 6 saniye. Sayaçlar kurulum tarihinden itibaren her yıl sıfırlanır."
+  },
   "welcomeKicker": {
     "message": "Kuruldu ve hazır"
   },

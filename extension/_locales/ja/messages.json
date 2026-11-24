@@ -203,6 +203,24 @@
   "donateLater": {
     "message": "今はしない"
   },
+  "donateYearTitle": {
+    "message": "フォローしている人だけの 1 年"
+  },
+  "donateYearText": {
+    "message": "Dezombify が、本当に大切なことのための時間を取り戻すお役に立てていればうれしいです。無料・広告なし・オープンソースです。この拡張機能と Gofio Design のほかのツールの開発を応援していただけませんか？"
+  },
+  "statHours": {
+    "message": "SNS でフォロー中の投稿だけを見た時間"
+  },
+  "statHidden": {
+    "message": "非表示にした広告・提案・おすすめ"
+  },
+  "statSaved": {
+    "message": "避けられたアルゴリズムの時間（概算）"
+  },
+  "donateNote": {
+    "message": "ブラウザ内だけで計算しています。非表示 1 件あたり約 6 秒として算出。カウンターはインストール日から毎年リセットされます。"
+  },
   "welcomeKicker": {
     "message": "インストール完了"
   },

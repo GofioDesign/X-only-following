@@ -203,6 +203,24 @@
   "donateLater": {
     "message": "나중에"
   },
+  "donateYearTitle": {
+    "message": "팔로우하는 것만 본 1년"
+  },
+  "donateYearText": {
+    "message": "Dezombify가 정말 중요한 일에 쓸 시간을 되찾는 데 도움이 되었기를 바랍니다. 무료이고 광고가 없으며 오픈 소스입니다. 이 확장 프로그램과 Gofio Design의 다른 도구 개발을 후원해 주시겠어요?"
+  },
+  "statHours": {
+    "message": "소셜 미디어에서 팔로우하는 것만 본 시간"
+  },
+  "statHidden": {
+    "message": "숨긴 광고, 제안, 추천"
+  },
+  "statSaved": {
+    "message": "아낀 알고리즘 시간(대략)"
+  },
+  "donateNote": {
+    "message": "브라우저 안에서만 계산하며, 숨긴 항목 하나당 약 6초로 셉니다. 카운터는 설치일부터 매년 초기화됩니다."
+  },
   "welcomeKicker": {
     "message": "설치 완료"
   },

@@ -203,6 +203,24 @@
   "donateLater": {
     "message": "Jetzt nicht"
   },
+  "donateYearTitle": {
+    "message": "Ein Jahr nur mit dem, dem Sie folgen"
+  },
+  "donateYearText": {
+    "message": "Wir hoffen, Dezombify hat Ihnen geholfen, Zeit für das zurückzugewinnen, was Ihnen wirklich wichtig ist. Sie ist kostenlos, werbefrei und Open Source. Würden Sie ihre Entwicklung und weitere Werkzeuge von Gofio Design unterstützen?"
+  },
+  "statHours": {
+    "message": "in Ihren Netzwerken, nur mit dem, dem Sie folgen"
+  },
+  "statHidden": {
+    "message": "Werbung, Vorschläge und Empfehlungen ausgeblendet"
+  },
+  "statSaved": {
+    "message": "Algorithmus erspart (ungefähr)"
+  },
+  "donateNote": {
+    "message": "Nur in Ihrem Browser berechnet, etwa 6 Sekunden pro ausgeblendetem Element. Die Zähler beginnen jedes Jahr ab dem Installationsdatum neu."
+  },
   "welcomeKicker": {
     "message": "Installiert und bereit"
   },

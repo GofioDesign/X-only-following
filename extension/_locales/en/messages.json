@@ -203,6 +203,24 @@
   "donateLater": {
     "message": "Not now"
   },
+  "donateYearTitle": {
+    "message": "A year of only what you follow"
+  },
+  "donateYearText": {
+    "message": "We hope Dezombify has helped you win back time for what really matters to you. It is free, ad-free and open source. Would you consider supporting its development and other Gofio Design tools?"
+  },
+  "statHours": {
+    "message": "on your networks, seeing only what you follow"
+  },
+  "statHidden": {
+    "message": "ads, suggestions and recommendations hidden"
+  },
+  "statSaved": {
+    "message": "of algorithm you were spared (approx.)"
+  },
+  "donateNote": {
+    "message": "Counted only in your browser, about 6 seconds per hidden item. The counters reset every year from the install date."
+  },
   "welcomeKicker": {
     "message": "Installed and ready"
   },

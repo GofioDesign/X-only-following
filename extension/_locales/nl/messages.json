@@ -203,6 +203,24 @@
   "donateLater": {
     "message": "Niet nu"
   },
+  "donateYearTitle": {
+    "message": "Een jaar alleen wat je volgt"
+  },
+  "donateYearText": {
+    "message": "We hopen dat Dezombify je heeft geholpen tijd terug te winnen voor wat echt belangrijk is. Ze is gratis, zonder advertenties en open source. Zou je overwegen haar ontwikkeling en andere tools van Gofio Design te steunen?"
+  },
+  "statHours": {
+    "message": "op je netwerken, met alleen wat je volgt"
+  },
+  "statHidden": {
+    "message": "advertenties, suggesties en aanbevelingen verborgen"
+  },
+  "statSaved": {
+    "message": "algoritme bespaard (ongeveer)"
+  },
+  "donateNote": {
+    "message": "Alleen in je browser berekend, ongeveer 6 seconden per verborgen item. De tellers beginnen elk jaar opnieuw vanaf de installatiedatum."
+  },
   "welcomeKicker": {
     "message": "Geïnstalleerd en klaar"
   },
