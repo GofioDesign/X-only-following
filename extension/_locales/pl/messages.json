@@ -1,0 +1,254 @@
+{
+  "extName": {
+    "message": "Dezombify"
+  },
+  "extShortName": {
+    "message": "Kill the Algo"
+  },
+  "extDescription": {
+    "message": "Zabij algorytm swoich mediów społecznościowych i sprowadź znajomych bezpiecznie do domu: tylko posty tych, których obserwujesz."
+  },
+  "tagline": {
+    "message": "Zabij algorytm"
+  },
+  "masterOn": {
+    "message": "Włączone"
+  },
+  "x_on": {
+    "message": "X: tylko „Obserwowani”"
+  },
+  "x_on_hint": {
+    "message": "Bez „Dla ciebie”, reklam i sugestii"
+  },
+  "x_reposts": {
+    "message": "Ukryj reposty"
+  },
+  "x_reposts_hint": {
+    "message": "Reposty pokazują konta, których nie obserwujesz"
+  },
+  "yt_on": {
+    "message": "YouTube: tylko Subskrypcje"
+  },
+  "yt_on_hint": {
+    "message": "Strona główna otwiera subskrypcje"
+  },
+  "yt_ads": {
+    "message": "Ukryj reklamy"
+  },
+  "yt_ads_hint": {
+    "message": "Banery i treści sponsorowane; pomija reklamy wideo, gdy tylko można"
+  },
+  "yt_shorts": {
+    "message": "Ukryj Shorts"
+  },
+  "yt_shorts_hint": {
+    "message": "Otwarte Shorts odtwarzają się jak zwykły film"
+  },
+  "yt_related": {
+    "message": "Ukryj polecane filmy"
+  },
+  "yt_related_hint": {
+    "message": "Pasek boczny i ekran końcowy"
+  },
+  "yt_autoplay": {
+    "message": "Bez autoodtwarzania"
+  },
+  "yt_autoplay_hint": {
+    "message": ""
+  },
+  "ig_on": {
+    "message": "Instagram: tylko „Obserwowani”"
+  },
+  "ig_on_hint": {
+    "message": "Strona główna otwiera chronologiczny kanał obserwowanych"
+  },
+  "ig_explore": {
+    "message": "Ukryj Odkrywaj i Reels"
+  },
+  "ig_explore_hint": {
+    "message": ""
+  },
+  "li_on": {
+    "message": "LinkedIn: tylko obserwowani"
+  },
+  "li_on_hint": {
+    "message": "Bez promowanych postów i autorów, których nie obserwujesz"
+  },
+  "note": {
+    "message": "Zmiany działają od razu. Działa w przeglądarce na komputerze."
+  },
+  "fb_on": {
+    "message": "Facebook: chronologiczne Kanały"
+  },
+  "fb_on_hint": {
+    "message": "Znajomi, grupy i strony, które obserwujesz, bez reklam"
+  },
+  "fb_friends": {
+    "message": "Tylko znajomi"
+  },
+  "fb_friends_hint": {
+    "message": "Bez grup i stron"
+  },
+  "fb_reels": {
+    "message": "Ukryj Rolki i Wideo"
+  },
+  "tt_on": {
+    "message": "TikTok: tylko „Obserwowani”"
+  },
+  "tt_on_hint": {
+    "message": "Bez „Dla Ciebie” i sugestii kont, których nie obserwujesz"
+  },
+  "tt_explore": {
+    "message": "Ukryj Eksploruj, LIVE i Minidramy"
+  },
+  "ig_reposts": {
+    "message": "Ukryj reposty"
+  },
+  "ig_reposts_hint": {
+    "message": "Reposty kont, które obserwujesz"
+  },
+  "fb_shares": {
+    "message": "Ukryj udostępnienia"
+  },
+  "fb_shares_hint": {
+    "message": "Posty innych osób udostępnione przez znajomych"
+  },
+  "fb_activity": {
+    "message": "Ukryj aktywność"
+  },
+  "fb_activity_hint": {
+    "message": "„X lubi to”, „X i Y obserwują…”: wybiera algorytm"
+  },
+  "li_reposts": {
+    "message": "Ukryj udostępnienia"
+  },
+  "li_reposts_hint": {
+    "message": "„X udostępnił(a) to”"
+  },
+  "li_activity": {
+    "message": "Ukryj aktywność"
+  },
+  "li_activity_hint": {
+    "message": "„X lubi to”, „X skomentował(a)”: wybiera algorytm"
+  },
+  "tt_reposts": {
+    "message": "Ukryj reposty"
+  },
+  "tt_reposts_hint": {
+    "message": "Reposty kont, które obserwujesz"
+  },
+  "moreOptions": {
+    "message": "Więcej opcji"
+  },
+  "allNetworks": {
+    "message": "Opcje wszystkich sieci"
+  },
+  "optionsTitle": {
+    "message": "Opcje"
+  },
+  "th_on": {
+    "message": "Threads: tylko „Obserwowani”"
+  },
+  "th_on_hint": {
+    "message": "Bez „Dla Ciebie” i sugestii"
+  },
+  "th_reposts": {
+    "message": "Ukryj reposty"
+  },
+  "th_reposts_hint": {
+    "message": "Reposty kont, które obserwujesz"
+  },
+  "bs_on": {
+    "message": "Bluesky: tylko „Following”"
+  },
+  "bs_on_hint": {
+    "message": "Bez Discover, Video i innych kanałów"
+  },
+  "bs_reposts": {
+    "message": "Ukryj reposty"
+  },
+  "bs_reposts_hint": {
+    "message": "„Repost od…”"
+  },
+  "moreLink": {
+    "message": "Więcej rozszerzeń · Wesprzyj projekt ♥"
+  },
+  "moreUrl": {
+    "message": "https://gofiodesign.eu/extensions.html"
+  },
+  "reviewTitle": {
+    "message": "Przydaje się?"
+  },
+  "reviewText": {
+    "message": "Ocena w Chrome Web Store pomaga innym ją znaleźć."
+  },
+  "reviewButton": {
+    "message": "Oceń"
+  },
+  "reviewLater": {
+    "message": "Nie teraz"
+  },
+  "reviewNever": {
+    "message": "Nie pokazuj więcej"
+  },
+  "donateTitle": {
+    "message": "Dziękujemy, że korzystasz z niej od tak dawna!"
+  },
+  "donateText": {
+    "message": "Jest darmowa i bez reklam. Dobrowolna darowizna pomaga ją utrzymać i tworzyć nowe narzędzia."
+  },
+  "donateButton": {
+    "message": "Wesprzyj"
+  },
+  "donateLater": {
+    "message": "Nie teraz"
+  },
+  "welcomeKicker": {
+    "message": "Zainstalowane i gotowe"
+  },
+  "welcomeLead": {
+    "message": "Od teraz twoje media społecznościowe pokazują to, co publikują obserwowane konta, a nie to, co wybiera algorytm. Jak to działa:"
+  },
+  "artExtensions": {
+    "message": "Rozszerzenia"
+  },
+  "step1Title": {
+    "message": "Przypnij rozszerzenie do paska"
+  },
+  "step1Text": {
+    "message": "Kliknij ikonę <strong>puzzla</strong> w prawym górnym rogu Chrome, a potem <strong>pinezkę</strong> obok „Dezombify”. Ustawienia będą zawsze pod ręką."
+  },
+  "step2Title": {
+    "message": "Otwieraj sieci jak zwykle"
+  },
+  "step2Text": {
+    "message": "Nic więcej nie musisz robić: po wejściu rozszerzenie przenosi cię do kanału obserwowanych kont i ukrywa sugestie, polecane treści i reklamy."
+  },
+  "step3Title": {
+    "message": "Dostosuj każdą sieć"
+  },
+  "step3Text": {
+    "message": "Kliknij ikonę, będąc w danej sieci, aby zobaczyć jej opcje (na przykład ukrywanie repostów). Wszystkie sieci i opcje są w <strong>Opcjach</strong>."
+  },
+  "welcomePrivacy": {
+    "message": "Rozszerzenie zmienia tylko wygląd sieci w twojej przeglądarce. Nie czyta twoich kont i niczego nie wysyła na serwer."
+  },
+  "welcomeRepo": {
+    "message": "Otwarty kod na GitHubie"
+  },
+  "tw_on": {
+    "message": "Twitch: tylko „Obserwowane”"
+  },
+  "tw_on_hint": {
+    "message": "Bez strony głównej, polecanych kanałów i kategorii"
+  },
+  "tw_browse": {
+    "message": "Ukryj Przeglądaj"
+  },
+  "demo": {
+    "message": "Pokaż, co jest pomijane"
+  },
+  "demo_hint": {
+    "message": "Zostawia wszystko widoczne i zakrywa reklamy (ADS, na czarno) i treści algorytmiczne (ALGORITHM, na czerwono)."
+  }
+}

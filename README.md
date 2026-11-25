@@ -28,7 +28,11 @@
 
 ## Al instalarla
 
-Se abre una pantalla de bienvenida (español o inglés) que explica cómo fijar la extensión y cómo ajustar cada red. El panel incluye un enlace a [más extensiones de Gofio Design](https://gofiodesign.eu/extensiones.html), una invitación a valorarla cada 5 usos (el icono muestra una ★ y el aviso aparece al abrir el panel) y, una vez al año, a donar; todo voluntario y contado solo en local.
+Se abre una pantalla de bienvenida (en el idioma del navegador) que explica cómo fijar la extensión y cómo ajustar cada red. El panel incluye un enlace a [más extensiones de Gofio Design](https://gofiodesign.eu/extensiones.html), una invitación a valorarla cada 5 usos (el icono muestra una ★ y el aviso aparece al abrir el panel) y, una vez al año, a donar; todo voluntario y contado solo en local.
+
+## Idiomas
+
+Español, inglés, francés, alemán, italiano, portugués (Brasil y Portugal), neerlandés, polaco, turco, ruso, japonés, coreano y chino (simplificado y tradicional). Los textos están en `tools/locales.py`; para cambiarlos, edítalo y ejecuta `python3 tools/locales.py`.
 
 ## Instalación manual
 

@@ -1,0 +1,254 @@
+{
+  "extName": {
+    "message": "Dezombify"
+  },
+  "extShortName": {
+    "message": "Kill the Algo"
+  },
+  "extDescription": {
+    "message": "SNS のアルゴリズムを倒して、友だちを無事に連れ戻そう。表示するのはフォローしている人の投稿だけ。"
+  },
+  "tagline": {
+    "message": "アルゴリズムを倒せ"
+  },
+  "masterOn": {
+    "message": "有効"
+  },
+  "x_on": {
+    "message": "X：「フォロー中」のみ"
+  },
+  "x_on_hint": {
+    "message": "「おすすめ」、広告、提案を表示しない"
+  },
+  "x_reposts": {
+    "message": "リポストを隠す"
+  },
+  "x_reposts_hint": {
+    "message": "リポストはフォローしていないアカウントを連れてきます"
+  },
+  "yt_on": {
+    "message": "YouTube：登録チャンネルのみ"
+  },
+  "yt_on_hint": {
+    "message": "ホームで登録チャンネルを開く"
+  },
+  "yt_ads": {
+    "message": "広告を隠す"
+  },
+  "yt_ads_hint": {
+    "message": "バナーとプロモーション。動画広告はスキップ可能になり次第スキップ"
+  },
+  "yt_shorts": {
+    "message": "ショートを隠す"
+  },
+  "yt_shorts_hint": {
+    "message": "開いたショートは通常の動画として再生"
+  },
+  "yt_related": {
+    "message": "おすすめ動画を隠す"
+  },
+  "yt_related_hint": {
+    "message": "サイドバーと終了画面"
+  },
+  "yt_autoplay": {
+    "message": "自動再生しない"
+  },
+  "yt_autoplay_hint": {
+    "message": ""
+  },
+  "ig_on": {
+    "message": "Instagram：「フォロー中」のみ"
+  },
+  "ig_on_hint": {
+    "message": "ホームでフォロー中の人の時系列フィードを開く"
+  },
+  "ig_explore": {
+    "message": "発見タブとリールを隠す"
+  },
+  "ig_explore_hint": {
+    "message": ""
+  },
+  "li_on": {
+    "message": "LinkedIn：フォロー中の人のみ"
+  },
+  "li_on_hint": {
+    "message": "プロモーションとフォローしていない投稿者を表示しない"
+  },
+  "note": {
+    "message": "変更はすぐに反映されます。パソコンのブラウザで動作します。"
+  },
+  "fb_on": {
+    "message": "Facebook：時系列フィード"
+  },
+  "fb_on_hint": {
+    "message": "フォロー中の友達、グループ、ページ。広告なし"
+  },
+  "fb_friends": {
+    "message": "友達のみ"
+  },
+  "fb_friends_hint": {
+    "message": "グループとページを除く"
+  },
+  "fb_reels": {
+    "message": "リールと動画を隠す"
+  },
+  "tt_on": {
+    "message": "TikTok：「フォロー中」のみ"
+  },
+  "tt_on_hint": {
+    "message": "「おすすめ」とフォローしていないアカウントの提案を表示しない"
+  },
+  "tt_explore": {
+    "message": "「探す」、LIVE、ミニドラマを隠す"
+  },
+  "ig_reposts": {
+    "message": "リポストを隠す"
+  },
+  "ig_reposts_hint": {
+    "message": "フォロー中のアカウントのリポスト"
+  },
+  "fb_shares": {
+    "message": "シェアを隠す"
+  },
+  "fb_shares_hint": {
+    "message": "友達がシェアした他の人の投稿"
+  },
+  "fb_activity": {
+    "message": "アクティビティを隠す"
+  },
+  "fb_activity_hint": {
+    "message": "「X さんが『いいね！』しました」など：アルゴリズムが選んだもの"
+  },
+  "li_reposts": {
+    "message": "シェアを隠す"
+  },
+  "li_reposts_hint": {
+    "message": "「X さんがこれを再投稿しました」"
+  },
+  "li_activity": {
+    "message": "アクティビティを隠す"
+  },
+  "li_activity_hint": {
+    "message": "「X さんが『いいね』しました」「X さんがコメントしました」：アルゴリズムが選んだもの"
+  },
+  "tt_reposts": {
+    "message": "リポストを隠す"
+  },
+  "tt_reposts_hint": {
+    "message": "フォロー中のアカウントのリポスト"
+  },
+  "moreOptions": {
+    "message": "その他のオプション"
+  },
+  "allNetworks": {
+    "message": "すべての SNS のオプション"
+  },
+  "optionsTitle": {
+    "message": "オプション"
+  },
+  "th_on": {
+    "message": "Threads：「フォロー中」のみ"
+  },
+  "th_on_hint": {
+    "message": "「おすすめ」と提案を表示しない"
+  },
+  "th_reposts": {
+    "message": "再投稿を隠す"
+  },
+  "th_reposts_hint": {
+    "message": "フォロー中のアカウントの再投稿"
+  },
+  "bs_on": {
+    "message": "Bluesky：「Following」のみ"
+  },
+  "bs_on_hint": {
+    "message": "Discover、Video などのフィードを表示しない"
+  },
+  "bs_reposts": {
+    "message": "リポストを隠す"
+  },
+  "bs_reposts_hint": {
+    "message": "「…がリポスト」"
+  },
+  "moreLink": {
+    "message": "その他の拡張機能 · プロジェクトを応援 ♥"
+  },
+  "moreUrl": {
+    "message": "https://gofiodesign.eu/extensions.html"
+  },
+  "reviewTitle": {
+    "message": "お役に立っていますか？"
+  },
+  "reviewText": {
+    "message": "Chrome ウェブストアで評価していただくと、ほかの人が見つけやすくなります。"
+  },
+  "reviewButton": {
+    "message": "評価する"
+  },
+  "reviewLater": {
+    "message": "今はしない"
+  },
+  "reviewNever": {
+    "message": "今後表示しない"
+  },
+  "donateTitle": {
+    "message": "長くご利用いただきありがとうございます！"
+  },
+  "donateText": {
+    "message": "無料で広告もありません。任意の寄付は、メンテナンスと新しいツールづくりの支えになります。"
+  },
+  "donateButton": {
+    "message": "応援する"
+  },
+  "donateLater": {
+    "message": "今はしない"
+  },
+  "welcomeKicker": {
+    "message": "インストール完了"
+  },
+  "welcomeLead": {
+    "message": "これからは、SNS がアルゴリズムの選んだものではなく、フォローしているアカウントの投稿を表示します。使い方："
+  },
+  "artExtensions": {
+    "message": "拡張機能"
+  },
+  "step1Title": {
+    "message": "拡張機能をツールバーに固定"
+  },
+  "step1Text": {
+    "message": "Chrome 右上の<strong>パズルのピース</strong>のアイコンをクリックし、「Dezombify」の横の<strong>ピン</strong>をクリックします。これでいつでも設定を開けます。"
+  },
+  "step2Title": {
+    "message": "いつもどおり SNS を開く"
+  },
+  "step2Text": {
+    "message": "ほかに何もする必要はありません。開くと、フォロー中のアカウントのフィードに移動し、提案、おすすめ、広告を隠します。"
+  },
+  "step3Title": {
+    "message": "SNS ごとに好みを設定"
+  },
+  "step3Text": {
+    "message": "SNS を開いた状態でアイコンをクリックすると、その SNS のオプションが表示されます（例：リポストを隠す）。すべての SNS とオプションは<strong>オプション</strong>にあります。"
+  },
+  "welcomePrivacy": {
+    "message": "この拡張機能はブラウザでの SNS の表示を変えるだけです。アカウントを読み取ったり、サーバーに何かを送信したりはしません。"
+  },
+  "welcomeRepo": {
+    "message": "GitHub でオープンソース公開中"
+  },
+  "tw_on": {
+    "message": "Twitch：「フォロー中」のみ"
+  },
+  "tw_on_hint": {
+    "message": "ホーム、おすすめのチャンネルやカテゴリーを表示しない"
+  },
+  "tw_browse": {
+    "message": "「さがす」を隠す"
+  },
+  "demo": {
+    "message": "省いているものを表示"
+  },
+  "demo_hint": {
+    "message": "すべて表示したまま、広告（ADS・黒）とアルゴリズムによるコンテンツ（ALGORITHM・赤）を覆います。"
+  }
+}

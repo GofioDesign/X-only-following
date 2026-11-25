@@ -1,0 +1,254 @@
+{
+  "extName": {
+    "message": "Dezombify"
+  },
+  "extShortName": {
+    "message": "Kill the Algo"
+  },
+  "extDescription": {
+    "message": "Dood het algoritme van je sociale media en breng je vrienden veilig en wel terug naar huis: alleen berichten van wie je volgt."
+  },
+  "tagline": {
+    "message": "Dood het algoritme"
+  },
+  "masterOn": {
+    "message": "Ingeschakeld"
+  },
+  "x_on": {
+    "message": "X: alleen ‘Volgend’"
+  },
+  "x_on_hint": {
+    "message": "Zonder ‘Voor jou’, advertenties of suggesties"
+  },
+  "x_reposts": {
+    "message": "Reposts verbergen"
+  },
+  "x_reposts_hint": {
+    "message": "Reposts brengen accounts die je niet volgt"
+  },
+  "yt_on": {
+    "message": "YouTube: alleen Abonnementen"
+  },
+  "yt_on_hint": {
+    "message": "Home opent je abonnementen"
+  },
+  "yt_ads": {
+    "message": "Advertenties verbergen"
+  },
+  "yt_ads_hint": {
+    "message": "Banners en gesponsorde items; slaat videoadvertenties over zodra het kan"
+  },
+  "yt_shorts": {
+    "message": "Shorts verbergen"
+  },
+  "yt_shorts_hint": {
+    "message": "Shorts die je opent spelen als gewone video"
+  },
+  "yt_related": {
+    "message": "Aanbevolen video’s verbergen"
+  },
+  "yt_related_hint": {
+    "message": "Zijbalk en eindscherm"
+  },
+  "yt_autoplay": {
+    "message": "Geen automatisch afspelen"
+  },
+  "yt_autoplay_hint": {
+    "message": ""
+  },
+  "ig_on": {
+    "message": "Instagram: alleen ‘Volgend’"
+  },
+  "ig_on_hint": {
+    "message": "Home opent de chronologische feed van wie je volgt"
+  },
+  "ig_explore": {
+    "message": "Ontdekken en Reels verbergen"
+  },
+  "ig_explore_hint": {
+    "message": ""
+  },
+  "li_on": {
+    "message": "LinkedIn: alleen wie je volgt"
+  },
+  "li_on_hint": {
+    "message": "Zonder gepromote berichten of auteurs die je niet volgt"
+  },
+  "note": {
+    "message": "Wijzigingen gelden meteen. Werkt in de browser op de computer."
+  },
+  "fb_on": {
+    "message": "Facebook: chronologische feeds"
+  },
+  "fb_on_hint": {
+    "message": "Vrienden, groepen en pagina’s die je volgt, zonder advertenties"
+  },
+  "fb_friends": {
+    "message": "Alleen vrienden"
+  },
+  "fb_friends_hint": {
+    "message": "Zonder groepen of pagina’s"
+  },
+  "fb_reels": {
+    "message": "Reels en Video verbergen"
+  },
+  "tt_on": {
+    "message": "TikTok: alleen ‘Volgend’"
+  },
+  "tt_on_hint": {
+    "message": "Zonder ‘Voor jou’ of suggesties van accounts die je niet volgt"
+  },
+  "tt_explore": {
+    "message": "Ontdekken, LIVE en Minidrama’s verbergen"
+  },
+  "ig_reposts": {
+    "message": "Reposts verbergen"
+  },
+  "ig_reposts_hint": {
+    "message": "Reposts van accounts die je volgt"
+  },
+  "fb_shares": {
+    "message": "Gedeelde berichten verbergen"
+  },
+  "fb_shares_hint": {
+    "message": "Berichten van anderen die je vrienden delen"
+  },
+  "fb_activity": {
+    "message": "Activiteit verbergen"
+  },
+  "fb_activity_hint": {
+    "message": "‘X vindt dit leuk’, ‘X en Y volgen…’: gekozen door het algoritme"
+  },
+  "li_reposts": {
+    "message": "Gedeelde berichten verbergen"
+  },
+  "li_reposts_hint": {
+    "message": "‘X heeft dit gerepost’"
+  },
+  "li_activity": {
+    "message": "Activiteit verbergen"
+  },
+  "li_activity_hint": {
+    "message": "‘X vindt dit leuk’, ‘X heeft gereageerd’: gekozen door het algoritme"
+  },
+  "tt_reposts": {
+    "message": "Reposts verbergen"
+  },
+  "tt_reposts_hint": {
+    "message": "Reposts van accounts die je volgt"
+  },
+  "moreOptions": {
+    "message": "Meer opties"
+  },
+  "allNetworks": {
+    "message": "Opties voor alle netwerken"
+  },
+  "optionsTitle": {
+    "message": "Opties"
+  },
+  "th_on": {
+    "message": "Threads: alleen ‘Volgend’"
+  },
+  "th_on_hint": {
+    "message": "Zonder ‘Voor jou’ of suggesties"
+  },
+  "th_reposts": {
+    "message": "Reposts verbergen"
+  },
+  "th_reposts_hint": {
+    "message": "Reposts van accounts die je volgt"
+  },
+  "bs_on": {
+    "message": "Bluesky: alleen ‘Following’"
+  },
+  "bs_on_hint": {
+    "message": "Zonder Discover, Video of andere feeds"
+  },
+  "bs_reposts": {
+    "message": "Reposts verbergen"
+  },
+  "bs_reposts_hint": {
+    "message": "‘Gerepost door…’"
+  },
+  "moreLink": {
+    "message": "Meer extensies · Steun het project ♥"
+  },
+  "moreUrl": {
+    "message": "https://gofiodesign.eu/extensions.html"
+  },
+  "reviewTitle": {
+    "message": "Heb je er iets aan?"
+  },
+  "reviewText": {
+    "message": "Een beoordeling in de Chrome Web Store helpt anderen haar te vinden."
+  },
+  "reviewButton": {
+    "message": "Beoordelen"
+  },
+  "reviewLater": {
+    "message": "Niet nu"
+  },
+  "reviewNever": {
+    "message": "Niet meer tonen"
+  },
+  "donateTitle": {
+    "message": "Bedankt dat je haar al zo lang gebruikt!"
+  },
+  "donateText": {
+    "message": "Ze is gratis en zonder advertenties. Een vrijwillige donatie helpt haar te onderhouden en nieuwe tools te maken."
+  },
+  "donateButton": {
+    "message": "Steunen"
+  },
+  "donateLater": {
+    "message": "Niet nu"
+  },
+  "welcomeKicker": {
+    "message": "Geïnstalleerd en klaar"
+  },
+  "welcomeLead": {
+    "message": "Vanaf nu laten je sociale media zien wat de accounts die je volgt plaatsen, niet wat het algoritme kiest. Zo werkt het:"
+  },
+  "artExtensions": {
+    "message": "Extensies"
+  },
+  "step1Title": {
+    "message": "Zet de extensie vast in de balk"
+  },
+  "step1Text": {
+    "message": "Klik rechtsboven in Chrome op het <strong>puzzelstukje</strong> en daarna op de <strong>punaise</strong> naast ‘Dezombify’. Zo heb je de instellingen altijd bij de hand."
+  },
+  "step2Title": {
+    "message": "Open je netwerken zoals altijd"
+  },
+  "step2Text": {
+    "message": "Verder hoef je niets te doen: als je ze opent, brengt de extensie je naar de feed van accounts die je volgt en verbergt ze suggesties, aanbevelingen en advertenties."
+  },
+  "step3Title": {
+    "message": "Stel elk netwerk naar wens in"
+  },
+  "step3Text": {
+    "message": "Klik op het pictogram terwijl je op een netwerk bent om de opties te zien (bijvoorbeeld reposts verbergen). Alle netwerken en opties staan onder <strong>Opties</strong>."
+  },
+  "welcomePrivacy": {
+    "message": "De extensie verandert alleen hoe de netwerken er in je browser uitzien. Ze leest je accounts niet en stuurt niets naar een server."
+  },
+  "welcomeRepo": {
+    "message": "Open source op GitHub"
+  },
+  "tw_on": {
+    "message": "Twitch: alleen ‘Volgend’"
+  },
+  "tw_on_hint": {
+    "message": "Zonder Home, aanbevolen kanalen of categorieën"
+  },
+  "tw_browse": {
+    "message": "Bladeren verbergen"
+  },
+  "demo": {
+    "message": "Tonen wat wordt weggelaten"
+  },
+  "demo_hint": {
+    "message": "Laat alles zichtbaar en bedekt advertenties (ADS, zwart) en algoritmische inhoud (ALGORITHM, rood)."
+  }
+}

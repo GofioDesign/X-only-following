@@ -1,0 +1,254 @@
+{
+  "extName": {
+    "message": "Dezombify"
+  },
+  "extShortName": {
+    "message": "Kill the Algo"
+  },
+  "extDescription": {
+    "message": "Mate o algoritmo das suas redes sociais e traga os seus amigos de volta a casa, sãos e salvos: só o que publica quem segue."
+  },
+  "tagline": {
+    "message": "Mate o algoritmo"
+  },
+  "masterOn": {
+    "message": "Ativada"
+  },
+  "x_on": {
+    "message": "X: só «A seguir»"
+  },
+  "x_on_hint": {
+    "message": "Sem «Para si», anúncios nem sugestões"
+  },
+  "x_reposts": {
+    "message": "Ocultar os reposts"
+  },
+  "x_reposts_hint": {
+    "message": "Os reposts trazem contas que não segue"
+  },
+  "yt_on": {
+    "message": "YouTube: só Subscrições"
+  },
+  "yt_on_hint": {
+    "message": "O Início abre as suas subscrições"
+  },
+  "yt_ads": {
+    "message": "Ocultar anúncios"
+  },
+  "yt_ads_hint": {
+    "message": "Banners e patrocinados; salta os anúncios em vídeo logo que possível"
+  },
+  "yt_shorts": {
+    "message": "Ocultar Shorts"
+  },
+  "yt_shorts_hint": {
+    "message": "Os Shorts que abrir veem-se como vídeo normal"
+  },
+  "yt_related": {
+    "message": "Ocultar vídeos recomendados"
+  },
+  "yt_related_hint": {
+    "message": "Coluna lateral e ecrã final"
+  },
+  "yt_autoplay": {
+    "message": "Sem reprodução automática"
+  },
+  "yt_autoplay_hint": {
+    "message": ""
+  },
+  "ig_on": {
+    "message": "Instagram: só «A seguir»"
+  },
+  "ig_on_hint": {
+    "message": "O Início abre o feed cronológico de quem segue"
+  },
+  "ig_explore": {
+    "message": "Ocultar Explorar e Reels"
+  },
+  "ig_explore_hint": {
+    "message": ""
+  },
+  "li_on": {
+    "message": "LinkedIn: só quem segue"
+  },
+  "li_on_hint": {
+    "message": "Sem patrocinados nem autores que não segue"
+  },
+  "note": {
+    "message": "As alterações aplicam-se de imediato. Funciona no navegador do computador."
+  },
+  "fb_on": {
+    "message": "Facebook: feed cronológico"
+  },
+  "fb_on_hint": {
+    "message": "Amigos, grupos e páginas que segue, sem anúncios"
+  },
+  "fb_friends": {
+    "message": "Só amigos"
+  },
+  "fb_friends_hint": {
+    "message": "Sem grupos nem páginas"
+  },
+  "fb_reels": {
+    "message": "Ocultar Reels e Vídeo"
+  },
+  "tt_on": {
+    "message": "TikTok: só «A seguir»"
+  },
+  "tt_on_hint": {
+    "message": "Sem «Para si» nem sugestões de contas que não segue"
+  },
+  "tt_explore": {
+    "message": "Ocultar Explorar, LIVE e Minidramas"
+  },
+  "ig_reposts": {
+    "message": "Ocultar os reposts"
+  },
+  "ig_reposts_hint": {
+    "message": "Reposts das contas que segue"
+  },
+  "fb_shares": {
+    "message": "Ocultar o que partilham"
+  },
+  "fb_shares_hint": {
+    "message": "Publicações de outras pessoas partilhadas pelos seus amigos"
+  },
+  "fb_activity": {
+    "message": "Ocultar atividade"
+  },
+  "fb_activity_hint": {
+    "message": "«X gosta disto», «X e Y seguem…»: escolhido pelo algoritmo"
+  },
+  "li_reposts": {
+    "message": "Ocultar o que partilham"
+  },
+  "li_reposts_hint": {
+    "message": "«X partilhou isto»"
+  },
+  "li_activity": {
+    "message": "Ocultar atividade"
+  },
+  "li_activity_hint": {
+    "message": "«X gosta disto», «X comentou»: escolhido pelo algoritmo"
+  },
+  "tt_reposts": {
+    "message": "Ocultar os reposts"
+  },
+  "tt_reposts_hint": {
+    "message": "Reposts das contas que segue"
+  },
+  "moreOptions": {
+    "message": "Mais opções"
+  },
+  "allNetworks": {
+    "message": "Opções de todas as redes"
+  },
+  "optionsTitle": {
+    "message": "Opções"
+  },
+  "th_on": {
+    "message": "Threads: só «A seguir»"
+  },
+  "th_on_hint": {
+    "message": "Sem «Para si» nem sugestões"
+  },
+  "th_reposts": {
+    "message": "Ocultar os reposts"
+  },
+  "th_reposts_hint": {
+    "message": "Reposts das contas que segue"
+  },
+  "bs_on": {
+    "message": "Bluesky: só «Following»"
+  },
+  "bs_on_hint": {
+    "message": "Sem Discover, Video nem outros feeds"
+  },
+  "bs_reposts": {
+    "message": "Ocultar os reposts"
+  },
+  "bs_reposts_hint": {
+    "message": "«Republicado por…»"
+  },
+  "moreLink": {
+    "message": "Mais extensões · Apoie o projeto ♥"
+  },
+  "moreUrl": {
+    "message": "https://gofiodesign.eu/extensions.html"
+  },
+  "reviewTitle": {
+    "message": "Está a ser-lhe útil?"
+  },
+  "reviewText": {
+    "message": "Uma avaliação na Chrome Web Store ajuda outras pessoas a encontrá-la."
+  },
+  "reviewButton": {
+    "message": "Avaliar"
+  },
+  "reviewLater": {
+    "message": "Agora não"
+  },
+  "reviewNever": {
+    "message": "Não voltar a mostrar"
+  },
+  "donateTitle": {
+    "message": "Obrigado por a usar todo este tempo!"
+  },
+  "donateText": {
+    "message": "É gratuita e sem anúncios. Um donativo voluntário ajuda a mantê-la e a criar novas ferramentas."
+  },
+  "donateButton": {
+    "message": "Apoiar"
+  },
+  "donateLater": {
+    "message": "Agora não"
+  },
+  "welcomeKicker": {
+    "message": "Instalada e pronta"
+  },
+  "welcomeLead": {
+    "message": "A partir de agora, as suas redes sociais mostram o que publicam as contas que segue, não o que o algoritmo escolhe. Veja como usar:"
+  },
+  "artExtensions": {
+    "message": "Extensões"
+  },
+  "step1Title": {
+    "message": "Fixe a extensão na barra"
+  },
+  "step1Text": {
+    "message": "Clique no ícone da <strong>peça de puzzle</strong> no canto superior direito do Chrome e depois no <strong>pionés</strong> junto a «Dezombify». Assim tem as definições sempre à mão."
+  },
+  "step2Title": {
+    "message": "Abra as suas redes como sempre"
+  },
+  "step2Text": {
+    "message": "Não tem de fazer mais nada: ao entrar, a extensão leva-o ao feed das contas que segue e oculta sugestões, recomendados e anúncios."
+  },
+  "step3Title": {
+    "message": "Ajuste cada rede a seu gosto"
+  },
+  "step3Text": {
+    "message": "Clique no ícone quando estiver numa rede para ver as respetivas opções (por exemplo, ocultar os reposts). Todas as redes e opções estão em <strong>Opções</strong>."
+  },
+  "welcomePrivacy": {
+    "message": "A extensão só muda o aspeto das redes no seu navegador. Não lê as suas contas nem envia nada para nenhum servidor."
+  },
+  "welcomeRepo": {
+    "message": "Código aberto no GitHub"
+  },
+  "tw_on": {
+    "message": "Twitch: só «A seguir»"
+  },
+  "tw_on_hint": {
+    "message": "Sem Início, canais nem categorias recomendados"
+  },
+  "tw_browse": {
+    "message": "Ocultar Explorar"
+  },
+  "demo": {
+    "message": "Ver o que é omitido"
+  },
+  "demo_hint": {
+    "message": "Deixa tudo visível e tapa os anúncios (ADS, a preto) e o conteúdo algorítmico (ALGORITHM, a vermelho)."
+  }
+}
