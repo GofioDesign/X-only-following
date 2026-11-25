@@ -1,0 +1,47 @@
+# Crea el release de GitHub cuando cambia la versión del manifest en main
+# (o a mano desde la pestaña Actions). Adjunta releases/dezombify-<versión>.zip
+# y usa como notas las secciones de CHANGELOG.md posteriores al último release.
+name: Release
+
+on:
+  push:
+    branches: [main]
+    paths: [extension/manifest.json]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Versión y notas
+        id: info
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION=$(jq -r .version extension/manifest.json)
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          if gh release view "v$VERSION" >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          test -f "releases/dezombify-$VERSION.zip" || { echo "Falta releases/dezombify-$VERSION.zip"; exit 1; }
+          PREV=$(gh release view --json tagName -q .tagName 2>/dev/null | sed 's/^v//' || true)
+          # Desde la sección de esta versión hasta la del último release publicado
+          awk -v prev="$PREV" '
+            /^## / { if (prev != "" && index($0, "## " prev " ") == 1) exit; started = 1 }
+            started { sub(/^## /, "### "); print }
+          ' CHANGELOG.md > notes.md
+          cat notes.md
+
+      - name: Crear release
+        if: steps.info.outputs.exists != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.info.outputs.version }}
+        run: |
+          gh release create "v$VERSION" "releases/dezombify-$VERSION.zip" \
+            --target "$GITHUB_SHA" --title "Dezombify $VERSION" --notes-file notes.md
