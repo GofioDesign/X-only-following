@@ -105,7 +105,7 @@ Módulo en `sites/`, host en `host_permissions` y `content_scripts`, entrada en 
 
 ## Entorno (sesiones en la nube de Claude)
 
-- Los `git push` funcionan con las credenciales de `add_repo`; **`gh` no tiene token válido** y **subir etiquetas falla** por el proxy → los releases se crean desde el formulario web de GitHub (el usuario adjunta el zip y publica).
+- Los `git push` funcionan con las credenciales de `add_repo`; **`gh` no tiene token válido** y **subir etiquetas falla** por el proxy → los releases los crea la acción `.github/workflows/release.yml`: al cambiar la versión del manifest en main (o a mano desde Actions) publica `v<versión>` con `releases/dezombify-<versión>.zip` y las secciones de CHANGELOG.md desde el último release. Antes de subir la versión: `bash build.sh`, copiar el zip a `releases/` y añadir la sección a CHANGELOG.md.
 - Las herramientas del navegador no pueden abrir `chrome://` ni páginas de la Chrome Web Store.
 
 ## Pendiente
