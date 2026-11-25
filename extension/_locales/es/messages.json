@@ -244,5 +244,11 @@
   },
   "tw_browse": {
     "message": "Ocultar Explorar"
+  },
+  "demo": {
+    "message": "Ver lo que se omite"
+  },
+  "demo_hint": {
+    "message": "Lo deja todo a la vista y tapa los anuncios (ADS, en negro) y lo algorítmico (ALGORITHM, en rojo)."
   }
 }

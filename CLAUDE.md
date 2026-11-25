@@ -111,3 +111,6 @@ Módulo en `sites/`, host en `host_permissions` y `content_scripts`, entrada en 
 2. Traducir a los **15 idiomas** que tiene la otra extensión del usuario, IA → PDF (repo GofioDesign/AI-PDF, `tools/locales.py` sirve de modelo), y después la ficha y las imágenes por idioma.
 3. Actualizar la página de la extensión en gofiodesign.eu (ES/EN/DE/FR) con el nuevo nombre, logo y capturas (por PR).
 4. Posibles redes futuras, de momento descartadas por el usuario: Reddit, Tumblr, Pinterest, Medium, Substack.
+
+## «Ver lo que se omite» (modo demo, desde la 2.0.2)
+Ajuste `demo` (casilla en el panel, debajo de «Activado»). No oculta, no redirige ni pulsa pestañas: tapa con `::after` lo que ocultaría. `KTA.hideAd(el)` → negro «ADS»; `KTA.hide(el)` → rojo «ALGORITHM». Los módulos comprueban `KTA.demo` antes de redirigir, reescribir enlaces o hacer clic. Funciona aunque la extensión esté apagada. Al marcar un anuncio nuevo, usar siempre `KTA.hideAd`.

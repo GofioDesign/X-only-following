@@ -23,7 +23,7 @@
           // Otras pestañas (Discover, Video, feeds algorítmicos): fuera
           tabs.forEach((t) => { if (t !== following) KTA.hide(t); });
           const onFollowing = [...document.querySelectorAll('[data-testid="followingFeedPage"]')].some((e) => e.offsetParent !== null);
-          if (!onFollowing && Date.now() - lastClick > 2000) { lastClick = Date.now(); following.click(); }
+          if (!KTA.demo && !onFollowing && Date.now() - lastClick > 2000) { lastClick = Date.now(); following.click(); }
         }
       }
 

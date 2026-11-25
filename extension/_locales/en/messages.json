@@ -244,5 +244,11 @@
   },
   "tw_browse": {
     "message": "Hide Browse"
+  },
+  "demo": {
+    "message": "Show what's left out"
+  },
+  "demo_hint": {
+    "message": "Keeps everything visible and covers ads (ADS, black) and algorithmic content (ALGORITHM, red)."
   }
 }
