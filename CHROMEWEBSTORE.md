@@ -1,15 +1,15 @@
 # Chrome Web Store — Dezombify
 
-> Última actualización: 2026-11-24 · Versión 2.0.1 (actualización del ítem «Solo Siguiendo para X», id `fhajebegoleecljdhfokiokejdkalhji`)
+> Última actualización: 2026-11-24 · Versión 2.1.0 (actualización del ítem «Solo Siguiendo para X», id `fhajebegoleecljdhfokiokejdkalhji`)
 
-Paquete a subir: `releases/dezombify-2.0.1.zip` (también en el release v2.0.1 de GitHub).
+Paquete a subir: `releases/dezombify-2.1.0.zip` (también en el release v2.1.0 de GitHub).
 Idiomas del paquete: español (predeterminado) e inglés.
 
 ---
 
 ## 1. Paquete → «Package»
 
-Sube `dezombify-2.0.1.zip` como nueva versión. El nombre y la descripción breve salen del manifest:
+Sube `dezombify-2.1.0.zip` como nueva versión. El nombre y la descripción breve salen del manifest:
 
 - **Nombre:** `Dezombify`
 - **Descripción breve (es, 127 caracteres):** Mata al algoritmo de tus redes sociales y trae a tus amigos de vuelta a casa, sanos y salvos: solo lo que publica quien sigues.
@@ -41,7 +41,7 @@ OPCIONES SIN LÍOS
 Al abrir el panel ves solo las opciones de la red en la que estás. Todas las demás están juntas en la página de opciones. Los cambios se aplican al momento, sin recargar.
 
 PRIVACIDAD
-Dezombify no recoge, envía ni vende ningún dato. Todo ocurre en tu navegador: tus preferencias se guardan en el almacenamiento de Chrome y solo se cuenta en local cuántas veces la usas, para pedirte de vez en cuando una valoración. Sin cuentas, sin analítica, sin servidores.
+Dezombify no recoge, envía ni vende ningún dato. Todo ocurre en tu navegador: tus preferencias se guardan en el almacenamiento de Chrome y solo se cuentan en local tus estadísticas de uso (tiempo, anuncios y algoritmo ocultados), para enseñártelas y para pedirte de vez en cuando una valoración. Sin cuentas, sin analítica, sin servidores.
 
 GRATIS Y DE CÓDIGO ABIERTO
 Código fuente: https://github.com/GofioDesign/dezombify
@@ -69,7 +69,7 @@ NO CLUTTER
 The panel only shows the options for the network you are on. Everything else is together on the options page. Changes apply instantly, no reload needed.
 
 PRIVACY
-Dezombify does not collect, send or sell any data. Everything happens in your browser: your preferences are stored in Chrome storage and only a local count of how often you use it is kept, to occasionally ask for a rating. No accounts, no analytics, no servers.
+Dezombify does not collect, send or sell any data. Everything happens in your browser: your preferences are stored in Chrome storage and only local usage statistics are kept (time, ads and algorithmic content hidden), to show them to you and to occasionally ask for a rating. No accounts, no analytics, no servers.
 
 FREE AND OPEN SOURCE
 Source code: https://github.com/GofioDesign/dezombify
@@ -108,7 +108,7 @@ Dezombify makes supported social networks show only posts from accounts the user
 
 **Justificación de `storage`**
 ```
-Stores the user's on/off settings for each social network (chrome.storage.sync) and, locally only, the install date and a usage count used to occasionally show a rating invitation and a yearly donation invitation. Nothing is transmitted.
+Stores the user's on/off settings for each social network (chrome.storage.sync) and, locally only, the install date and usage statistics (use count, minutes per network, number of ads and algorithmic items hidden) used to show the user their own statistics page and occasional rating and donation invitations. Nothing is transmitted.
 ```
 
 **Justificación de los permisos de host**
@@ -134,6 +134,8 @@ https://github.com/GofioDesign/dezombify/blob/main/PRIVACY.md
 
 | Versión | Fecha | Cambios |
 |---|---|---|
+| 2.1.0 | 2026-11-24 | Traducida a 15 idiomas. Página de Estadísticas (tiempo, anuncios y algoritmo ocultados por red). Invitación a donar a los 20 usos y luego una vez al año con el resumen; «Recuérdamelo el próximo año» en valoración y donación. |
+| 2.0.2 | 2026-11-24 | Opción «Ver lo que se omite» (tapa anuncios con ADS y lo algorítmico con ALGORITHM). X: oculta «Suscríbete a Premium» y «En directo en X». Instagram: oculta publicaciones patrocinadas. |
 | 2.0.1 | 2026-11-24 | Instagram: el feed salía en blanco (se ocultaba toda la página al detectar «Sugerencias para ti»). |
 | 2.0.0 | 2026-11-22 | Rechazada una vez por la lista de redes en la descripción (corregido). Pasa a llamarse Dezombify. Nueve redes sociales, opciones por red, anuncios de YouTube, nuevo logo, bienvenida, aviso de valoración cada 5 usos. |
 | 1.0.0 | 2026-11 | «Solo Siguiendo para X»: solo X. |

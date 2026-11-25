@@ -250,5 +250,73 @@
   },
   "demo_hint": {
     "message": "Lo deja todo a la vista y tapa los anuncios (ADS, en negro) y lo algorítmico (ALGORITHM, en rojo)."
+  },
+  "statsLink": {
+    "message": "Estadísticas"
+  },
+  "statsTitle": {
+    "message": "Tus estadísticas"
+  },
+  "statsPeriod": {
+    "message": "Del $FROM$ al $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "donateYearTitle": {
+    "message": "Un año viendo solo lo que sigues"
+  },
+  "donateYearText": {
+    "message": "Esperamos que Dezombify te haya ayudado a recuperar tiempo para lo que de verdad te importa. Es gratuita, sin anuncios y de código abierto."
+  },
+  "statHours": {
+    "message": "en tus redes, viendo solo lo que sigues"
+  },
+  "statDaily": {
+    "message": "de media al día"
+  },
+  "statAds": {
+    "message": "anuncios ocultados"
+  },
+  "statAlgo": {
+    "message": "sugerencias y contenidos del algoritmo ocultados"
+  },
+  "statSaved": {
+    "message": "de algoritmo y publicidad que te has ahorrado (aprox.)"
+  },
+  "statNet": {
+    "message": "Red"
+  },
+  "statTime": {
+    "message": "Tiempo"
+  },
+  "statAdsShort": {
+    "message": "Anuncios"
+  },
+  "statAlgoShort": {
+    "message": "Algoritmo"
+  },
+  "statSavedShort": {
+    "message": "Ahorrado"
+  },
+  "statEmpty": {
+    "message": "Aún no hay datos: abre una de tus redes con la extensión activa."
+  },
+  "donateAskTitle": {
+    "message": "Apoya el proyecto"
+  },
+  "remindNextYear": {
+    "message": "Recuérdamelo el próximo año"
+  },
+  "remindSet": {
+    "message": "Hecho: te lo recordaremos dentro de un año."
+  },
+  "donateNote": {
+    "message": "Todo se cuenta solo en tu navegador y no se envía a ningún sitio. El tiempo ahorrado es una estimación de unos 6 segundos por cada elemento ocultado. Los contadores vuelven a cero cada año desde la instalación."
   }
 }

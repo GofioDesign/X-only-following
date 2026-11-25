@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>…</title>
+  <link rel="stylesheet" href="stats.css">
+</head>
+<body>
+  <main>
+    <header>
+      <img src="../icons/icon-128.png" alt="" width="64" height="64">
+      <div>
+        <p class="kicker" data-i18n="extName"></p>
+        <h1 id="title"></h1>
+        <p class="period" id="period"></p>
+      </div>
+    </header>
+
+    <p class="lead" id="lead" hidden></p>
+
+    <section id="summary">
+      <div class="cards">
+        <div class="card"><b id="totHours"></b><span data-i18n="statHours"></span></div>
+        <div class="card"><b id="totDaily"></b><span data-i18n="statDaily"></span></div>
+        <div class="card"><b id="totAds"></b><span data-i18n="statAds"></span></div>
+        <div class="card"><b id="totAlgo"></b><span data-i18n="statAlgo"></span></div>
+        <div class="card accent"><b id="totSaved"></b><span data-i18n="statSaved"></span></div>
+      </div>
+      <div class="table-wrap"><table class="nets">
+        <thead><tr><th data-i18n="statNet"></th><th data-i18n="statTime"></th><th data-i18n="statAdsShort"></th><th data-i18n="statAlgoShort"></th><th data-i18n="statSavedShort"></th></tr></thead>
+        <tbody id="rows"></tbody>
+        <tfoot id="foot"></tfoot>
+      </table></div>
+    </section>
+    <p class="empty" id="empty" data-i18n="statEmpty" hidden></p>
+
+    <section class="asks">
+      <div class="ask donate" id="donateBox">
+        <h2 data-i18n="donateAskTitle"></h2>
+        <p data-i18n="donateText"></p>
+        <div class="actions">
+          <a class="btn primary" id="donateGo" target="_blank" rel="noopener" data-i18n="donateButton"></a>
+          <button type="button" class="btn" id="donateLater" data-i18n="remindNextYear"></button>
+        </div>
+        <p class="done" id="donateSnoozed" data-i18n="remindSet" hidden></p>
+      </div>
+      <div class="ask" id="reviewBox">
+        <h2 data-i18n="reviewTitle"></h2>
+        <p data-i18n="reviewText"></p>
+        <div class="actions">
+          <a class="btn primary" id="reviewGo" target="_blank" rel="noopener" data-i18n="reviewButton"></a>
+          <button type="button" class="btn" id="reviewLater" data-i18n="remindNextYear"></button>
+        </div>
+        <p class="done" id="reviewSnoozed" data-i18n="remindSet" hidden></p>
+      </div>
+    </section>
+
+    <footer>
+      <p data-i18n="donateNote"></p>
+      <p><a id="moreLink" target="_blank" rel="noopener" data-i18n="moreLink"></a></p>
+    </footer>
+  </main>
+  <script src="stats.js"></script>
+</body>
+</html>

@@ -11,8 +11,14 @@ chrome.runtime.onInstalled.addListener(async ({ reason, previousVersion }) => {
   }
 });
 
-// Cada 5 usos: marca en el icono para que se abra el panel, que muestra el aviso de valoración
+// Cada 5 usos: marca en el icono para que se abra el panel, que muestra el aviso de valoración.
+// A los 20 usos y en cada aniversario: pestaña de estadísticas con la invitación a donar.
 chrome.runtime.onMessage.addListener((msg) => {
+  if (msg?.type === 'openStats') {
+    const from = msg.from === 'year' ? 'year' : 'first';
+    chrome.tabs.create({ url: chrome.runtime.getURL(`stats/stats.html?from=${from}`) }).catch((err) => console.warn(err));
+    return;
+  }
   if (msg?.type !== 'reviewDue') return;
   (async () => {
     try {

@@ -250,5 +250,73 @@
   },
   "demo_hint": {
     "message": "Zostawia wszystko widoczne i zakrywa reklamy (ADS, na czarno) i treści algorytmiczne (ALGORITHM, na czerwono)."
+  },
+  "statsLink": {
+    "message": "Statystyki"
+  },
+  "statsTitle": {
+    "message": "Twoje statystyki"
+  },
+  "statsPeriod": {
+    "message": "$FROM$ – $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "donateYearTitle": {
+    "message": "Rok tylko z tym, co obserwujesz"
+  },
+  "donateYearText": {
+    "message": "Mamy nadzieję, że Dezombify pomogło ci odzyskać czas na to, co naprawdę ważne. Jest darmowe, bez reklam i open source."
+  },
+  "statHours": {
+    "message": "w twoich sieciach, tylko z obserwowanymi"
+  },
+  "statDaily": {
+    "message": "średnio dziennie"
+  },
+  "statAds": {
+    "message": "ukrytych reklam"
+  },
+  "statAlgo": {
+    "message": "ukrytych sugestii i treści algorytmu"
+  },
+  "statSaved": {
+    "message": "algorytmu i reklam zaoszczędzone (w przybliżeniu)"
+  },
+  "statNet": {
+    "message": "Sieć"
+  },
+  "statTime": {
+    "message": "Czas"
+  },
+  "statAdsShort": {
+    "message": "Reklamy"
+  },
+  "statAlgoShort": {
+    "message": "Algorytm"
+  },
+  "statSavedShort": {
+    "message": "Zaoszczędzone"
+  },
+  "statEmpty": {
+    "message": "Brak danych: otwórz jedną ze swoich sieci z włączonym rozszerzeniem."
+  },
+  "donateAskTitle": {
+    "message": "Wesprzyj projekt"
+  },
+  "remindNextYear": {
+    "message": "Przypomnij za rok"
+  },
+  "remindSet": {
+    "message": "Gotowe: przypomnimy ci za rok."
+  },
+  "donateNote": {
+    "message": "Wszystko jest liczone tylko w twojej przeglądarce i nigdzie nie jest wysyłane. Zaoszczędzony czas to szacunek ok. 6 sekund na każdy ukryty element. Liczniki zerują się co roku od daty instalacji."
   }
 }

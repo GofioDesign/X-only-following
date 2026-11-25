@@ -58,39 +58,29 @@ function refresh(s) {
   document.querySelectorAll('.sub[data-parent]').forEach((r) => r.classList.toggle('off', !s[r.dataset.parent]));
 }
 
-// Avisos de valoración (cada 5 aperturas del panel) y de donación (1 vez por año
-// desde la instalación). Todo se cuenta en local: nada sale del navegador.
+// Aviso de valoración: common.js lo marca cada 5 usos reales y aquí se muestra.
+// (La donación se pide en la página de estadísticas, stats/stats.html.) Todo en local.
+const NEXT_YEAR_MS = 358 * 24 * 3600 * 1000; // «el próximo año», con margen antes del aniversario
 const REVIEW_URL = 'https://chromewebstore.google.com/detail/fhajebegoleecljdhfokiokejdkalhji/reviews';
-const YEAR_MS = 365.25 * 24 * 3600 * 1000;
 
 async function maybeAsk() {
-  const st = await chrome.storage.local.get({ installDate: 0, donateYearsShown: 0, reviewDone: false, reviewShown: 0, reviewPending: false });
+  const st = await chrome.storage.local.get({ installDate: 0, reviewDone: false, reviewShown: 0, reviewPending: false });
+  try { await chrome.action.setBadgeText({ text: '' }); } catch {}
   const update = {};
   if (!st.installDate) update.installDate = Date.now();
-  const years = st.installDate ? Math.floor((Date.now() - st.installDate) / YEAR_MS) : 0;
-
-  if (years >= 1 && st.donateYearsShown < years) {
-    update.donateYearsShown = years;
-    await chrome.storage.local.set(update);
-    const box = document.getElementById('donateBox');
-    document.getElementById('donateGo').href = `${t('moreUrl')}#donar`;
-    document.getElementById('donateGo').addEventListener('click', () => { box.hidden = true; });
-    document.getElementById('donateLater').addEventListener('click', () => { box.hidden = true; });
-    box.hidden = false;
-    return;
-  }
-  // La valoración se pide cada 5 usos reales (los cuenta common.js en las redes)
   if (!st.reviewDone && st.reviewPending) {
     const shown = st.reviewShown + 1;
     Object.assign(update, { reviewShown: shown, reviewPending: false });
     await chrome.storage.local.set(update);
-    try { await chrome.action.setBadgeText({ text: '' }); } catch {}
     const box = document.getElementById('reviewBox');
     const never = document.getElementById('reviewNever');
     const done = async () => { box.hidden = true; try { await chrome.storage.local.set({ reviewDone: true }); } catch {} };
     document.getElementById('reviewGo').href = REVIEW_URL;
     document.getElementById('reviewGo').addEventListener('click', done);
-    document.getElementById('reviewLater').addEventListener('click', () => { box.hidden = true; });
+    document.getElementById('reviewLater').addEventListener('click', async () => {
+      box.hidden = true;
+      try { await chrome.storage.local.set({ reviewSnoozeUntil: Date.now() + NEXT_YEAR_MS }); } catch {}
+    });
     if (shown >= 3) { never.hidden = false; never.addEventListener('click', done); }
     box.hidden = false;
     return;
@@ -115,11 +105,13 @@ async function currentNet() {
     document.title = `${t('extName')} · ${t('optionsTitle')}`;
     build(NETS, true);
     document.getElementById('openOptions').remove();
+    document.getElementById('openStats').href = chrome.runtime.getURL('stats/stats.html');
   } else {
     const net = await currentNet();
     if (net) { build([net], true); document.getElementById('openOptions').textContent = t('allNetworks'); }
     else build(NETS, false);
     document.getElementById('openOptions').addEventListener('click', (e) => { e.preventDefault(); chrome.runtime.openOptionsPage(); });
+    document.getElementById('openStats').addEventListener('click', (e) => { e.preventDefault(); chrome.tabs.create({ url: chrome.runtime.getURL('stats/stats.html') }); });
     try { await maybeAsk(); } catch (err) { console.warn(err); }
   }
 

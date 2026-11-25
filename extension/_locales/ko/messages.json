@@ -250,5 +250,73 @@
   },
   "demo_hint": {
     "message": "모두 보이게 두고 광고(ADS, 검정)와 알고리즘 콘텐츠(ALGORITHM, 빨강)를 가립니다."
+  },
+  "statsLink": {
+    "message": "통계"
+  },
+  "statsTitle": {
+    "message": "내 통계"
+  },
+  "statsPeriod": {
+    "message": "$FROM$ ~ $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "donateYearTitle": {
+    "message": "팔로우하는 것만 본 1년"
+  },
+  "donateYearText": {
+    "message": "Dezombify가 정말 중요한 일에 쓸 시간을 되찾는 데 도움이 되었기를 바랍니다. 무료이고 광고가 없으며 오픈 소스입니다."
+  },
+  "statHours": {
+    "message": "소셜 미디어에서 팔로우하는 것만 본 시간"
+  },
+  "statDaily": {
+    "message": "하루 평균"
+  },
+  "statAds": {
+    "message": "숨긴 광고"
+  },
+  "statAlgo": {
+    "message": "숨긴 제안과 알고리즘 콘텐츠"
+  },
+  "statSaved": {
+    "message": "아낀 알고리즘·광고 시간(대략)"
+  },
+  "statNet": {
+    "message": "네트워크"
+  },
+  "statTime": {
+    "message": "시간"
+  },
+  "statAdsShort": {
+    "message": "광고"
+  },
+  "statAlgoShort": {
+    "message": "알고리즘"
+  },
+  "statSavedShort": {
+    "message": "절약"
+  },
+  "statEmpty": {
+    "message": "아직 데이터가 없습니다. 확장 프로그램을 켠 상태로 소셜 미디어를 열어 보세요."
+  },
+  "donateAskTitle": {
+    "message": "프로젝트 후원"
+  },
+  "remindNextYear": {
+    "message": "내년에 다시 알림"
+  },
+  "remindSet": {
+    "message": "알겠습니다. 1년 뒤에 알려 드릴게요."
+  },
+  "donateNote": {
+    "message": "모든 것은 브라우저 안에서만 집계되며 어디에도 전송되지 않습니다. 절약 시간은 숨긴 항목 하나당 약 6초로 계산한 추정치입니다. 카운터는 설치일부터 매년 초기화됩니다."
   }
 }

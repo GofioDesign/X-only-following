@@ -250,5 +250,73 @@
   },
   "demo_hint": {
     "message": "保留全部内容可见，并遮盖广告（ADS，黑色）和算法内容（ALGORITHM，红色）。"
+  },
+  "statsLink": {
+    "message": "统计"
+  },
+  "statsTitle": {
+    "message": "你的统计"
+  },
+  "statsPeriod": {
+    "message": "$FROM$ – $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "donateYearTitle": {
+    "message": "只看你关注的内容的一年"
+  },
+  "donateYearText": {
+    "message": "希望 Dezombify 帮你把时间还给真正重要的事。它免费、无广告且开源。"
+  },
+  "statHours": {
+    "message": "在社交网络上只看你关注的内容"
+  },
+  "statDaily": {
+    "message": "日均"
+  },
+  "statAds": {
+    "message": "已隐藏的广告"
+  },
+  "statAlgo": {
+    "message": "已隐藏的建议和算法内容"
+  },
+  "statSaved": {
+    "message": "省下的算法和广告时间（约）"
+  },
+  "statNet": {
+    "message": "网络"
+  },
+  "statTime": {
+    "message": "时间"
+  },
+  "statAdsShort": {
+    "message": "广告"
+  },
+  "statAlgoShort": {
+    "message": "算法"
+  },
+  "statSavedShort": {
+    "message": "节省"
+  },
+  "statEmpty": {
+    "message": "还没有数据：请在启用扩展程序的情况下打开你的社交网络。"
+  },
+  "donateAskTitle": {
+    "message": "支持这个项目"
+  },
+  "remindNextYear": {
+    "message": "明年再提醒我"
+  },
+  "remindSet": {
+    "message": "好的，一年后再提醒你。"
+  },
+  "donateNote": {
+    "message": "所有数据只在你的浏览器中统计，不会发送到任何地方。节省时间按每个隐藏项约 6 秒估算。计数器从安装日起每年清零。"
   }
 }

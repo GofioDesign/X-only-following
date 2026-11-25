@@ -3,7 +3,7 @@
 Extensión de Chrome (Manifest V3) de **Gofio Design** (Juan Alberto). Lema: «Mata al algoritmo de tus redes sociales y trae a tus amigos de vuelta a casa, sanos y salvos» / *Kill the algorithm…*. Hace que cada red muestre solo lo que publican las cuentas que sigues: abre el feed «Siguiendo»/cronológico y oculta «Para ti», sugerencias, anuncios y contenido algorítmico.
 
 - Antes se llamaba **«Solo Siguiendo para X»** (v1.0.0, solo X). La 2.0.0 es una **actualización del mismo ítem** de la Chrome Web Store (id `fhajebegoleecljdhfokiokejdkalhji`), no una extensión nueva (las extensiones duplicadas están prohibidas).
-- Repo: https://github.com/GofioDesign/dezombify (antes `X-only-following`). Release v2.0.0 publicado con `dezombify-2.0.0.zip`.
+- Repo: https://github.com/GofioDesign/dezombify (antes `X-only-following`). Releases en GitHub con el zip de `releases/`; cambios de cada versión en CHANGELOG.md.
 - El usuario habla en **español**; responde en español.
 
 ## Estructura
@@ -18,6 +18,7 @@ extension/
   popup/             popup.html|css|js: panel del icono y, con data-mode="full", la página de opciones
   options/           options.html (misma UI que el popup en modo completo)
   welcome/           pantalla de bienvenida (cómo fijar el icono)
+  stats/             página de Estadísticas + invitación a valorar y donar
   _locales/<idioma>  15 idiomas, generados con tools/locales.py (no editar a mano)
 tools/locales.py     fuente única de los textos de la extensión en todos los idiomas
 store/es|en          imágenes de la tienda; store/src/ tiene el HTML y scripts (playwright) que las generan
@@ -56,7 +57,8 @@ Módulo en `sites/`, host en `host_permissions` y `content_scripts`, entrada en 
 - **«No queremos aturullar al usuario»:** en el panel solo salen las opciones de la red en la que estás (detecta la pestaña por `tab.url`, disponible gracias a los permisos de host). Fuera de una red, solo los interruptores principales. Todas las opciones juntas en la página de opciones.
 - Una opción por red para lo que republican o comparten (reposts/shares) y la actividad.
 - Logo: **jeringa cargada de corazones** (rosa `#ff5fa2` sobre `#17191d`); a 16 px va sin corazones. Fuente en `store/src/icon.svg` e `icon-16.svg`.
-- Aviso de valoración **cada 5 usos reales**: un uso = abrir una red con la extensión activa, máximo uno cada 30 min (common.js `countUse`). Al llegar a múltiplo de 5, background pone una ★ en el icono y el panel muestra el aviso; desde la 3.ª vez sale «No volver a mostrar». Donación: como mucho una vez al año. Todo contado en local (`chrome.storage.local`) y explicado en PRIVACY.md.
+- Avisos **solo en el panel o en la pestaña propia de Estadísticas, nunca un modal en las webs.** Valoración **cada 5 usos reales**: un uso = abrir una red con la extensión activa, máximo uno cada 30 min (common.js `countUse`). Al llegar a múltiplo de 5, background pone una ★ en el icono y el panel muestra el aviso («Valorar», «Recuérdamelo el próximo año»; desde la 3.ª vez, «No volver a mostrar»). Donación: a los 20 usos y luego en cada aniversario de la instalación (si hubo ≥5 usos ese año) se abre `stats/stats.html?from=first|year`. Todo contado en local (`chrome.storage.local`) y explicado en PRIVACY.md.
+- **Estadísticas** (`stats/`, enlace en el panel): `stats = {since, nets: {<key>: {ms, ads, algo}}}`. `ms` suma 1 min por minuto con la pestaña visible y enfocada; `ads`/`algo` cuentan `KTA.hideAd`/`KTA.hide` (no en modo demo). En el aniversario se guarda en `lastYear` y se pone a cero. Ahorro estimado: 6 s por elemento ocultado. Snoozes: `reviewSnoozeUntil`, `donateSnoozeUntil`.
 - Enlace «Más extensiones · Apoya el proyecto» a https://gofiodesign.eu/extensiones.html (donaciones en paypal.me/gofiodesign).
 - Cambios en la web gofiodesign.eu: siempre por PR en `GofioDesign/GofioDesign.github.io`.
 
